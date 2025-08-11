@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="UnitPrice" type="UnitPrice"/><xsd:complexType name="UnitPrice">
+      <xsd:sequence>
+         <xsd:element name="UnitPriceValue" type="Decimal21_6"/>
+         <xsd:element minOccurs="0" ref="Currency"/>
+         <xsd:element minOccurs="0" ref="UnitOfMeasurement"/>
+      </xsd:sequence>
+   </xsd:complexType><xsd:simpleType name="Decimal21_6">
+      <xsd:restriction base="xsd:decimal">
+         <xsd:totalDigits value="21"/>
+         <xsd:fractionDigits value="6"/>
+      </xsd:restriction>
+   </xsd:simpleType></xsd:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+
+    <allow>
+
+        <create creator="spring" javascript="catalogueService">
+            <param name="beanName" value="catalogueService"/>
+            <include method="checkSubCategories"/>
+            <include method="getProductsByCategoryIdCount"/>
+            <include method="checkOrderReceived"/>
+			<include method="checkScaniaOrderReceived"/>
+        </create>
+
+        <create creator="spring" javascript="administrationService">
+            <param name="beanName" value="administrationService"/>
+            <include method="checkRoleAssignedToUser"/>
+            <include method="checkUserId"/>
+        </create>
+    </allow>
+
+</dwr>

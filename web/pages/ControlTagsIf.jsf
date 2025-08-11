@@ -1,0 +1,11 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<html>
+    <head>
+        <title>Control Tags - if Tag Example</title>
+    </head>
+    <body>
+        <h2>Control Tags</h2>
+		<p>if tag Example</b>
+    </body>
+</html>
+

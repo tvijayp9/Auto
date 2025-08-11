@@ -1,0 +1,49 @@
+/* 
+    Document   : viewFlashNews
+    Created on : 04/05/2009, 1:55:04 PM
+    Author     : Terry
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin-top: 15px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+#container {
+	width: 560px;
+	margin: 0 auto;
+	text-align: left;
+}
+#header{
+	border-top-width: medium;
+	border-top-style: solid;
+	border-top-color: #5c9ccc;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	text-align: center;
+}
+#container #header .print {
+	background-image: url(../images/print.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 15px;
+	margin-left: 350px;
+}
+#container .content {
+	text-align: justify;
+}
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>    
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+
+    <package name="message" extends="struts-default">
+
+        <action name="downloadFileINQ"  class="com.nexus.struts.action.FileDownloadAction" method="downloadINQFile">
+            <result name = "success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/octet- stream;charset=ISO8859-1</param>
+                <param name="bufferSize">4096</param>
+                <param name="contentDisposition">attachment;filename="${downloadName}"</param>
+            </result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+        <action name="viewUploadFile"  class="com.nexus.struts.action.FileDownloadAction" method="downloadINQFile">
+            <result name = "success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/octet- stream;charset=ISO8859-1</param>
+                <param name="bufferSize">4096</param>
+                <param name="contentDisposition">filename="${downloadName}"</param>
+            </result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+        <action name="downloadFileOUTQ"  class="com.nexus.struts.action.FileDownloadAction" method="downloadOUTQFile">
+            <result name = "success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/octet- stream;charset=ISO8859-1</param>
+                <param name="bufferSize">4096</param>
+                <param name="contentDisposition">attachment;filename="${downloadName}"</param>
+            </result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+        <action name="viewUploadFile1"  class="com.nexus.struts.action.FileDownloadAction" method="downloadOUTQFile">
+            <result name = "success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/octet- stream;charset=ISO8859-1</param>
+                <param name="bufferSize">4096</param>
+                <param name="contentDisposition">filename="${downloadName}"</param>
+            </result>
+            <result name="error">/pages/error.jsp</result>
+        </action>
+        <action name="ShowInBoundlist">
+            <result>/pages/messaging/InBoundMessageList.jsp</result>
+        </action>
+        <action name="ShowInBoundArchivelist">
+            <result>/pages/messaging/InBoundArchiveMessageList.jsp</result>
+        </action>
+        <action name="ShowOutBoundlist">
+            <result>/pages/messaging/OutBoundMessageList.jsp</result>
+        </action>
+        <action name="ShowOutBoundArchivelist">
+            <result>/pages/messaging/OutBoundArchiveMessageList.jsp</result>
+        </action>
+        <action name="showmessagelist">
+            <result>/pages/messaging/InBoundMessageList.jsp</result>
+        </action>
+        <action name="viewOrderFromInboundTransaction" class="viewOrderFromInboundTransaction">
+            <result>/pages/messaging/ViewOrderFromInboundTransaction.jsp</result>
+            <result name="Print">/pages/messaging/ViewOrderFromInboundTransaction.jsp</result>
+            <result name="AusDrillPrint">/pages/messaging/ViewAusOrderFromInboundTransaction.jsp</result>
+            <result name="ScaniaPrint">/pages/messaging/ViewScaniaOrderFromInboundTransaction.jsp</result>
+        </action>
+		<action name="showInvoiceData">
+            <result>/pages/messaging/ViewAusInvoiceTransaction.jsp</result>
+        </action>
+		<action name="viewinvoiceTransaction" class="viewinvoiceTransactionAction">
+            <result>/pages/messaging/ViewAusInvoiceTransaction.jsp</result>
+        </action>
+		<action name="generateInvoice" class="generateInvoiceAction">
+           <!-- <result>/pages/messaging/Invoice_AusDrill.jsp</result> -->
+        </action>
+    </package>
+    
+</struts>

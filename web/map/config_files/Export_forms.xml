@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export_Forms>
+   <!--This file contains the list of valid export document names that Form trap will uses to output reports-->
+   <!--The data contained in this file will be displyed in the TRS export documentation module.-->
+   <!--Copyright XmlYes Pty Ltd 2002-->
+   <FormsList>
+      <form>
+         <id>1</id>
+         <formname>WILSONSLIDATA</formname>
+         <description>Transmit - SLI To Wilson Logistics</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_WILSONSLIDATA_Xml_v5.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVWILSONSLIDATA_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>2</id>
+         <formname>WILSONINVDATA</formname>
+         <description>Transmit - Invoice To Wilson Logistics</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_WILSONINVDATA_Xml_v5.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVWILSONINVDATA_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>3</id>
+         <formname>SLIWIL</formname>
+         <description>Print - SLI To Wilson Logistics</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_SLIWIL_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVSLIWIL_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>4</id>
+         <formname>SLIEGL</formname>
+         <description>Print - EGL SLI</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_SLIEGL_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVSLIEGL_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>5</id>
+         <formname>SLIIDS</formname>
+         <description>Print - IDS SLI</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_SLIIDS_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVSLIIDS_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>6</id>
+         <formname>SLIAFL</formname>
+         <description>Print - AFL SLI</description>
+         <copies>1</copies>
+         <selected>false</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_SLIAFL_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVSLIAFL_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>7</id>
+         <formname>SLIKN</formname>
+         <description>Print - KN SLI</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_SLIKN_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVSLIKN_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>8</id>
+         <formname>CERTORGN</formname>
+         <description>Print - Certificate Of Origin</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_CERTORGN_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVCERTORGN_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>9</id>
+         <formname>MSAEXPIN</formname>
+         <description>Print - Export Tax Invoice</description>
+         <copies>1</copies>
+         <selected>false</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_MSAEXPIN_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVMSAEXPIN_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>10</id>
+         <formname>PACKLIST</formname>
+         <description>Print - Packing List</description>
+         <copies>1</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_PACKLIST_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVPACKLIST_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>11</id>
+         <formname>SLIGEN</formname>
+         <description>Print - Blank Shippers Letter</description>
+         <copies>4</copies>
+         <selected>true</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_SLIGEN_Xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVSLIGEN_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>12</id>
+         <formname>AMSA250</formname>
+         <description>Print - Hazardous Goods Form (MO41-A)</description>
+         <copies>1</copies>
+         <selected>false</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_AMSA250_xml_v4.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVAMSA250_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+      <form>
+         <id>13</id>
+         <formname>TERRAFIRMA</formname>
+         <description>Print - Terra Firma</description>
+         <copies>1</copies>
+         <selected>false</selected>
+         <DESTPRINT>exportprinter</DESTPRINT>
+         <styleSheet>C:\Dynex\Xsl\TRS_ExpInv_Babelised_to_TERRAFIRMA_Xml_v1.xsl</styleSheet>
+         <EDXSENDMETH>TRSEXPINVTERRAFIRMA_1</EDXSENDMETH>
+         <destinationDir>C:\Dynex\datadynex\drp</destinationDir>
+      </form>
+   </FormsList>
+</Export_Forms>

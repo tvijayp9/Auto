@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="UOMCoded" type="UOMCode"/><xsd:simpleType name="UOMCode">
+        <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="3"/>
+                    <xsd:minLength value="0"/>
+                </xsd:restriction>
+    </xsd:simpleType></xsd:schema>

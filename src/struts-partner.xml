@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+    
+    <package name="partner" extends="struts-default">
+        <action name="BeforeCreatePartner" class="com.nexus.struts.action.PartnerAction" method="beforeCreatePartner">
+            <result>/pages/partner/Create.jsp</result>
+        </action>
+        <action name="CreatePartner" class="com.nexus.struts.action.PartnerAction" method="create">
+            <result name="input">/pages/partner/Create.jsp</result>
+            <result>/pages/partner/CreateMicrocatAccount.jsp</result>
+        </action>
+        <action name="CreateMicrocatAccount" class="createMicrocatAccountAction">
+            <result>/pages/partner/CreateSuccess.jsp</result>
+        </action>
+        <action name="showpartnerlist">
+            <result>/pages/partner/partnerlist.jsp</result>
+        </action>
+        <action name="ShowPriceType" class="com.nexus.web.umg.ShowPriceTypesAction">
+            <result>/pages/partner/showPriceType.jsp</result>
+        </action>
+        <action name="ChangePriceType" class="changePriceTypeAction">
+            <result>/pages/partner/showPriceType.jsp</result>
+        </action>
+        <action name="ViewMicrocatAccount">
+            <result>/pages/partner/microcat.jsp</result>
+        </action>
+        <action name="CreateOneMicrocatAccount">
+            <result>/pages/partner/CreateOneMicrocatAccount.jsp</result>
+        </action>
+        <action name="DoCreateOneMicrocatAccount" class="doCreateOneMicrocatAccountAction">
+            <result>/pages/partner/microcat.jsp</result>
+        </action>
+        <action name="EditMicrocatAccount" class="editMicrocatAccountAction">
+            <result>/pages/partner/EditMicrocatAccount.jsp</result>
+        </action>
+        <action name="DoEditMicrocatAccount" class="doEditMicrocatAccountAction">
+            <result>/pages/partner/microcat.jsp</result>
+        </action>
+        <action name="EditPartner" class="com.nexus.struts.action.PartnerAction" method="edit">
+            <result>/pages/partner/editPartner.jsp</result>
+        </action>
+        <action name="UpdatePartner" class="com.nexus.struts.action.PartnerAction" method="update">
+            <result>/pages/partner/partnerlist.jsp</result>
+        </action>
+    </package>
+</struts>

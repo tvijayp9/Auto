@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : uncheckSession.xml
+    Created on : 3 July 2009, 12:11 PM
+    Author     : Terry
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <request>/login.action</request>
+    <request>/punchoutSetup.action</request>
+	<request>/purchaseOrder.action</request>
+    <request>/logout.action</request>
+    <request>/ntforgetpassword.action</request>
+    <request>/kforgetpassword.action</request>
+    <request>/ntuserforgetpassword.action</request>
+    <request>/ptuserforgetpassword.action</request>
+    <request>/ptforgetpassword.action</request>
+    <request>/kuserforgetpassword.action</request>
+	<request>/login.action;jsessionid=</request>
+</root>

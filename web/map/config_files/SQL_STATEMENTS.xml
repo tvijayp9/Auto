@@ -1,0 +1,28 @@
+<SQL_LIST>
+   <QUERY_ALL_STATEMENT>SELECT * FROM `trans_store`</QUERY_ALL_STATEMENT>
+   <QUERY_GET_CURR_TRANS>SELECT * FROM `trans_store`WHERE DOCKEY='?'</QUERY_GET_CURR_TRANS>
+   <QUERY_GET_ROOT_STATEMENT>SELECT * FROM `trans_store`WHERE RootParentTransactionUniqueId='?'</QUERY_GET_ROOT_STATEMENT>
+   <QUERY_DUPLICATE_PO_STATEMENT>SELECT * FROM `trans_store` WHERE (DocumentType='PurchaseOrder') AND (DocumentCreatorsTransactionID='?')</QUERY_DUPLICATE_PO_STATEMENT>
+   <QUERY_DUPLICATE_CO_STATEMENT>SELECT * FROM `trans_store` WHERE (RootParentTransactionUniqueID='?') AND (DocumentType='ChangeOrder') AND ((DocumentCreatorsTransactionID='?') OR (SequenceNumber='?''))</QUERY_DUPLICATE_CO_STATEMENT>
+   <QUERY_LATEST_CO>SELECT * FROM `trans_store` WHERE RootParentTransactionUniqueId ='?' AND DocumentType='ChangeOrder'</QUERY_LATEST_CO>
+   <QUERY_LATEST_PO>SELECT * FROM `trans_store` WHERE RootParentTransactionUniqueId ='?' AND DocumentType='PurchaseOrder'</QUERY_LATEST_PO>
+   <QUERY_DUPLICATE_EXP_STATEMENT>SELECT * FROM `trans_store` WHERE RootParentTransactionUniqueID='?' AND DocumentType='ExportDocument'</QUERY_DUPLICATE_EXP_STATEMENT>
+   <QUERY_PARENT_STATEMENT>SELECT * FROM `trans_store` WHERE DocumentCreatorsTransactionID='?'</QUERY_PARENT_STATEMENT>
+   <QUERY_SEQUENCE_STATEMENT>SELECT * FROM `trans_store` WHERE (SequenceNumber='?') AND (RootParentTransactionUniqueId='?')</QUERY_SEQUENCE_STATEMENT>
+   <QUERY_STATEMENT_4>SELECT * FROM `trans_store`WHERE RootParentTransactionUniqueId ='?' AND SequenceNumber= (SELECT MAX(SequenceNumber) FROM 'trans_store')</QUERY_STATEMENT_4>
+   <QUERY_STATEMENT_5/>
+   <INSERT_TRANS_STORE_STATEMENT>INSERT INTO 'trans_store' values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</INSERT_TRANS_STORE_STATEMENT>
+   <INSERT_ERROR_STORE_STATEMENT>INSERT INTO 'error_store' values(?,?,?,?,?,?,?,?)</INSERT_ERROR_STORE_STATEMENT>
+   <UPDATE_STATEMENT_1>UPDATE 'trans_store' SET DocumentCreatorsTransactionID = ?, DocumentCreatorTPID = ?, SequenceNumber = ?, DocumentType = ?, RootParentTransactionUniqueID = ?, PreviousParentTransactionUniqueID = ?, TransactionNote = ?, LogDate = ?, CreationDate = ?, UserId = ?, OpenState = ?, ResolvedState = ?, FileType = ?, SendDate = ?, ReceivedDate = ?, SendMethod = ?, Direction = ?, DestinationAddress = ?, ArchivePath = ? WHERE DOCKEY=?</UPDATE_STATEMENT_1>
+   <UPDATE_STATEMENT_2/>
+   <UPDATE_STATEMENT_3/>
+   <UPDATE_STATEMENT_4/>
+   <UPDATE_STATEMENT_5/>
+   <QUERY_USERDB_1>SELECT * FROM tr_userlog;</QUERY_USERDB_1>
+   <QUERY_USERDB_MAX_KEYVALUE>SELECT MAX(UserLogKey) AS KeyValue FROM tr_userlog;</QUERY_USERDB_MAX_KEYVALUE>
+   <QUERY_USERDB_USER_VALID>SELECT * FROM tr_userlog where (LoginName = '?') AND (Password = '?');</QUERY_USERDB_USER_VALID>
+   <QUERY_USERDB_USER_EXISTS>SELECT * FROM tr_userlog where (LoginName = '?');</QUERY_USERDB_USER_EXISTS>
+   <INSERT_USERDB_1>INSERT INTO tr_userlog values(?,?,?,?,?)</INSERT_USERDB_1>
+   <DELETE_USERDB_1>DELETE FROM tr_userlog WHERE (LoginName='?')</DELETE_USERDB_1>
+   <UPDATE_USERDB_1>UPDATE tr_userlog SET LoginName ='?', FullName ='?', Password = '?', Type = '?' WHERE UserLogKey=?;</UPDATE_USERDB_1>
+</SQL_LIST>

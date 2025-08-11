@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+    <package name="resolution" extends="struts-default">
+        <action name="DRLogin">
+            <result>/pages/resolution/Transaction_Centre.jsp</result>
+        </action>
+         <action name="showtranasctionslist" class="com.nexus.web.DR.DRClickAction">
+			<result>/pages/resolution/tranactionlist.jsp</result>
+        </action>
+        <action name="unlocktransaction">
+            <result>/pages/resolution/UnlockTransaction.jsp</result>
+        </action>
+        <action name="updatetransaction" class="com.nexus.web.DR.UnlockTransactionAction">
+            <result name="input">/pages/resolution/UnlockTransaction.jsp</result>
+            <result>/pages/resolution/UnlockTransaction.jsp</result>
+        </action>
+        <action name="opentransaction" class="com.nexus.web.DR.DataResolutionAction">
+            <result name="input">/pages/resolution/Trans_Disp_FS.jsp</result>
+        </action>
+        <action name="selectelementaction" class="com.nexus.web.DR.DataResolutionAction" method="selectElement">
+            <result name="input">/pages/resolution/Trans_Disp_FS.jsp</result>
+        </action>
+		<action name="FilterTransactions" class="FilterTransactionsAction">
+            <result name="input">/pages/resolution/ProcessedTransactionList.jsp</result>
+			<result>/pages/resolution/tranactionlist.jsp</result>
+        </action>
+		<action name="beforeuserassign" class="usermanagementAction">
+            <result>/pages/resolution/UserPartners.jsp</result>
+        </action>
+		<action name="assignpartner" class="com.nexus.web.DR.UserManagementAction" method="assignPartner">
+            <result>/pages/resolution/userManagement.jsp</result>
+        </action>
+		<action name="usermanagement">
+            <result>/pages/resolution/DrUsers.jsp</result>
+        </action>
+		<action name="drPartner" class="drPartnerAction">
+            <result type="redirect">usermanagement.action</result>
+        </action>
+        <action name="processedPrintTransaction" class="processedPrintTransactionAction">
+            <result>/pages/resolution/ProcessedTransactionList.jsp</result>
+        </action>
+	</package>
+	<package name="resolution-json" extends="json-default">
+		<action name="showAssignedPartners" class="showAssignedPartnersAction">
+            <result type="json"/>
+        </action>
+		<action name="showExistingPartners" class="showExistingPartnersAction">
+            <result type="json"/>
+        </action>
+		<action name="showDrUsers" class="showDrUsersAction">
+            <result type="json"/>
+        </action>
+	</package>
+</struts>

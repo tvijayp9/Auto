@@ -1,0 +1,1547 @@
+<?xml version="1.0"?>
+<!--
+This file is a Bable template file 2003-11-24
+Rules
+Display settings                   |Store Settings            |Element display name  |Help text
+________________________________________________________________________________________________
+Display in Content screen =C       |PassAndStore        PS   |Any Text name          |Any text 
+Display in Tree screen    =T       |DontStoreDontPass   DSDP |Any Text name          |Any text 
+No Display                   =N       |PassDontStore       PDS  |Any Text name          |Any text 
+________________________________________________________________________________________________
+-->
+<ExportInvoice>T,DSDP,Export Document
+   <InvoiceHeader>T,DSDP,Header
+      <InvoiceNumber>T,DSDP,Invoice Number
+         <Reference>
+            <RefNum>C,PDS,Invoice No</RefNum>
+            <RefDate/>
+         </Reference>
+      </InvoiceNumber>
+      <InvoiceIssueDate>T,DSDP,Invoice Issue Date
+         <RefDate>C,PDS,Invoice Date</RefDate>
+      </InvoiceIssueDate>
+      <InvoiceReferences>T,DSDP,Invoice References
+         <PurchaseOrderReference>T,DSDP,Customer PO No.
+            <PurchaseOrderNumber>
+               <Reference>
+                  <RefNum>C,PDS,Customer PO No.</RefNum>
+                  <RefDate>C,PDS,PO Date</RefDate>
+               </Reference>
+            </PurchaseOrderNumber>
+            <PurchaseOrderDate/>
+         </PurchaseOrderReference>
+         <AccountNumber>T,DSDP,Account No.
+            <Reference>
+               <RefNum>C,PS,Account No</RefNum>
+               <RefDate/>
+            </Reference>
+         </AccountNumber>
+         <ProformaInvoiceNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </ProformaInvoiceNumber>
+         <ASNNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </ASNNumber>
+         <SupplierOrderNumber>
+            <Reference>
+               <RefNum>C,PDS,PO Reference No.</RefNum>
+               <RefDate/>
+            </Reference>
+         </SupplierOrderNumber>
+         <PriceListVersionNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </PriceListVersionNumber>
+         <BuyersCatalogNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </BuyersCatalogNumber>
+         <BillOfLadingNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </BillOfLadingNumber>
+         <AirWayBillNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </AirWayBillNumber>
+         <LetterOfCreditNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </LetterOfCreditNumber>
+         <DeliveryNoteNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </DeliveryNoteNumber>
+         <HouseAirWayBillNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </HouseAirWayBillNumber>
+         <ExportClearanceNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </ExportClearanceNumber>
+         <ConsignmentNoteNumber>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </ConsignmentNoteNumber>
+         <DespatchNumber>T,DSDP,Sales Order No.
+            <Reference>
+               <RefNum>C,PDS,Sales Order No.</RefNum>
+               <RefDate/>
+            </Reference>
+         </DespatchNumber>
+         <OtherInvoiceReferences>T,DSDP,Territory Code
+            <ListOfReferenceCoded>
+               <ReferenceCoded>C,PS,Territory Code</ReferenceCoded>
+            </ListOfReferenceCoded>
+         </OtherInvoiceReferences>
+      </InvoiceReferences>
+      <InvoicePurpose>
+         <InvoicePurposeCoded/>
+      </InvoicePurpose>
+      <InvoiceType>
+         <InvoiceTypeCoded/>
+      </InvoiceType>
+      <InvoiceCurrency>T,DSDP,Invoice Currency
+         <Currency>
+            <CurrencyCoded>C,PDS,Invoice Currency</CurrencyCoded>
+            <CountryCodedOther/>
+         </Currency>
+      </InvoiceCurrency>
+      <PaymentCurrency>
+         <Currency>
+            <CurrencyCoded/>
+            <CountryCodedOther/>
+         </Currency>
+      </PaymentCurrency>
+      <InvoiceLanguage>
+         <Language>
+            <LanguageCoded>C,PDS,Invoice Language</LanguageCoded>
+         </Language>
+      </InvoiceLanguage>
+      <InvoiceDates>
+         <InvoiceDueDate/>
+      </InvoiceDates>
+      <InvoiceParty>T,DSDP,Invoice Parties
+         <BuyerParty>T,DSDP,Buyer Party
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </BuyerParty>
+         <SellerParty>T,DSDP,Seller Party
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </SellerParty>
+         <ShipToParty>T,DSDP,Ship To Party
+		 <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </ShipToParty>
+         <BillToParty>T,DSDP,Bill To Party
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </BillToParty>
+         <ShipFromParty>
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </ShipFromParty>
+      </InvoiceParty>
+      <ShippingParty>T,DSDP,Shipping Parties
+         <Port-of-loading>T,DSDP,Port Of Loading
+            <port>
+               <unique-id/>
+               <name>C,PS,Port Name</name>
+               <country-code/>
+            </port>
+            <vessel>
+               <Air>
+                  <Airline>
+                     <Name>C,PS,Airline Name</Name>
+                     <ReferenceNo/>
+                  </Airline>
+                  <Flight>
+                     <Number>C,PS,Flight No</Number>
+                     <DepartureDate/>
+                     <DepartureTime/>
+                  </Flight>
+               </Air>
+               <sea>
+                  <lloyds-code/>
+                  <name>C,PS,Vessel Name</name>
+                  <voyage-no>C,PS,Voyage No</voyage-no>
+               </sea>
+            </vessel>
+         </Port-of-loading>
+         <Departure>
+            <port>
+               <unique-id/>
+               <name/>
+               <country-code/>
+            </port>
+            <vessel>
+               <Air>
+                  <Airline>
+                     <Name/>
+                     <ReferenceNo/>
+                  </Airline>
+                  <Flight>
+                     <Number/>
+                     <DepartureDate/>
+                     <DepartureTime/>
+                  </Flight>
+               </Air>
+               <sea>
+                  <lloyds-code/>
+                  <name/>
+                  <voyage-no/>
+               </sea>
+            </vessel>
+         </Departure>
+         <Shipper>T,DSDP,Shipper
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </Shipper>
+         <Notify>T,DSDP,Notify
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </Notify>
+         <FinalDestination>T,DSDP,Final Destination
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </FinalDestination>
+         <Forwarder>
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </Forwarder>
+         <Other-ports>
+            <other-port/>
+         </Other-ports>
+         <Consignee>T,DSDP,Consignee
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </Consignee>
+         <Courier>
+            <Party>
+               <ListOfIdentifier>T,DSDP,Identifiers List
+                  <Identifier>T,DSDP,Identifier
+                     <Agency>
+                        <AgencyCoded/>
+                        <AgencyCodedOther>C,PS,Ident Party</AgencyCodedOther>
+                        <AgencyDescription/>
+                        <CodeListIdentifierCodedOther>C,PS,Ident Type</CodeListIdentifierCodedOther>
+                     </Agency>
+                     <Ident>C,PS,Ident Value</Ident>
+                  </Identifier>
+               </ListOfIdentifier>
+               <NameAddress>
+                  <Name1>C,PS,Address Line 1</Name1>
+                  <Name2>C,PS,Address Line 2</Name2>
+                  <Name3>C,PS,Address Line 3</Name3>
+                  <POBox>C,PS,PO Box</POBox>
+                  <Street>C,PS,Street</Street>
+                  <HouseNumber>C,PS,House No</HouseNumber>
+                  <StreetSupplement1>C,PS,Street Supp 1</StreetSupplement1>
+                  <StreetSupplement2>C,PS,Street Supp 2</StreetSupplement2>
+                  <PostalCode>C,PS,Post Code</PostalCode>
+                  <City>C,PS,City</City>
+                  <Country>
+                     <CountryCoded>C,PS,Country</CountryCoded>
+                  </Country>
+               </NameAddress>
+               <OrderContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </OrderContact>
+               <ReceivingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ReceivingContact>
+               <ShippingContact>
+                  <Contact>
+                     <ContactName/>
+                     <ContactDescription/>
+                     <ListOfContactNumber>
+                        <ContactNumber>
+                           <ContactNumberValue/>
+                        </ContactNumber>
+                     </ListOfContactNumber>
+                  </Contact>
+               </ShippingContact>
+            </Party>
+         </Courier>
+      </ShippingParty>
+      <Shipping-info>T,DSDP,Shipping Info
+         <type-of-service>T,DSDP,Type of Service
+            <TransportMode>C,PS,Type of Service</TransportMode>
+         </type-of-service>
+         <Charges>T,DSDP,Shipping Charges
+            <Freight>T,DSDP,Freight
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy>C,PS,Paid By?</ServicePaidBy>
+                  <OrganiserOfService>C,PS,Organised By?</OrganiserOfService>
+                  <AmountOfService>C,PS,Amount Of Service</AmountOfService>
+                  <CurrencyOfService>C,PS,Currency</CurrencyOfService>
+               </ServiceProvision>
+            </Freight>
+            <Insurance>T,DSDP,Insurance
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy>C,PS,Paid By?</ServicePaidBy>
+                  <OrganiserOfService>C,PS,Organised By?</OrganiserOfService>
+                  <AmountOfService>C,PS,Amount Of Service</AmountOfService>
+                  <CurrencyOfService>C,PS,Currency</CurrencyOfService>
+               </ServiceProvision>
+               <AmountInsured>C,PS,Amount Insured</AmountInsured>
+               <Currency>
+                  <CurrencyCoded>C,PS,Insured Currency</CurrencyCoded>
+               </Currency>
+            </Insurance>
+            <LocalPickupCartage>T,DSDP,Local Pickup
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy>C,PS,Paid By?</ServicePaidBy>
+                  <OrganiserOfService>C,PS,Organised By?</OrganiserOfService>
+                  <AmountOfService>C,PS,Amount Of Service</AmountOfService>
+                  <CurrencyOfService>C,PS,Currency</CurrencyOfService>
+               </ServiceProvision>
+            </LocalPickupCartage>
+            <ExportEntry>
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy/>
+                  <OrganiserOfService/>
+                  <AmountOfService/>
+                  <CurrencyOfService/>
+               </ServiceProvision>
+            </ExportEntry>
+            <AirWayBillCharges>
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy/>
+                  <OrganiserOfService/>
+                  <AmountOfService/>
+                  <CurrencyOfService/>
+               </ServiceProvision>
+            </AirWayBillCharges>
+            <AgencyCharges>
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy/>
+                  <OrganiserOfService/>
+                  <AmountOfService/>
+                  <CurrencyOfService/>
+               </ServiceProvision>
+            </AgencyCharges>
+            <EdfCharges>
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy/>
+                  <OrganiserOfService/>
+                  <AmountOfService/>
+                  <CurrencyOfService/>
+               </ServiceProvision>
+            </EdfCharges>
+            <EcnCharges>
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy/>
+                  <OrganiserOfService/>
+                  <AmountOfService/>
+                  <CurrencyOfService/>
+               </ServiceProvision>
+            </EcnCharges>
+            <FOBCharges>T,DSDP,FOB
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy>C,PS,Paid By?</ServicePaidBy>
+                  <OrganiserOfService>C,PS,Organised By?</OrganiserOfService>
+                  <AmountOfService>C,PS,Amount Of Service</AmountOfService>
+                  <CurrencyOfService>C,PS,Currency</CurrencyOfService>
+               </ServiceProvision>
+            </FOBCharges>
+            <door-to-door>T,DSDP,Door-to-Door
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy>C,PS,Paid By?</ServicePaidBy>
+                  <OrganiserOfService>C,PS,Organised By?</OrganiserOfService>
+                  <AmountOfService>C,PS,Amount Of Service</AmountOfService>
+                  <CurrencyOfService>C,PS,Currency</CurrencyOfService>
+               </ServiceProvision>
+            </door-to-door>
+            <OtherDutiesTaxes>
+               <Applicable/>
+               <ServiceProvision>
+                  <ServicePaidBy/>
+                  <OrganiserOfService/>
+                  <AmountOfService/>
+                  <CurrencyOfService/>
+               </ServiceProvision>
+            </OtherDutiesTaxes>
+            <ListOfDocumentation>
+               <ComercialInvoice>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </ComercialInvoice>
+               <CustomsInvoice>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </CustomsInvoice>
+               <PackingList>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </PackingList>
+               <Entry>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </Entry>
+               <Exit>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </Exit>
+               <CertificateOfOrigin>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </CertificateOfOrigin>
+               <Consular>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </Consular>
+               <Banking>
+                  <Applicable/>
+                  <ServiceProvision>
+                     <ServicePaidBy/>
+                     <OrganiserOfService/>
+                     <AmountOfService/>
+                     <CurrencyOfService/>
+                  </ServiceProvision>
+               </Banking>
+            </ListOfDocumentation>
+         </Charges>
+         <ExportDeclarations>T,DSDP,Export Declarations
+            <DeclaredCustomsValue>
+               <Amount>C,PDS,Declared Value</Amount>
+               <Currency>
+                  <CurrencyCoded>C,PDS,Declared Currency</CurrencyCoded>
+               </Currency>
+            </DeclaredCustomsValue>
+            <DutyDrawBack>C,PDS,Duty Draw Back</DutyDrawBack>
+            <FreeDomicile>C,PDS,Free Domicile</FreeDomicile>
+            <DangerousGoods>C,PDS,Dangerous Goods</DangerousGoods>
+            <HECC/>
+         </ExportDeclarations>
+      </Shipping-info>
+      <InvoiceTermsOfDelivery>T,DSDP,Terms Of Delivery
+         <TermsOfDelivery>
+            <TermsOfDeliveryFunctionCoded/>
+            <TransportTermsCoded>C,PDS, Terms of Delivery Code</TransportTermsCoded>
+            <Location>C,PDS, Terms of Delivery Location</Location>
+            <TermsOfDeliveryDescription>C,PDS, Terms Description</TermsOfDeliveryDescription>
+         </TermsOfDelivery>
+      </InvoiceTermsOfDelivery>
+      <InvoicePaymentInstructions>T,DSDP,Payment Instructions
+         <PaymentInstructions>C,PS,Payment Terms</PaymentInstructions>
+      </InvoicePaymentInstructions>
+      <InvoiceAllowancesOrCharges>
+         <InvoiceCurrencyAmt>
+            <MonetaryValue/>
+         </InvoiceCurrencyAmt>
+      </InvoiceAllowancesOrCharges>
+      <InvoiceHeaderNote>T,DSDP,Shipping Instructions	
+         <NoteDetail>C,PS,Shipping Instructions</NoteDetail>
+      </InvoiceHeaderNote>
+   </InvoiceHeader>
+   <InvoiceDetail>T,DSDP,Detail
+      <ListOfInvoiceItemDetail>T,DSDP,Item List
+         <InvoiceItemDetail>T,DSDP,Item
+            <InvoiceBaseItemDetail>
+               <ItemIdentifiers>
+                  <PartNumbers>
+                     <SellerPartNumber>
+                        <PartNum>
+                           <PartID>C,PS,Seller Item Code</PartID>
+                        </PartNum>
+                     </SellerPartNumber>
+                     <BuyerPartNumber>
+                        <PartNum>
+                           <PartID>C,PS,Buyer Item Code</PartID>
+                        </PartNum>
+                     </BuyerPartNumber>
+                     <IntTariffNumber>
+                        <PartNum>
+                           <PartID>C,PS,Int Tariff Code</PartID>
+                        </PartNum>
+                     </IntTariffNumber>
+                  </PartNumbers>
+                  <ItemDescription>
+                     <SellerDescription>C,PS,Seller Description</SellerDescription>
+                     <BuyersDescription>C,PS,Buyers Description</BuyersDescription>
+                     <IntTariffDescription>C,PS,Int Tariff Description</IntTariffDescription>
+                  </ItemDescription>
+                  <ListOfItemCharacteristic>
+                     <ItemCharacteristic>
+                        <UnitOfMeasurement>
+                           <UOMCoded>C,PS,UOM</UOMCoded>
+                        </UnitOfMeasurement>
+                     </ItemCharacteristic>
+                  </ListOfItemCharacteristic>
+               </ItemIdentifiers>
+               <ListOfItemReferences>
+                  <ListOfReferenceCoded>
+                     <ReferenceCoded/>
+                  </ListOfReferenceCoded>
+               </ListOfItemReferences>
+               <StateOfOrigin>
+                  <State>
+                     <StateOfOriginCoded>C,PS,State of Origin</StateOfOriginCoded>
+                  </State>
+               </StateOfOrigin>
+               <CountryOfOrigin>
+                  <Country>
+                     <CountryCoded>C,PS,Country of Origin</CountryCoded>
+                  </Country>
+               </CountryOfOrigin>
+               <HazardousMaterials>
+                  <HazardousGoods/>
+                  <HazardNote/>
+                  <HazardCode/>
+               </HazardousMaterials>
+               <LineItemReferences>
+                  <InvoiceReferences>
+                     <PurchaseOrderReference>
+                        <PurchaseOrderNumber>
+                           <Reference>
+                              <RefNum/>
+                              <RefDate/>
+                           </Reference>
+                        </PurchaseOrderNumber>
+                        <PurchaseOrderDate/>
+                     </PurchaseOrderReference>
+                     <AccountNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </AccountNumber>
+                     <ProformaInvoiceNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </ProformaInvoiceNumber>
+                     <ASNNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </ASNNumber>
+                     <SupplierOrderNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </SupplierOrderNumber>
+                     <PriceListVersionNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </PriceListVersionNumber>
+                     <BuyersCatalogNumber/>
+                     <BillOfLadingNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </BillOfLadingNumber>
+                     <AirWayBillNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </AirWayBillNumber>
+                     <LetterOfCreditNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </LetterOfCreditNumber>
+                     <DeliveryNoteNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </DeliveryNoteNumber>
+                     <HouseAirWayBillNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </HouseAirWayBillNumber>
+                     <ExportClearanceNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </ExportClearanceNumber>
+                     <ConsignmentNoteNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </ConsignmentNoteNumber>
+                     <DespatchNumber>
+                        <Reference>
+                           <RefNum/>
+                           <RefDate/>
+                        </Reference>
+                     </DespatchNumber>
+                     <OtherInvoiceReferences>
+                        <ListOfReferenceCoded>
+                           <ReferenceCoded/>
+                        </ListOfReferenceCoded>
+                     </OtherInvoiceReferences>
+                  </InvoiceReferences>
+               </LineItemReferences>
+               <Quantities>
+                  <Ordered>
+                     <Quantity>
+                        <QuantityValue>C,PDS,Ordered Quantity</QuantityValue>
+                        <UnitOfMeasurement>
+                           <UOMCoded/>
+                        </UnitOfMeasurement>
+                     </Quantity>
+                  </Ordered>
+                  <Invoiced>
+                     <Quantity>
+                        <QuantityValue>C,PDS,Invoiced Quantity</QuantityValue>
+                        <UnitOfMeasurement>
+                           <UOMCoded/>
+                        </UnitOfMeasurement>
+                     </Quantity>
+                  </Invoiced>
+                  <Shipped>
+                     <Quantity>
+                        <QuantityValue>C,PDS,Shipped Quantity</QuantityValue>
+                        <UnitOfMeasurement>
+                           <UOMCoded/>
+                        </UnitOfMeasurement>
+                     </Quantity>
+                  </Shipped>
+                  <Packed>
+                     <Quantity>
+                        <QuantityValue/>
+                        <UnitOfMeasurement>
+                           <UOMCoded/>
+                        </UnitOfMeasurement>
+                     </Quantity>
+                  </Packed>
+                  <BackOrder>
+                     <Quantity>
+                        <QuantityValue>C,PDS,BackOrder Quantity</QuantityValue>
+                        <UnitOfMeasurement>
+                           <UOMCoded/>
+                        </UnitOfMeasurement>
+                     </Quantity>
+                  </BackOrder>
+                  <ShippedToDate>
+                     <Quantity>
+                        <QuantityValue/>
+                        <UnitOfMeasurement>
+                           <UOMCoded/>
+                        </UnitOfMeasurement>
+                     </Quantity>
+                  </ShippedToDate>
+               </Quantities>
+            </InvoiceBaseItemDetail>
+            <InvoicePricingDetail>
+               <UnitPrice>
+                  <MonetaryValue>C,PDS,Unit Price</MonetaryValue>
+               </UnitPrice>
+               <Tax/>
+               <TotalValue>
+                  <MonetaryValue>C,PDS,Total Value</MonetaryValue>
+               </TotalValue>
+               <InvoiceCurrencyTotalValue/>
+               <TotalTaxAmount>
+                  <MonetaryValue/>
+               </TotalTaxAmount>
+               <PriceMultiplier>
+                  <PriceMultiplierCoded/>
+                  <PriceMultiplierCodedOther/>
+                  <Multiplier>C,PDS,Discount %</Multiplier>
+               </PriceMultiplier>
+               <InvoiceOtherPricesList>
+                  <InvoiceOtherPrice>
+                     <TypeOfInvoiceOtherPrice>C,PDS,Discount Type</TypeOfInvoiceOtherPrice>
+                     <InvoiceOtherPriceValue>C,PDS,Discounted Amount</InvoiceOtherPriceValue>
+                  </InvoiceOtherPrice>
+               </InvoiceOtherPricesList>
+            </InvoicePricingDetail>
+            <InvoiceDates>
+               <InvoiceDueDate/>
+            </InvoiceDates>
+            <DeliveryDetail>
+               <ShipToLocation>
+                  <Location/>
+               </ShipToLocation>
+               <ShipFromLocation>
+                  <Location/>
+               </ShipFromLocation>
+               <SimplePackageNote/>
+               <TermsOfDelivery>
+                  <TransportTermsCoded/>
+               </TermsOfDelivery>
+               <CargoClassification/>
+            </DeliveryDetail>
+            <LineItemNote/>
+            <ListOfStructuredNote>
+               <StructuredNote>
+                  <GeneralNote>C,PDS,Lot Number</GeneralNote>
+                  <NoteID/>
+               </StructuredNote>
+            </ListOfStructuredNote>
+         </InvoiceItemDetail>
+      </ListOfInvoiceItemDetail>
+      <ListOfPackageDetail>T,DSDP,Consign Details
+         <PackageCode/>
+         <PickerDetail>
+            <name/>
+            <Reference>
+               <RefNum/>
+               <RefDate/>
+            </Reference>
+         </PickerDetail>
+         <PackerDetail>
+            <name/>
+            <Reference>
+               <RefNum/>
+               <RefDate>C,PS,Packed Date</RefDate>
+            </Reference>
+         </PackerDetail>
+         <PackageTypeDescription>C,PDS,Description of Packages</PackageTypeDescription>
+         <NumberOfPackages>C,PS,No Of Boxes</NumberOfPackages>
+         <AllPackagesTotalDimension>T,DSDP,Dimensions
+            <volume>
+               <volumeValue>C,PS,Cons. Volume</volumeValue>
+               <unit>C,PS,Cons. Vol Unit</unit>
+               <height/>
+               <length/>
+               <width/>
+            </volume>
+            <WeightGross>
+               <WeightUnit>C,PS,Cons. Weight Unit</WeightUnit>
+               <WeightValue>C,PS,Cons. Weight</WeightValue>
+            </WeightGross>
+            <WeightCubic>
+               <WeightUnit>C,PS,Cons. Cubic Weight Unit</WeightUnit>
+               <WeightValue>C,PS,Cons. Cubic Weight</WeightValue>
+            </WeightCubic>
+            <UnitOfMeasure>
+               <UOMCodedOther/>
+            </UnitOfMeasure>
+         </AllPackagesTotalDimension>
+         <ExportDescriptionOfConsignment>C,PS,Export Desc</ExportDescriptionOfConsignment>
+         <MarksAndNumbers>C,PS,Cons. Marks &amp; Numbers</MarksAndNumbers>
+         <ListOfPackageGroups>T,DSDP,Package Groups
+            <PackageGroup>T,DSDP,Package Group
+               <PackageGroupID>C,PDS,Group Id</PackageGroupID>
+               <PackageGroupNumbering>
+                  <NumberOfPackages>C,PDS,No Of Packages</NumberOfPackages>
+                  <FirstPackageNumber>C,PDS,First Package No</FirstPackageNumber>
+                  <LastPackageNumber>C,PDS,Last Package No</LastPackageNumber>
+               </PackageGroupNumbering>
+               <PackageTypeDescription>C,PS,Package Desc</PackageTypeDescription>
+               <ListOfItemReference>
+                  <ListOfOrderReferences>
+                     <OrderReferences>
+                        <AccountCode>
+                           <Reference>
+                              <RefNum/>
+                              <RefDate/>
+                           </Reference>
+                        </AccountCode>
+                        <QuoteReference>
+                           <Reference>
+                              <RefNum/>
+                              <RefDate/>
+                           </Reference>
+                        </QuoteReference>
+                     </OrderReferences>
+                  </ListOfOrderReferences>
+               </ListOfItemReference>
+               <ListOfPackageMark>
+                  <PackageMark>
+                     <PackageMarkCodedOther/>
+                     <PackageMarkValue/>
+                  </PackageMark>
+               </ListOfPackageMark>
+               <ListOfPackageCharacteristic/>
+               <ListOfPackageDimension>T,DSDP,Dimensions
+                  <volume>
+                     <volumeValue>C,PDS,Volume</volumeValue>
+                     <unit/>
+                     <height>C,PDS,Height</height>
+                     <length>C,PDS,Length</length>
+                     <width>C,PDS,Width</width>
+                  </volume>
+                  <WeightGross>
+                     <WeightUnit>C,PDS,Weight Unit</WeightUnit>
+                     <WeightValue>C,PDS,Weight</WeightValue>
+                  </WeightGross>
+                  <WeightCubic>
+                     <WeightUnit>C,PDS,Cubic Weight unit</WeightUnit>
+                     <WeightValue>C,PDS,Cubic Weight</WeightValue>
+                  </WeightCubic>
+                  <UnitOfMeasure>
+                     <UOMCodedOther/>
+                  </UnitOfMeasure>
+               </ListOfPackageDimension>
+               <ListOfPackageDescription>
+                  <PackageDescription>
+                     <PackageType/>
+                     <ExportDescriptionOfGoodsWithin/>
+                  </PackageDescription>
+               </ListOfPackageDescription>
+               <SpecialHandling>
+                  <SpecialHandlingCodedOther/>
+                  <SpecialHandlingNote/>
+               </SpecialHandling>
+               <HazardousPackaging>
+                  <Hazardous/>
+               </HazardousPackaging>
+               <ShippingInstructions>C,PS,Shipping Instructions</ShippingInstructions>
+               <ListofPackageContents>T,DSDP,Item List
+                  <Packagecontents>T,DSDP,Item							
+                     <SellerItemcode>C,PS,Seller Item Code</SellerItemcode>
+                     <BuyerItemCode>C,PS,Buyer Item Code</BuyerItemCode>
+                     <IntTariffCode>C,PS,Int Tariff Code</IntTariffCode>
+                     <ItemDescriptionOfBuyer>C,PS,Buyer Desc</ItemDescriptionOfBuyer>
+                     <ItemDescriptionOfSeller>C,PS,Seller Desc</ItemDescriptionOfSeller>
+                     <ItemExportDescription>C,PS,Export Desc</ItemExportDescription>
+                     <Itemcode/>
+                     <NumberPacked>C,PDS,No Of Items</NumberPacked>
+                  </Packagecontents>
+               </ListofPackageContents>
+            </PackageGroup>
+         </ListOfPackageGroups>
+      </ListOfPackageDetail>
+   </InvoiceDetail>
+   <InvoiceSummary>T,DSDP,Summary
+      <NumberOfLines/>
+      <InvoiceTotals>
+         <NetValue>
+            <MonetaryValue>C,PDS,Total Including GST</MonetaryValue>
+         </NetValue>
+         <GrossValue>
+            <MonetaryValue>C,PDS,Total Excluding GST</MonetaryValue>
+         </GrossValue>
+         <TaxValue>
+            <MonetaryValue>C,PDS,Total GST</MonetaryValue>
+         </TaxValue>
+         <TotalAmountPayable>
+            <MonetaryValue/>
+         </TotalAmountPayable>
+         <PrepaidAmount>
+            <MonetaryValue/>
+         </PrepaidAmount>
+         <TotalDiscount>
+            <MonetaryValue/>
+         </TotalDiscount>
+         <TotalTaxAmount>
+            <MonetaryValue/>
+         </TotalTaxAmount>
+         <TotalAmountMinusDiscount>
+            <MonetaryValue/>
+         </TotalAmountMinusDiscount>
+         <FOBValue>
+            <MonetaryValue>C,PDS,FOB Value</MonetaryValue>
+            <Currency>
+               <CurrencyCoded>C,PDS,FOB Currency</CurrencyCoded>
+            </Currency>
+         </FOBValue>
+      </InvoiceTotals>
+      <ListOfTaxSummary>
+         <TaxSummary>
+            <Tax/>
+         </TaxSummary>
+      </ListOfTaxSummary>
+      <InvoicePaymentStatus/>
+      <ListOfActualPayment>
+         <ActualPayment>
+            <PaymentAmount>
+               <InvoiceCurrencyAmt>
+                  <MonetaryValue/>
+               </InvoiceCurrencyAmt>
+               <ForeignCurrencyPayment>
+                  <MonetaryValue/>
+               </ForeignCurrencyPayment>
+            </PaymentAmount>
+            <PaymentDate/>
+            <OtherPaymentInfo/>
+         </ActualPayment>
+      </ListOfActualPayment>
+      <SummaryNote>C,PDS,Summary Note</SummaryNote>
+   </InvoiceSummary>
+</ExportInvoice>

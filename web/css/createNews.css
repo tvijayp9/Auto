@@ -1,0 +1,16 @@
+/* 
+    Document   : createNews
+    Created on : 19/05/2009, 10:06:47 AM
+    Author     : Terry
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#container #body-wrap1 .label {
+	font-weight: bold;
+    vertical-align: top;
+}

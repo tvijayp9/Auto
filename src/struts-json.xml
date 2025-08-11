@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+
+    <package name="json" extends="json-default">
+        <action name="ShowPartnerListDetails" class="showPartnerListDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowMemberListDetails" class="showMemberListDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowInBoundListDetails" class="showInBoundListDetailsAction">
+            <result type="json"/>
+        </action>
+		<action name="showInvoiceDetails" class="showInvoiceDetailsAction">
+            <result type="json"/>
+        </action>
+		
+        <action name="ShowInBoundArchivedListDetails" class="showInBoundArchivedListDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ArchiveInBoundMessage" class="archiveInBoundMessageAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowOutBoundListDetails" class="showOutBoundListDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowOutBoundArchivedListDetails" class="showOutBoundArchivedListDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowOrderListDetails" class="showOrderListDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowArchivedOrderListDetails" class="showArchivedOrderListDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowOrderItemDetails" class="showOrderItemDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowArchivedOrderItemDetails" class="showArchivedOrderItemDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowFutureOrderList" class="showFutureOrderListAction">
+            <result type="json"/>
+        </action>
+        <action name="AllNewOrdersCount" class="allNewOrdersCountAction">
+            <result type="json"/>
+        </action>
+        <action name="FavouriteOrderList" class="favouriteOrderListAction">
+            <result type="json"/>
+        </action>
+        <action name="QuotesList" class="quotesListAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteFavouriteOrder" class="deleteFavouriteOrderAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteQuotes" class="deleteQuotesAction">
+            <result type="json"/>
+        </action>
+        <action name="CreateCategory" class="createCategoryAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowProductsWithoutCategory" class="showProductsWithoutCategoryAction">
+            <result type="json"/>
+        </action>
+        <action name="CheckCategoryName" class="checkCategoryNameAction">
+            <result type="json"/>
+        </action>
+        <action name="UpdateCategoryName" class="updateCategoryNameAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowProductsByCategory" class="showProductsByCategoryAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteCategory" class="deleteCategoryAction">
+            <result type="json"/>
+        </action>
+        <action name="CopyCategory" class="copyCategoryAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowProducts" class="ShowProductsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowSupplierProductsByCategory" class="showSupplierProductsByCategoryAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowBuyerProductsBySupplier" class="showBuyerProductsBySupplierAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowShoppingCart" class="showShoppingCartAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowCatalogueShoppingCart" class="showCatalogueShoppingCartAction">
+            <result type="json"/>
+        </action>
+                <action name="ShowQuoteShoppingCart" class="showQuoteShoppingCartAction">
+            <result type="json"/>
+        </action>
+        <action name="AddShoppingCartItem" class="addShoppingCartItemAction">
+            <result type="json"/>
+        </action>
+        <action name="AddCatalogueShoppingCartItem" class="addCatalogueShoppingCartItemAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteShoppingCartItem" class="deleteShoppingCartItemAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteCatalogueShoppingCartItem" class="deleteCatalogueShoppingCartItemAction">
+            <result type="json"/>
+        </action>
+        <action name="EditShoppingCart" class="editShoppingCartAction">
+            <result type="json"/>
+        </action>
+        <action name="EditCatalogueShoppingCart" class="editCatalogueShoppingCartAction">
+            <result type="json"/>
+        </action>
+        <action name="EditProductDetails" class="editProductDetailsAction">
+            <result type="json"/>
+        </action>
+        <action name="EditQuote" class="editQuoteAction">
+            <result type="json"/>
+        </action>
+        <action name="EditQuoteItemQuantity" class="editQuoteItemQuantityAction">
+            <result type="json"/>
+        </action>
+        <action name="EditAmcapQuoteItemQuantity" class="editAmcapQuoteItemQuantityAction">
+            <result type="json"/>
+        </action>
+        <action name="CheckShoppingCart" class="checkShoppingCartAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowMyBuyersProduct" class="ShowMyBuyerProductsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowPartnerPriceType" class="showPartnerPriceTypeAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowTemplate" class="showTemplateAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowQuote" class="showQuoteAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowAmcapQuote" class="showAmcapQuoteAction">
+            <result type="json"/>
+        </action>
+        <action name="AddTemplateOrderItem" class="addTemplateOrderItemAction">
+            <result type="json"/>
+        </action>
+        <action name="AddQuoteItem" class="addQuoteItemAction">
+            <result type="json"/>
+        </action>
+        <action name="AddAmcapQuoteItem" class="addAmcapQuoteItemAction">
+            <result type="json"/>
+        </action>
+        <action name="AddAmcapProductItem" class="addAmcapProductItemAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteTemplateOrderItem" class="deleteTemplateOrderItemAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteQuoteItem" class="deleteQuoteItemAction">
+            <result type="json"/>
+        </action>
+        <action name="CheckTemplate" class="checkTemplateAction">
+            <result type="json"/>
+        </action>
+        <action name="CheckQuote" class="checkQuoteAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowTemplateOrderItems" class="showTemplateOrderItemsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowQuoteItems" class="showQuoteItemsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowAmcapQuoteItems" class="showAmcapQuoteItemsAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteTemplateOrderItems" class="deleteTemplateOrderItemsAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteQuoteItems" class="deleteQuoteItemsAction">
+            <result type="json"/>
+        </action>
+        <action name="AddTemplateOrderItemsToShoppingcart" class="addTemplateOrderItemsToShoppingcartAction">
+            <result type="json"/>
+        </action>
+        <action name="GetMicrocatInfo" class="getMicrocatInfoAction">
+            <result type="json"/>
+        </action>
+        <action name="GetScaniaInfo" class="getScaniaInfoAction">
+            <result type="json"/>
+        </action>
+        <action name="CombineOrdersFromMicrocat" class="combineOrdersFromMicrocatAction">
+            <result type="json"/>
+        </action>
+		 <action name="OrderFromScania" class="orderFromScaniaAction">
+            <result type="json"/>
+        </action>
+                <action name="CombineOrdersFromMicrocatForFavourite" class="combineOrdersFromMicrocatForFavouriteAction">
+            <result type="json"/>
+        </action>
+        <action name="CombineOrdersFromMicrocatForQuote" class="combineOrdersFromMicrocatForQuoteAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowMicrocats" class="showMicrocatsAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteMicrocatAccount" class="deleteMicrocatAccountAction">
+            <result type="json"/>
+        </action>
+		<action name="ShowTransactionListDetails" class="showTransactionListDetailsAction">
+			<result type="json"/>
+        </action>
+		<action name="ShowProcessedTransactionList" class="ShowProcessedTransactionListAction">
+			<result type="json"/>
+        </action>
+		<action name="editInvoiceProduct" class="editInvoiceProductAction">
+            <result type="json"/>
+        </action>
+         <action name="readCategoriesBySite" class="SearchCategoriesForAmcapAction">
+			<result type="json"/>
+		</action>
+    </package>
+</struts>

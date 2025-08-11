@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<EDXDATA>
+   <EDXBABLE>
+      <EDXID/>
+      <KEYRULES/>
+      <ORIGINATOR>
+         <NAME/>
+         <VALUE/>
+         <DATATYPE>String</DATATYPE>
+      </ORIGINATOR>
+      <DESTINATION>
+         <ENGLISHNAME/>
+         <HELPNOTE/>
+         <DATATYPE>String</DATATYPE>
+         <REQUIRED>True</REQUIRED>
+         <STOREVALUEINBABLE>false</STOREVALUEINBABLE>
+         <RESOLVETYPE>dontConfirm</RESOLVETYPE>
+         <CURRKEYVALUE/>
+         <RESOLVEDVALUE/>
+         <VALIDATEDOK>true</VALIDATEDOK>
+         <SCHEMATOUSE/>
+         <DISPLAYDETAILS>
+            <BGCOLOUR> FFFFFF</BGCOLOUR>
+            <FONTCOLOUR> 000000</FONTCOLOUR>
+            <FONTSIZE> -1</FONTSIZE>
+            <DISPLAYINTREE>false</DISPLAYINTREE>
+            <DISPLAYINCONTENT>false</DISPLAYINCONTENT>
+         </DISPLAYDETAILS>
+      </DESTINATION>
+      <VALUES/>
+   </EDXBABLE>
+</EDXDATA>

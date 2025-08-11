@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="ASNNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AccountCode" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AccountNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ActualPayment" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PaymentAmount" minOccurs="1"/>
+				<xsd:element ref="PaymentDate" minOccurs="1"/>
+				<xsd:element ref="OtherPaymentInfo" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AgencyCharges" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Air" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Airline" minOccurs="1"/>
+				<xsd:element ref="Flight" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AirWayBillCharges" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AirWayBillNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Airline" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Name" minOccurs="1"/>
+				<xsd:element ref="ReferenceNo" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Amount" type="xsd:string" minOccurs="1"/>
+	<xsd:element name="AmountInsured" minOccurs="1"/>
+	<xsd:element name="AmountOfService" minOccurs="1"/>
+	<xsd:element default="No" name="Applicable" type="TRSBooleanYesNoType" minOccurs="1"/>
+
+
+
+	<xsd:element name="BackOrder" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Quantity" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Banking" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="BillOfLadingNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="BillToParty" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="BuyerItemCode" minOccurs="1"/>
+	<xsd:element name="BuyerPartNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PartNum" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="BuyerParty" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="BuyersCatalogNumber" minOccurs="1"/>
+	<xsd:element name="BuyersDescription" minOccurs="1"/>
+	<xsd:element name="CargoClassification" minOccurs="1"/>
+	<xsd:element name="CertificateOfOrigin" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Charges" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Freight" minOccurs="1"/>
+				<xsd:element ref="Insurance" minOccurs="1"/>
+				<xsd:element ref="LocalPickupCartage" minOccurs="1"/>
+				<xsd:element ref="ExportEntry" minOccurs="1"/>
+				<xsd:element ref="AirWayBillCharges" minOccurs="1"/>
+				<xsd:element ref="AgencyCharges" minOccurs="1"/>
+				<xsd:element ref="EdfCharges" minOccurs="1"/>
+				<xsd:element ref="EcnCharges" minOccurs="1"/>
+				<xsd:element ref="FOBCharges" minOccurs="1"/>
+				<xsd:element ref="door-to-door" minOccurs="1"/>
+				<xsd:element ref="ListOfDocumentation" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="City" minOccurs="1"/>
+	<xsd:element name="ComercialInvoice" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Consignee" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ConsignmentNoteNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Consular" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Country" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element minOccurs="1" ref="CountryCoded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CountryCoded" type="CountryCodeType" minOccurs="1"/>
+
+
+
+	<xsd:simpleType name="CountryCodeType" minOccurs="1">
+		<xsd:restriction base="xsd:NMTOKEN" minOccurs="1">
+			<xsd:enumeration value="Other" minOccurs="1"/>
+			<xsd:enumeration value="AE" minOccurs="1"/>
+			<xsd:enumeration value="AF" minOccurs="1"/>
+			<xsd:enumeration value="AG" minOccurs="1"/>
+			<xsd:enumeration value="AI" minOccurs="1"/>
+			<xsd:enumeration value="AL" minOccurs="1"/>
+			<xsd:enumeration value="AM" minOccurs="1"/>
+			<xsd:enumeration value="AN" minOccurs="1"/>
+			<xsd:enumeration value="AO" minOccurs="1"/>
+			<xsd:enumeration value="AQ" minOccurs="1"/>
+			<xsd:enumeration value="AR" minOccurs="1"/>
+			<xsd:enumeration value="AS" minOccurs="1"/>
+			<xsd:enumeration value="AT" minOccurs="1"/>
+			<xsd:enumeration value="AU" minOccurs="1"/>
+			<xsd:enumeration value="AW" minOccurs="1"/>
+			<xsd:enumeration value="AZ" minOccurs="1"/>
+			<xsd:enumeration value="BA" minOccurs="1"/>
+			<xsd:enumeration value="BB" minOccurs="1"/>
+			<xsd:enumeration value="BD" minOccurs="1"/>
+			<xsd:enumeration value="BE" minOccurs="1"/>
+			<xsd:enumeration value="BF" minOccurs="1"/>
+			<xsd:enumeration value="BG" minOccurs="1"/>
+			<xsd:enumeration value="BH" minOccurs="1"/>
+			<xsd:enumeration value="BI" minOccurs="1"/>
+			<xsd:enumeration value="BJ" minOccurs="1"/>
+			<xsd:enumeration value="BM" minOccurs="1"/>
+			<xsd:enumeration value="BN" minOccurs="1"/>
+			<xsd:enumeration value="BO" minOccurs="1"/>
+			<xsd:enumeration value="BR" minOccurs="1"/>
+			<xsd:enumeration value="BS" minOccurs="1"/>
+			<xsd:enumeration value="BT" minOccurs="1"/>
+			<xsd:enumeration value="BU" minOccurs="1"/>
+			<xsd:enumeration value="BW" minOccurs="1"/>
+			<xsd:enumeration value="BY" minOccurs="1"/>
+			<xsd:enumeration value="BZ" minOccurs="1"/>
+			<xsd:enumeration value="CA" minOccurs="1"/>
+			<xsd:enumeration value="CC" minOccurs="1"/>
+			<xsd:enumeration value="CD" minOccurs="1"/>
+			<xsd:enumeration value="CF" minOccurs="1"/>
+			<xsd:enumeration value="CG" minOccurs="1"/>
+			<xsd:enumeration value="CH" minOccurs="1"/>
+			<xsd:enumeration value="CI" minOccurs="1"/>
+			<xsd:enumeration value="CK" minOccurs="1"/>
+			<xsd:enumeration value="CL" minOccurs="1"/>
+			<xsd:enumeration value="CM" minOccurs="1"/>
+			<xsd:enumeration value="CN" minOccurs="1"/>
+			<xsd:enumeration value="CO" minOccurs="1"/>
+			<xsd:enumeration value="CR" minOccurs="1"/>
+			<xsd:enumeration value="CS" minOccurs="1"/>
+			<xsd:enumeration value="CU" minOccurs="1"/>
+			<xsd:enumeration value="CV" minOccurs="1"/>
+			<xsd:enumeration value="CX" minOccurs="1"/>
+			<xsd:enumeration value="CY" minOccurs="1"/>
+			<xsd:enumeration value="CZ" minOccurs="1"/>
+			<xsd:enumeration value="DE" minOccurs="1"/>
+			<xsd:enumeration value="DJ" minOccurs="1"/>
+			<xsd:enumeration value="DK" minOccurs="1"/>
+			<xsd:enumeration value="DM" minOccurs="1"/>
+			<xsd:enumeration value="DO" minOccurs="1"/>
+			<xsd:enumeration value="DZ" minOccurs="1"/>
+			<xsd:enumeration value="EC" minOccurs="1"/>
+			<xsd:enumeration value="EE" minOccurs="1"/>
+			<xsd:enumeration value="EG" minOccurs="1"/>
+			<xsd:enumeration value="EH" minOccurs="1"/>
+			<xsd:enumeration value="ER" minOccurs="1"/>
+			<xsd:enumeration value="ES" minOccurs="1"/>
+			<xsd:enumeration value="ET" minOccurs="1"/>
+			<xsd:enumeration value="FI" minOccurs="1"/>
+			<xsd:enumeration value="FJ" minOccurs="1"/>
+			<xsd:enumeration value="FK" minOccurs="1"/>
+			<xsd:enumeration value="FM" minOccurs="1"/>
+			<xsd:enumeration value="FO" minOccurs="1"/>
+			<xsd:enumeration value="FR" minOccurs="1"/>
+			<xsd:enumeration value="GA" minOccurs="1"/>
+			<xsd:enumeration value="GB" minOccurs="1"/>
+			<xsd:enumeration value="GD" minOccurs="1"/>
+			<xsd:enumeration value="GE" minOccurs="1"/>
+			<xsd:enumeration value="GF" minOccurs="1"/>
+			<xsd:enumeration value="GH" minOccurs="1"/>
+			<xsd:enumeration value="GI" minOccurs="1"/>
+			<xsd:enumeration value="GL" minOccurs="1"/>
+			<xsd:enumeration value="GM" minOccurs="1"/>
+			<xsd:enumeration value="GN" minOccurs="1"/>
+			<xsd:enumeration value="GP" minOccurs="1"/>
+			<xsd:enumeration value="GQ" minOccurs="1"/>
+			<xsd:enumeration value="GR" minOccurs="1"/>
+			<xsd:enumeration value="GS" minOccurs="1"/>
+			<xsd:enumeration value="GT" minOccurs="1"/>
+			<xsd:enumeration value="GU" minOccurs="1"/>
+			<xsd:enumeration value="GW" minOccurs="1"/>
+			<xsd:enumeration value="GY" minOccurs="1"/>
+			<xsd:enumeration value="HK" minOccurs="1"/>
+			<xsd:enumeration value="HN" minOccurs="1"/>
+			<xsd:enumeration value="HR" minOccurs="1"/>
+			<xsd:enumeration value="HT" minOccurs="1"/>
+			<xsd:enumeration value="HU" minOccurs="1"/>
+			<xsd:enumeration value="ID" minOccurs="1"/>
+			<xsd:enumeration value="IE" minOccurs="1"/>
+			<xsd:enumeration value="IL" minOccurs="1"/>
+			<xsd:enumeration value="IN" minOccurs="1"/>
+			<xsd:enumeration value="IO" minOccurs="1"/>
+			<xsd:enumeration value="IQ" minOccurs="1"/>
+			<xsd:enumeration value="IR" minOccurs="1"/>
+			<xsd:enumeration value="IS" minOccurs="1"/>
+			<xsd:enumeration value="IT" minOccurs="1"/>
+			<xsd:enumeration value="JM" minOccurs="1"/>
+			<xsd:enumeration value="JO" minOccurs="1"/>
+			<xsd:enumeration value="JP" minOccurs="1"/>
+			<xsd:enumeration value="KE" minOccurs="1"/>
+			<xsd:enumeration value="KG" minOccurs="1"/>
+			<xsd:enumeration value="KH" minOccurs="1"/>
+			<xsd:enumeration value="KI" minOccurs="1"/>
+			<xsd:enumeration value="KM" minOccurs="1"/>
+			<xsd:enumeration value="KN" minOccurs="1"/>
+			<xsd:enumeration value="KP" minOccurs="1"/>
+			<xsd:enumeration value="KR" minOccurs="1"/>
+			<xsd:enumeration value="KW" minOccurs="1"/>
+			<xsd:enumeration value="KY" minOccurs="1"/>
+			<xsd:enumeration value="KZ" minOccurs="1"/>
+			<xsd:enumeration value="LA" minOccurs="1"/>
+			<xsd:enumeration value="LB" minOccurs="1"/>
+			<xsd:enumeration value="LC" minOccurs="1"/>
+			<xsd:enumeration value="LI" minOccurs="1"/>
+			<xsd:enumeration value="LK" minOccurs="1"/>
+			<xsd:enumeration value="LR" minOccurs="1"/>
+			<xsd:enumeration value="LS" minOccurs="1"/>
+			<xsd:enumeration value="LT" minOccurs="1"/>
+			<xsd:enumeration value="LU" minOccurs="1"/>
+			<xsd:enumeration value="LV" minOccurs="1"/>
+			<xsd:enumeration value="LY" minOccurs="1"/>
+			<xsd:enumeration value="MA" minOccurs="1"/>
+			<xsd:enumeration value="MC" minOccurs="1"/>
+			<xsd:enumeration value="MD" minOccurs="1"/>
+			<xsd:enumeration value="MG" minOccurs="1"/>
+			<xsd:enumeration value="MH" minOccurs="1"/>
+			<xsd:enumeration value="MK" minOccurs="1"/>
+			<xsd:enumeration value="ML" minOccurs="1"/>
+			<xsd:enumeration value="MM" minOccurs="1"/>
+			<xsd:enumeration value="MN" minOccurs="1"/>
+			<xsd:enumeration value="MO" minOccurs="1"/>
+			<xsd:enumeration value="MP" minOccurs="1"/>
+			<xsd:enumeration value="MQ" minOccurs="1"/>
+			<xsd:enumeration value="MR" minOccurs="1"/>
+			<xsd:enumeration value="MS" minOccurs="1"/>
+			<xsd:enumeration value="MT" minOccurs="1"/>
+			<xsd:enumeration value="MU" minOccurs="1"/>
+			<xsd:enumeration value="MV" minOccurs="1"/>
+			<xsd:enumeration value="MW" minOccurs="1"/>
+			<xsd:enumeration value="MX" minOccurs="1"/>
+			<xsd:enumeration value="MY" minOccurs="1"/>
+			<xsd:enumeration value="MZ" minOccurs="1"/>
+			<xsd:enumeration value="NA" minOccurs="1"/>
+			<xsd:enumeration value="NC" minOccurs="1"/>
+			<xsd:enumeration value="NE" minOccurs="1"/>
+			<xsd:enumeration value="NF" minOccurs="1"/>
+			<xsd:enumeration value="NG" minOccurs="1"/>
+			<xsd:enumeration value="NI" minOccurs="1"/>
+			<xsd:enumeration value="NL" minOccurs="1"/>
+			<xsd:enumeration value="NO" minOccurs="1"/>
+			<xsd:enumeration value="NP" minOccurs="1"/>
+			<xsd:enumeration value="NR" minOccurs="1"/>
+			<xsd:enumeration value="NU" minOccurs="1"/>
+			<xsd:enumeration value="NZ" minOccurs="1"/>
+			<xsd:enumeration value="OM" minOccurs="1"/>
+			<xsd:enumeration value="PA" minOccurs="1"/>
+			<xsd:enumeration value="PE" minOccurs="1"/>
+			<xsd:enumeration value="PF" minOccurs="1"/>
+			<xsd:enumeration value="PG" minOccurs="1"/>
+			<xsd:enumeration value="PH" minOccurs="1"/>
+			<xsd:enumeration value="PK" minOccurs="1"/>
+			<xsd:enumeration value="PL" minOccurs="1"/>
+			<xsd:enumeration value="PM" minOccurs="1"/>
+			<xsd:enumeration value="PN" minOccurs="1"/>
+			<xsd:enumeration value="PR" minOccurs="1"/>
+			<xsd:enumeration value="PT" minOccurs="1"/>
+			<xsd:enumeration value="PW" minOccurs="1"/>
+			<xsd:enumeration value="PY" minOccurs="1"/>
+			<xsd:enumeration value="QA" minOccurs="1"/>
+			<xsd:enumeration value="RE" minOccurs="1"/>
+			<xsd:enumeration value="RO" minOccurs="1"/>
+			<xsd:enumeration value="RU" minOccurs="1"/>
+			<xsd:enumeration value="RW" minOccurs="1"/>
+			<xsd:enumeration value="SA" minOccurs="1"/>
+			<xsd:enumeration value="SB" minOccurs="1"/>
+			<xsd:enumeration value="SC" minOccurs="1"/>
+			<xsd:enumeration value="SD" minOccurs="1"/>
+			<xsd:enumeration value="SE" minOccurs="1"/>
+			<xsd:enumeration value="SG" minOccurs="1"/>
+			<xsd:enumeration value="SH" minOccurs="1"/>
+			<xsd:enumeration value="SI" minOccurs="1"/>
+			<xsd:enumeration value="SJ" minOccurs="1"/>
+			<xsd:enumeration value="SK" minOccurs="1"/>
+			<xsd:enumeration value="SL" minOccurs="1"/>
+			<xsd:enumeration value="SM" minOccurs="1"/>
+			<xsd:enumeration value="SN" minOccurs="1"/>
+			<xsd:enumeration value="SO" minOccurs="1"/>
+			<xsd:enumeration value="SR" minOccurs="1"/>
+			<xsd:enumeration value="ST" minOccurs="1"/>
+			<xsd:enumeration value="SV" minOccurs="1"/>
+			<xsd:enumeration value="SY" minOccurs="1"/>
+			<xsd:enumeration value="SZ" minOccurs="1"/>
+			<xsd:enumeration value="TC" minOccurs="1"/>
+			<xsd:enumeration value="TD" minOccurs="1"/>
+			<xsd:enumeration value="TF" minOccurs="1"/>
+			<xsd:enumeration value="TG" minOccurs="1"/>
+			<xsd:enumeration value="TH" minOccurs="1"/>
+			<xsd:enumeration value="TJ" minOccurs="1"/>
+			<xsd:enumeration value="TM" minOccurs="1"/>
+			<xsd:enumeration value="TN" minOccurs="1"/>
+			<xsd:enumeration value="TO" minOccurs="1"/>
+			<xsd:enumeration value="TP" minOccurs="1"/>
+			<xsd:enumeration value="TR" minOccurs="1"/>
+			<xsd:enumeration value="TT" minOccurs="1"/>
+			<xsd:enumeration value="TV" minOccurs="1"/>
+			<xsd:enumeration value="TW" minOccurs="1"/>
+			<xsd:enumeration value="TZ" minOccurs="1"/>
+			<xsd:enumeration value="UA" minOccurs="1"/>
+			<xsd:enumeration value="UG" minOccurs="1"/>
+			<xsd:enumeration value="UM" minOccurs="1"/>
+			<xsd:enumeration value="US" minOccurs="1"/>
+			<xsd:enumeration value="UY" minOccurs="1"/>
+			<xsd:enumeration value="UZ" minOccurs="1"/>
+			<xsd:enumeration value="VA" minOccurs="1"/>
+			<xsd:enumeration value="VC" minOccurs="1"/>
+			<xsd:enumeration value="VE" minOccurs="1"/>
+			<xsd:enumeration value="VG" minOccurs="1"/>
+			<xsd:enumeration value="VI" minOccurs="1"/>
+			<xsd:enumeration value="VN" minOccurs="1"/>
+			<xsd:enumeration value="VU" minOccurs="1"/>
+			<xsd:enumeration value="WF" minOccurs="1"/>
+			<xsd:enumeration value="WS" minOccurs="1"/>
+			<xsd:enumeration value="YE" minOccurs="1"/>
+			<xsd:enumeration value="YT" minOccurs="1"/>
+			<xsd:enumeration value="YU" minOccurs="1"/>
+			<xsd:enumeration value="ZA" minOccurs="1"/>
+			<xsd:enumeration value="ZM" minOccurs="1"/>
+			<xsd:enumeration value="ZW" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="CountryOfOrigin" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element minOccurs="1" ref="Country"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Currency" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element minOccurs="1" ref="CurrencyCoded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CurrencyCoded" minOccurs="1"/>
+
+
+	<xsd:simpleType name="CurrencyCoded" minOccurs="1">
+		<xsd:restriction base="xsd:string" minOccurs="1">
+			<xsd:enumeration value="PrePaid" minOccurs="1"/>
+			<xsd:enumeration value="Collect" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+
+
+	<xsd:element name="CurrencyOfService" minOccurs="1"/>
+	<xsd:element name="CustomsInvoice" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DangerousGoods" minOccurs="1"/>
+	<xsd:element name="DeclaredCustomsValue" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Amount" minOccurs="1"/>
+				<xsd:element ref="Currency" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DeliveryDetail" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ShipToLocation" minOccurs="1"/>
+				<xsd:element ref="ShipFromLocation" minOccurs="1"/>
+				<xsd:element ref="SimplePackageNote" minOccurs="1"/>
+				<xsd:element ref="TermsOfDelivery" minOccurs="1"/>
+				<xsd:element ref="CargoClassification" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DeliveryNoteNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Departure" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="port" minOccurs="1"/>
+				<xsd:element ref="vessel" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DepartureDate" minOccurs="1"/>
+	<xsd:element name="DepartureTime" minOccurs="1"/>
+	<xsd:element name="DespatchNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Destination" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="port" minOccurs="1"/>
+				<xsd:element ref="final-destination" minOccurs="1"/>
+				<xsd:element ref="pre-carriage" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DutyDrawBack" type="TRSBooleanYesNoType" minOccurs="1"/>
+	<xsd:element name="EcnCharges" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EdfCharges" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Entry" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Exit" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ExportClearanceNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ExportDeclarations" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="DeclaredCustomsValue" minOccurs="1"/>
+				<xsd:element ref="DutyDrawBack" minOccurs="1"/>
+				<xsd:element ref="FreeDomicile" minOccurs="1"/>
+				<xsd:element ref="DangerousGoods" minOccurs="1"/>
+				<xsd:element ref="HECC" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ExportDescriptionOfGoodsWithin" minOccurs="1"/>
+	<xsd:element name="ExportEntry" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ExportInvoice" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceHeader" minOccurs="1"/>
+				<xsd:element ref="InvoiceDetail" minOccurs="1"/>
+				<xsd:element ref="InvoiceSummary" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FOBCharges" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Flight" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Number" minOccurs="1"/>
+				<xsd:element ref="DepartureDate" minOccurs="1"/>
+				<xsd:element ref="DepartureTime" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ForeignCurrencyPayment" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Forwarder" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FreeDomicile" type="TRSBooleanYesNoType" minOccurs="1"/>
+	<xsd:element name="Freight" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="GrossValue" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="HECC" minOccurs="1"/>
+	<xsd:element name="HazardCode" minOccurs="1"/>
+
+	<xsd:element name="HazardNote" minOccurs="1"/>
+	<xsd:element name="Hazardous" minOccurs="1"/>
+	<xsd:element name="HazardousMaterials" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="HazardousGoods" minOccurs="1"/><xsd:element ref="HazardNote" minOccurs="1"/>
+				<xsd:element ref="HazardCode" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="HazardousPackaging" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Hazardous" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="HouseAirWayBillNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="HouseNumber" type="xsd:string" minOccurs="1"/>
+
+
+
+
+	<xsd:element name="Ident" minOccurs="1"/>
+	<xsd:element name="Identifier" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Ident" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Insurance" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+				<xsd:element ref="AmountInsured" minOccurs="1"/>
+				<xsd:element ref="Currency" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="IntTariffCode" minOccurs="1"/>
+	<xsd:element name="IntTariffDescription" minOccurs="1"/>
+	<xsd:element name="IntTariffNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PartNum" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceAllowancesOrCharges" minOccurs="1"/>
+	<xsd:element name="InvoiceBaseItemDetail" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ItemIdentifiers" minOccurs="1"/>
+				<xsd:element ref="ListOfItemReferences" minOccurs="1"/>
+				<xsd:element ref="CountryOfOrigin" minOccurs="1"/>
+				<xsd:element ref="HazardousMaterials" minOccurs="1"/>
+				<xsd:element ref="LineItemReferences" minOccurs="1"/>
+				<xsd:element ref="Quantities" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceCurrency" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Currency" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceCurrencyAmt" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceCurrencyTotalValue" minOccurs="1"/>
+	<xsd:element name="InvoiceDates" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceDueDate" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceDetail" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ListOfInvoiceItemDetail" minOccurs="1"/>
+				<xsd:element ref="ListOfPackageDetail" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceDueDate" minOccurs="1"/>
+	<xsd:element name="InvoiceHeader" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceNumber" minOccurs="1"/>
+				<xsd:element ref="InvoiceIssueDate" minOccurs="1"/>
+				<xsd:element ref="InvoiceReferences" minOccurs="1"/>
+				<xsd:element ref="InvoicePurpose" minOccurs="1"/>
+				<xsd:element ref="InvoiceType" minOccurs="1"/>
+				<xsd:element ref="InvoiceCurrency" minOccurs="1"/>
+				<xsd:element ref="PaymentCurrency" minOccurs="1"/>
+				<xsd:element ref="InvoiceLanguage" minOccurs="1"/>
+				<xsd:element ref="InvoiceDates" minOccurs="1"/>
+				<xsd:element ref="InvoiceParty" minOccurs="1"/>
+				<xsd:element ref="ShippingParty" minOccurs="1"/>
+				<xsd:element ref="Shipping-info" minOccurs="1"/>
+				<xsd:element ref="InvoiceTermsOfDelivery" minOccurs="1"/>
+				<xsd:element ref="InvoicePaymentInstructions" minOccurs="1"/>
+				<xsd:element ref="InvoiceAllowancesOrCharges" minOccurs="1"/>
+				<xsd:element ref="InvoiceHeaderNote" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceHeaderNote" minOccurs="1"/>
+	<xsd:element name="InvoiceIssueDate" minOccurs="1"/>
+	<xsd:element name="InvoiceItemDetail" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceBaseItemDetail" minOccurs="1"/>
+				<xsd:element ref="InvoicePricingDetail" minOccurs="1"/>
+				<xsd:element ref="InvoiceDates" minOccurs="1"/>
+				<xsd:element ref="DeliveryDetail" minOccurs="1"/>
+				<xsd:element ref="LineItemNote" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceLanguage" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Language" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceParty" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="BuyerParty" minOccurs="1"/>
+				<xsd:element ref="SellerParty" minOccurs="1"/>
+				<xsd:element ref="ShipToParty" minOccurs="1"/>
+				<xsd:element ref="BillToParty" minOccurs="1"/>
+				<xsd:element ref="ShipFromParty" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoicePaymentInstructions" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PaymentInstructions" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoicePaymentStatus" minOccurs="1"/>
+	<xsd:element name="InvoicePricingDetail" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="UnitPrice" minOccurs="1"/>
+				<xsd:element ref="Tax" minOccurs="1"/>
+				<xsd:element ref="TotalValue" minOccurs="1"/>
+				<xsd:element ref="InvoiceCurrencyTotalValue" minOccurs="1"/>
+				<xsd:element ref="TotalTaxAmount" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoicePurpose" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoicePurposeCoded" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoicePurposeCoded" minOccurs="1"/>
+	<xsd:element name="InvoiceReferences" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PurchaseOrderReference" minOccurs="1"/>
+				<xsd:element ref="AccountNumber" minOccurs="1"/>
+				<xsd:element ref="ProformaInvoiceNumber" minOccurs="1"/>
+				<xsd:element ref="ASNNumber" minOccurs="1"/>
+				<xsd:element ref="SupplierOrderNumber" minOccurs="1"/>
+				<xsd:element ref="PriceListVersionNumber" minOccurs="1"/>
+				<xsd:element ref="BuyersCatalogNumber" minOccurs="1"/>
+				<xsd:element ref="BillOfLadingNumber" minOccurs="1"/>
+				<xsd:element ref="AirWayBillNumber" minOccurs="1"/>
+				<xsd:element ref="LetterOfCreditNumber" minOccurs="1"/>
+				<xsd:element ref="DeliveryNoteNumber" minOccurs="1"/>
+				<xsd:element ref="HouseAirWayBillNumber" minOccurs="1"/>
+				<xsd:element ref="ExportClearanceNumber" minOccurs="1"/>
+				<xsd:element ref="ConsignmentNoteNumber" minOccurs="1"/>
+				<xsd:element ref="DespatchNumber" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceSummary" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="NumberOfLines" minOccurs="1"/>
+				<xsd:element ref="InvoiceTotals" minOccurs="1"/>
+				<xsd:element ref="ListOfTaxSummary" minOccurs="1"/>
+				<xsd:element ref="InvoicePaymentStatus" minOccurs="1"/>
+				<xsd:element ref="ListOfActualPayment" minOccurs="1"/>
+				<xsd:element ref="SummaryNote" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceTermsOfDelivery" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="TermsOfDelivery" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceTotals" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="NetValue" minOccurs="1"/>
+				<xsd:element ref="GrossValue" minOccurs="1"/>
+				<xsd:element ref="TaxValue" minOccurs="1"/>
+				<xsd:element ref="TotalAmountPayable" minOccurs="1"/>
+				<xsd:element ref="PrepaidAmount" minOccurs="1"/>
+				<xsd:element ref="TotalDiscount" minOccurs="1"/>
+				<xsd:element ref="TotalTaxAmount" minOccurs="1"/>
+				<xsd:element ref="TotalAmountMinusDiscount" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceType" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceTypeCoded" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="InvoiceTypeCoded" minOccurs="1"/>
+	<xsd:element name="Invoiced" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Quantity" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ItemCharacteristic" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="UnitOfMeasurement" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ItemDescription" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="SellerDescription" minOccurs="1"/>
+				<xsd:element ref="BuyersDescription" minOccurs="1"/>
+				<xsd:element ref="IntTariffDescription" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ItemDescriptionOfBuyer" minOccurs="1"/>
+	<xsd:element name="ItemDescriptionOfSeller" minOccurs="1"/>
+	<xsd:element name="ItemExportDescription" minOccurs="1"/>
+	<xsd:element name="ItemIdentifiers" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PartNumbers" minOccurs="1"/>
+				<xsd:element ref="ItemDescription" minOccurs="1"/>
+				<xsd:element ref="ListOfItemCharacteristic" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Itemcode" minOccurs="1"/>
+	<xsd:element name="Language" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="LanguageCoded" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="LanguageCoded" minOccurs="1"/>
+	<xsd:element name="LetterOfCreditNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="LineItemNote" minOccurs="1"/>
+	<xsd:element name="LineItemReferences" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceReferences" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfActualPayment" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ActualPayment" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfDocumentation" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ComercialInvoice" minOccurs="1"/>
+				<xsd:element ref="CustomsInvoice" minOccurs="1"/>
+				<xsd:element ref="PackingList" minOccurs="1"/>
+				<xsd:element ref="Entry" minOccurs="1"/>
+				<xsd:element ref="Exit" minOccurs="1"/>
+				<xsd:element ref="CertificateOfOrigin" minOccurs="1"/>
+				<xsd:element ref="Consular" minOccurs="1"/>
+				<xsd:element ref="Banking" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfIdentifier" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Identifier" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfInvoiceItemDetail" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceItemDetail" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfItemCharacteristic" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ItemCharacteristic" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfItemReference" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ListOfOrderReferences" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfItemReferences" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ListOfReferenceCoded" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfOrderReferences" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="OrderReferences" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfPackage" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Package" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfPackageCharacteristic" minOccurs="1"/>
+	<xsd:element name="ListOfPackageDescription" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PackageDescription" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfPackageDetail" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PackageCode" minOccurs="1"/>
+				<xsd:element ref="PackageTypeDescription" minOccurs="1"/>
+				<xsd:element ref="NumberOfPackages" minOccurs="1"/>
+				<xsd:element ref="ListOfPackage" minOccurs="1"/>
+				<xsd:element ref="ExportDescriptionOfConsignment" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfPackageDimension" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="volume" minOccurs="1"/>
+				<xsd:element ref="WeightGross" minOccurs="1"/>
+				<xsd:element ref="WeightCubic" minOccurs="1"/>
+				<xsd:element ref="UnitOfMeasure" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfPackageMark" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PackageMark" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfReferenceCoded" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="ReferenceCoded" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListOfTaxSummary" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="TaxSummary" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ListofPackageContents" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Packagecontents" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="LocalPickupCartage" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Location" minOccurs="1"/>
+	<xsd:element name="MonetaryValue" minOccurs="1"/>
+
+	<xsd:element name="Name" minOccurs="1"/>
+
+	<xsd:element name="Name1" minOccurs="1"/>
+
+
+	<xsd:element name="Name2" minOccurs="1"/>
+
+
+	<xsd:element name="Name3" minOccurs="1"/>
+
+
+	<xsd:element name="NameAddress" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Name1" minOccurs="1"/>
+				<xsd:element ref="Name2" minOccurs="1"/>
+				<xsd:element ref="Name3" minOccurs="1"/>
+				<xsd:element ref="POBox" minOccurs="1"/>
+				<xsd:element ref="Street" minOccurs="1"/>
+				<xsd:element ref="HouseNumber" minOccurs="1"/>
+				<xsd:element ref="StreetSupplement1" minOccurs="1"/>
+				<xsd:element ref="StreetSupplement2" minOccurs="1"/>
+				<xsd:element ref="PostalCode" minOccurs="1"/>
+				<xsd:element ref="City" minOccurs="1"/>
+				<xsd:element ref="Country" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="NetValue" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Notify" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Number" minOccurs="1"/>
+	<xsd:element name="NumberOfLines" minOccurs="1"/>
+	<xsd:element name="NumberOfPackages" minOccurs="1"/>
+	<xsd:element name="NumberPacked" minOccurs="1"/>
+	<xsd:element name="OrderReferences" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="AccountCode" minOccurs="1"/>
+				<xsd:element ref="QuoteReference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Ordered" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Quantity" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="OrganiserOfService" minOccurs="1"/>
+	<xsd:element name="Other-ports" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="other-port" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="OtherPaymentInfo" minOccurs="1"/>
+	<xsd:element name="POBox" type="xsd:string" minOccurs="1"/>
+	<xsd:element name="Package" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PackageID" minOccurs="1"/>
+				<xsd:element ref="PackageNumber" minOccurs="1"/>
+				<xsd:element ref="PackageTypeDescription" minOccurs="1"/>
+				<xsd:element ref="ListOfItemReference" minOccurs="1"/>
+				<xsd:element ref="ListOfPackageMark" minOccurs="1"/>
+				<xsd:element ref="ListOfPackageCharacteristic" minOccurs="1"/>
+				<xsd:element ref="ListOfPackageDimension" minOccurs="1"/>
+				<xsd:element ref="ListOfPackageDescription" minOccurs="1"/>
+				<xsd:element ref="SpecialHandling" minOccurs="1"/>
+				<xsd:element ref="HazardousPackaging" minOccurs="1"/>
+				<xsd:element ref="ShippingInstructions" minOccurs="1"/>
+				<xsd:element ref="ListofPackageContents" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PackageCode" minOccurs="1"/>
+	<xsd:element name="PackageDescription" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PackageType" minOccurs="1"/>
+				<xsd:element ref="ExportDescriptionOfGoodsWithin" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PackageID" minOccurs="1"/>
+	<xsd:element name="PackageMark" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PackageMarkCodedOther" minOccurs="1"/>
+				<xsd:element ref="PackageMarkValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PackageMarkCodedOther" minOccurs="1"/>
+	<xsd:element name="PackageMarkValue" minOccurs="1"/>
+	<xsd:element name="PackageNumber" minOccurs="1"/>
+	<xsd:element name="PackageType" minOccurs="1"/>
+	<xsd:element name="PackageTypeDescription" minOccurs="1"/>
+	<xsd:element name="Packagecontents" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="SellerItemcode" minOccurs="1"/>
+				<xsd:element ref="BuyerItemCode" minOccurs="1"/>
+				<xsd:element ref="IntTariffCode" minOccurs="1"/>
+				<xsd:element ref="ItemDescriptionOfBuyer" minOccurs="1"/>
+				<xsd:element ref="ItemDescriptionOfSeller" minOccurs="1"/>
+				<xsd:element ref="ItemExportDescription" minOccurs="1"/>
+				<xsd:element ref="Itemcode" minOccurs="1"/>
+				<xsd:element ref="NumberPacked" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Packed" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Quantity" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PackingList" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Applicable" minOccurs="1"/>
+				<xsd:element ref="ServiceProvision" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PartID" minOccurs="1"/>
+	<xsd:element name="PartNum" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PartID" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PartNumbers" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="SellerPartNumber" minOccurs="1"/>
+				<xsd:element ref="BuyerPartNumber" minOccurs="1"/>
+				<xsd:element ref="IntTariffNumber" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Party" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PartyID" minOccurs="1"/>
+				<xsd:element ref="ListOfIdentifier" minOccurs="1"/>
+				<xsd:element ref="NameAddress" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PartyID" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Identifier" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element default="None" name="ServicePaidBy" type="TRSServicePaidByType" minOccurs="1"/>
+
+	<xsd:element name="PaymentAmount" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="InvoiceCurrencyAmt" minOccurs="1"/>
+				<xsd:element ref="ForeignCurrencyPayment" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PaymentCurrency" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Currency" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PaymentDate" minOccurs="1"/>
+	<xsd:element name="PaymentInstructions" minOccurs="1"/>
+	<xsd:element name="Port-of-loading" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="port" minOccurs="1"/>
+				<xsd:element ref="vessel" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PostalCode" minOccurs="1"/>
+	<xsd:element name="PrepaidAmount" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PriceListVersionNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ProformaInvoiceNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PurchaseOrderDate" minOccurs="1"/>
+	<xsd:element name="PurchaseOrderNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PurchaseOrderReference" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PurchaseOrderNumber" minOccurs="1"/>
+				<xsd:element ref="PurchaseOrderDate" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Quantities" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Ordered" minOccurs="1"/>
+				<xsd:element ref="Invoiced" minOccurs="1"/>
+				<xsd:element ref="Shipped" minOccurs="1"/>
+				<xsd:element ref="Packed" minOccurs="1"/>
+				<xsd:element ref="BackOrder" minOccurs="1"/>
+				<xsd:element ref="ShippedToDate" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Quantity" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="QuantityValue" minOccurs="1"/>
+				<xsd:element ref="UnitOfMeasurement" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="QuantityValue" type="xsd:string" minOccurs="1"/>
+	<xsd:element name="QuoteReference" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+    <xsd:complexType name="Reference" minOccurs="1">
+        <xsd:sequence minOccurs="1">
+            <xsd:element name="RefNum" type="xsd:string" minOccurs="1"/>
+            <xsd:element minOccurs="1" name="RefDate" type="xcblDatetime"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="Reference" type="Reference" minOccurs="1"/>
+	<xsd:element name="ReferenceCoded" minOccurs="1"/>
+	<xsd:element name="ReferenceNo" minOccurs="1"/>
+	<xsd:element name="SellerDescription" minOccurs="1"/>
+	<xsd:element name="SellerItemcode" minOccurs="1"/>
+	<xsd:element name="SellerPartNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PartNum" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="ServiceProvision" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+
+
+				<xsd:element minOccurs="1" ref="ServicePaidBy"/>
+				<xsd:element ref="OrganiserOfService" minOccurs="1"/>
+				<xsd:element ref="AmountOfService" minOccurs="1"/>
+				<xsd:element ref="CurrencyOfService" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element><xsd:element name="SellerParty" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ShipFromLocation" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Location" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ShipFromParty" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ShipToLocation" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Location" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ShipToParty" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Shipped" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Quantity" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ShippedToDate" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Quantity" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Shipper" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Party" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Shipping-info" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="type-of-service" minOccurs="1"/>
+				<xsd:element ref="Charges" minOccurs="1"/>
+				<xsd:element ref="ExportDeclarations" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ShippingInstructions" minOccurs="1"/>
+	<xsd:element name="ShippingParty" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Port-of-loading" minOccurs="1"/>
+				<xsd:element ref="Departure" minOccurs="1"/>
+				<xsd:element ref="Shipper" minOccurs="1"/>
+				<xsd:element ref="Notify" minOccurs="1"/>
+				<xsd:element ref="Destination" minOccurs="1"/>
+				<xsd:element ref="Forwarder" minOccurs="1"/>
+				<xsd:element ref="Other-ports" minOccurs="1"/>
+				<xsd:element ref="Consignee" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SimplePackageNote" minOccurs="1"/>
+	<xsd:element name="SpecialHandling" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="SpecialHandlingCodedOther" minOccurs="1"/>
+				<xsd:element ref="SpecialHandlingNote" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SpecialHandlingCodedOther" minOccurs="1"/>
+	<xsd:element name="SpecialHandlingNote" minOccurs="1"/>
+	<xsd:element name="Street" type="xsd:string" minOccurs="1"/>
+	<xsd:element name="StreetSupplement1" minOccurs="1"/>
+	<xsd:element name="StreetSupplement2" minOccurs="1"/>
+	<xsd:element name="SummaryNote" minOccurs="1"/>
+	<xsd:element name="SupplierOrderNumber" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Reference" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Tax" minOccurs="1">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="TaxSummary" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Tax" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TaxValue" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TermsOfDelivery" minOccurs="1">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="TotalAmountMinusDiscount" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TotalAmountPayable" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TotalDiscount" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TotalTaxAmount" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="MonetaryValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TotalValue" minOccurs="1">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="UOMCoded" minOccurs="1">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="UOMCodedOther" minOccurs="1">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="UnitOfMeasure" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="UOMCodedOther" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="UnitOfMeasurement" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="UOMCoded" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="UnitPrice" minOccurs="1">
+		<xsd:complexType/>
+	</xsd:element>
+	<xsd:element name="WeightCubic" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="WeightUnit" minOccurs="1"/>
+				<xsd:element ref="WeightValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="WeightGross" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="WeightUnit" minOccurs="1"/>
+				<xsd:element ref="WeightValue" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="WeightUnit" minOccurs="1"/>
+	<xsd:element name="WeightValue" minOccurs="1"/>
+	<xsd:element name="country-code" minOccurs="1"/>
+	<xsd:element name="door-to-door" type="TRSBooleanYesNoType" minOccurs="1"/>
+	<xsd:element name="final-destination" minOccurs="1"/>
+	<xsd:element name="height" minOccurs="1"/>
+	<xsd:element name="length" minOccurs="1"/>
+	<xsd:element name="lloyds-code" minOccurs="1"/>
+	<xsd:element name="name" minOccurs="1"/>
+	<xsd:element name="other-port" minOccurs="1"/>
+	<xsd:element name="port" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="unique-id" minOccurs="1"/>
+				<xsd:element ref="name" minOccurs="1"/>
+				<xsd:element ref="country-code" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="pre-carriage" minOccurs="1"/>
+	<xsd:element name="sea" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="lloyds-code" minOccurs="1"/>
+				<xsd:element ref="name" minOccurs="1"/>
+				<xsd:element ref="voyage-no" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="type-of-service" minOccurs="1"/>
+	<xsd:element name="unique-id" minOccurs="1"/>
+	<xsd:element name="unit" minOccurs="1"/>
+	<xsd:element name="vessel" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="Air" minOccurs="1"/>
+				<xsd:element ref="sea" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="volume" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="unit" minOccurs="1"/>
+				<xsd:element ref="height" minOccurs="1"/>
+				<xsd:element ref="length" minOccurs="1"/>
+				<xsd:element ref="width" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="voyage-no" minOccurs="1"/>
+	<xsd:element name="width" minOccurs="1"/>
+	<xsd:simpleType name="TRSServicePaidByType" minOccurs="1">
+		<xsd:restriction base="xsd:string" minOccurs="1">
+			<xsd:enumeration value="None" minOccurs="1"/>
+			<xsd:enumeration value="Prepaid" minOccurs="1"/>
+			<xsd:enumeration value="Collect" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="ExportDescriptionOfConsignment" type="xsd:string" minOccurs="1"/>
+	<!-- SOX format datatypes where they difer from standard XSDL datatypes-->
+
+
+
+
+	<xsd:simpleType name="xcblDate" minOccurs="1">
+		<xsd:restriction base="xsd:string" minOccurs="1">
+			<xsd:pattern value="[0-9]{4}(((01|03|05|07|08|10|12)((0[1-9])|([1-2][0-9])|(3[0-1])))|((04|06|09|11)((0[1-9])|([1-2][0-9])|30))|((02)((0[1-9])|([1-2][0-9]))))" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="xcblTime" minOccurs="1">
+		<xsd:restriction base="xsd:string" minOccurs="1">
+			<xsd:pattern value="((([0-1][0-9])|(2[0-3]))(:([0-5][0-9])){2}((\+|-)(([0-1][0-9])|(2[0-3])):([0-5][0-9]))?)" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="xcblDatetime" minOccurs="1">
+		<xsd:restriction base="xsd:string" minOccurs="1">
+			<xsd:pattern value="[0-9]{4}(((01|03|05|07|08|10|12)((0[1-9])|([1-2][0-9])|(3[0-1])))|((04|06|09|11)((0[1-9])|([1-2][0-9])|30))|((02)((0[1-9])|([1-2][0-9]))))T((([0-1][0-9])|(2[0-3]))(:([0-5][0-9])){2}((\+|-)(([0-1][0-9])|(2[0-3])):([0-5][0-9]))?)" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="xcblBoolean" minOccurs="1">
+		<xsd:restriction base="xsd:boolean" minOccurs="1">
+			<xsd:pattern value="true|false" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="xcblFloat" minOccurs="1">
+		<xsd:restriction base="xsd:float" minOccurs="1">
+			<xsd:pattern value="(\+|-)?[0-9]*\.?[0-9]*(E|e)?[0-9]*" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="xcblDouble" minOccurs="1">
+		<xsd:restriction base="xsd:double" minOccurs="1">
+			<xsd:pattern value="(\+|-)?[0-9]*\.?[0-9]*(E|e)?[0-9]*" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="NoteDetail" type="xsd:string" minOccurs="1"/>
+	<xsd:element name="PackagingRefList" minOccurs="1">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="1">
+				<xsd:element ref="PackageCode" minOccurs="1"/>
+				<xsd:element ref="PackageTypeDescription" minOccurs="1"/>
+				<xsd:element ref="NumberOfPackages" minOccurs="1"/>
+				<xsd:element ref="ExportDescriptionOfConsignment" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="TRSBooleanYesNoType" minOccurs="1">
+		<xsd:restriction base="xsd:string" minOccurs="1">
+			<xsd:enumeration value="Yes" minOccurs="1"/>
+			<xsd:enumeration value="No" minOccurs="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<xsd:element name="HazardousGoods" type="TRSBooleanYesNoType" minOccurs="1"/></xsd:schema>

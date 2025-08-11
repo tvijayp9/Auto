@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.multipart.saveDir" value="c:\upload" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+    
+    <package name="admin" extends="struts-default">
+        <!-- Add actions here for admin module-->
+        <action name="admin">
+            <result>/pages/admin/admin.jsp</result>
+        </action>
+        <action name="users">
+            <result>/pages/admin/users.jsp</result>
+        </action>
+        <action name="roles">
+            <result>/pages/admin/roles.jsp</result>
+        </action>
+        <action name="trans">
+            <result>/pages/admin/trans.jsp</result>
+        </action>
+        
+        <action name="create">
+            <result>/pages/admin/createuser.jsp</result>
+        </action>
+        <action name="createuser" class="com.nexus.struts.action.AdminAction" method="create">
+            <result name="error">/pages/admin/createuser.jsp</result>
+            <result>/pages/admin/usercreated.jsp</result>
+        </action>
+        <action name="userlist" class="com.nexus.struts.action.AdminAction" method="userlist">
+            <result>/pages/admin/userlist.jsp</result>
+        </action>
+        <action name="edituser" class="com.nexus.struts.action.AdminAction" method="edit">
+            <result>/pages/admin/edituser.jsp</result>
+        </action>
+        <action name="updateuser" class="com.nexus.struts.action.AdminAction" method="update">
+            <result>/pages/admin/userlist.jsp</result>
+        </action>
+        <action name="deleteuser" class="com.nexus.struts.action.AdminAction" method="edit">
+            <result>/pages/admin/deleteuser.jsp</result>
+        </action>
+        <action name="userdeleted" class="com.nexus.struts.action.AdminAction" method="delete">
+            <result>/pages/admin/userlist.jsp</result>
+        </action>
+        <action name="mydetails" class="com.nexus.struts.action.AdminAction" method="mydetail">
+            <result>/pages/admin/MyDetails.jsp</result>
+        </action>
+        
+        <action name="downloadlist" class="com.nexus.struts.action.AdminAction" method="downloadlist">
+            <result>/pages/admin/downloadlist.jsp</result>
+        </action>
+        <action name="EditTransactionTypes">
+            <result>/pages/admin/editTransactionTypes.jsp</result>
+        </action>
+        <action name="ShowTransactionTypes" class="showTransactionTypesAction">
+            <result>/pages/admin/showTransactionTypes.jsp</result>
+        </action>
+        <action name="AddTransactionTypes" class="addTransactionTypesAction">
+            <result>/pages/admin/showTransactionTypes.jsp</result>
+        </action>
+        <action name="getmytranstypes" class="getMyTransTypes">
+            <result>/pages/admin/showMyTransToDelete.jsp</result>
+        </action>
+        <action name="deletemytranstypes" class="deleteMyTransTypes">
+            <result>/pages/admin/showMyTransToDelete.jsp</result>
+        </action>
+        <action name="CreateRole">
+            <result>/pages/admin/createRole.jsp</result>
+        </action>
+        <action name="CreateRoleWithTab" class="createRoleWithTabAction">
+            <result type="redirect">roles.action</result>
+        </action>
+        <action name="EditRole" class="editRoleAction">
+            <result>/pages/admin/editRole.jsp</result>
+        </action>
+        <action name="EditRoleWithTab" class="editRoleWithTabAction">
+            <result type="redirect">roles.action</result>
+        </action>
+        <action name="CreateUser" class="createUserAction">
+            <result>/pages/admin/createUser.jsp</result>
+        </action>
+        <action name="CreateUserWithRole" class="createUserWithRoleAction">
+            <result type="redirect">users.action</result>
+        </action>
+        <action name="EditUser" class="editUserAction">
+            <result>/pages/admin/editUser.jsp</result>
+        </action>
+        <action name="SaveUser" class="saveUserAction">
+            <result type="redirect">users.action</result>
+        </action>
+        <action name="myaccount" class="com.nexus.struts.action.PartnerAction" method="viewMyAccount">
+            <result>/pages/admin/viewMyAccount.jsp</result>
+        </action>
+                <action name="UpdateMyAccount" class="com.nexus.struts.action.PartnerAction" method="update">
+            <result>/pages/admin/updateMyAccountSuccess.jsp</result>
+        </action>
+    </package>
+    
+    <package name="admin-json" extends="json-default">
+        <action name="ShowRoles" class="showRolesAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteRole" class="deleteRoleAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowTabs" class="showTabsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowExistingTabs" class="showExistingTabsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowMoreTabs" class="showMoreTabsAction">
+            <result type="json"/>
+        </action>
+        <action name="ShowUsers" class="showUsersAction">
+            <result type="json"/>
+        </action>
+        <action name="DeleteUser" class="deleteUserAction">
+            <result type="json"/>
+        </action>
+    </package>
+</struts>

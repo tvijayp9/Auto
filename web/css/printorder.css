@@ -1,0 +1,49 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	line-height: 1.6;
+}
+
+.clear {
+  clear: both;
+}
+
+table {
+  border-collapse: collapse;
+  width: 72em;
+  border: 1px solid #666;
+}
+
+col {
+  border-right: 1px solid #ccc;
+}
+
+thead {
+  background: #ccc url(../images/bar.gif) repeat-x left center;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+th, td {
+  padding: 0.1em 1em;
+}
+
+p {
+	font-weight: bold;
+}
+.general {
+	font-weight: normal;
+}
+
+.quantity{
+    text-align: center;
+}
+
+#input{
+    text-align: right;
+}

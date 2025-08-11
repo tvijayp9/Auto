@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright Business Technology Australia Pty Ltd 2000-->
+<!--Intermediate XML file for Dynamic Exchange-->
+<EDXDATA>
+   <DOCDATA EDXSENDMETH="TRSMESSAGE_111" DOCID="111" DESTDESC="Trade Route Message" DESTID="250100" DESTEMAIL="true" DESTFAX="false" DESTPRINT="False">
+      <MESSAGEDETAIL>
+         <To>Trade Route Application</To>
+         <From>Trade Route Server Application</From>
+         <Message>There is a change order waiting</Message>
+         <Date>13/12/2002</Date>
+         <URL>http://trs/test.htm</URL>
+      </MESSAGEDETAIL>
+   </DOCDATA>
+</EDXDATA>

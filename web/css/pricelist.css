@@ -1,0 +1,18 @@
+/* 
+    Document   : pricelist
+    Created on : 28/04/2009, 11:11:10 AM
+    Author     : Terry
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#container #body-wrap1 img {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+

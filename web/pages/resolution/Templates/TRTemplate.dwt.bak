@@ -1,0 +1,21 @@
+<%@ page%>
+<html>
+<head>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr background="../images/Title_Bar/Title_Background2.jpg"> 
+    <td width="11%" height="74" background="../images/Title_Bar/Title_Background2.jpg"><div align="left"><img src="../images/Title_Bar/Title_Logo2.jpg" width="116" height="74" border="0"></div></td>
+    <td width="77%" background="../images/Title_Bar/Title_Background2.jpg"><div align="center"><img src="../images/Title_Bar/Title_Main2.jpg" width="289" height="74"></div></td>
+    <td width="12%" background="../images/Title_Bar/Title_Background2.jpg"><div align="right"><img src="../images/Title_Bar/Title_Version2.jpg" width="90" height="74"></div></td>
+  </tr>
+</table>
+<!-- TemplateBeginEditable name="Content" -->Content<!-- TemplateEndEditable --> 
+</body>
+</html>

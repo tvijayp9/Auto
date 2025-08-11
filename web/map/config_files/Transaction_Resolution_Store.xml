@@ -1,0 +1,169 @@
+<TRANSRESSTORE>
+   <Transaction>
+      <schemaName>Order_structureOnly.xsd</schemaName>
+      <sendMethod>MSAPO</sendMethod>
+      <transType>PO</transType>
+      <fullTransType>PurchaseOrder</fullTransType>
+      <transDesc>Purchase Order that needs to be resolved.</transDesc>
+      <destDesc>Purcahse Order going to Chess</destDesc>
+      <appToUse>Trans_Disp_FS</appToUse>
+      <followOnMethod>nextPOStep</followOnMethod>
+      <destDir>C:\TradeRoute\TRSRelator\Purchase_Order_Queue</destDir>
+      <destID>0</destID>
+      <destMail>False</destMail>
+      <destFax>False</destFax>
+      <defaultTransStatus>unresolved</defaultTransStatus>
+      <fileNamePrefix>PO</fileNamePrefix>
+      <schemaPath>C:/Dynex/Xsd/XMLYesSchemas/Order_structureOnly.xsd</schemaPath>
+      <emailSubject>Purchase Order Validation Failure</emailSubject>
+      <schemaAttrib1>Order_structureOnly.xsd</schemaAttrib1>
+      <schemaAttrib2>http://www.w3.org/2001/XMLSchema-instance</schemaAttrib2>
+      <schemaAttrib3>Order_structureOnly.xsd C:/Dynex/Xsd/XMLYesSchemas/Order_structureOnly.xsd</schemaAttrib3>
+      <BableFileList>
+         <buyerMapping>
+            <buyerPartyID>000 010 300</buyerPartyID>
+            <buyerPartyName>BLACKWOODS</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>new901</buyerPartyID>
+            <buyerPartyName>PT NEWMONT</buyerPartyName>
+            <bableFileToUse>AXIST2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>NEWMONT_PO_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>JBS</buyerPartyID>
+            <buyerPartyName>BLACKWOODS</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>000001</buyerPartyID>
+            <buyerPartyName>BLACKWOODS</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>BHP</buyerPartyID>
+            <buyerPartyName>BHP</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+      </BableFileList>
+   </Transaction>
+   <Transaction>
+      <schemaName>Order.xsd</schemaName>
+      <sendMethod>MSAPO</sendMethod>
+      <transType>PO</transType>
+      <fullTransType>PurchaseOrder</fullTransType>
+      <transDesc>Purchase Order that needs to be resolved.</transDesc>
+      <destDesc>Purcahse Order going to Chess</destDesc>
+      <appToUse>Trans_Disp_FS</appToUse>
+      <followOnMethod>nextPOStep</followOnMethod>
+      <destDir>C:\TradeRoute\TRSRelator\Purchase_Order_Queue</destDir>
+      <bableFileTemplate/>
+      <destID>0</destID>
+      <destMail>False</destMail>
+      <destFax>False</destFax>
+      <defaultTransStatus>unresolved</defaultTransStatus>
+      <fileNamePrefix>PO</fileNamePrefix>
+      <schemaPath>C:/Dynex/Xsd/xCBL30/singleRoot/Order.xsd</schemaPath>
+      <emailSubject>Purchase Order Validation Failure</emailSubject>
+      <schemaAttrib1>Order.xsd</schemaAttrib1>
+      <schemaAttrib2>http://www.w3.org/2001/XMLSchema-instance</schemaAttrib2>
+      <schemaAttrib3>Order.xsd C:/Dynex/Xsd/xCBL30/singleRoot/Order.xsd</schemaAttrib3>
+      <BableFileList>
+         <buyerMapping>
+            <buyerPartyID>000 010 300</buyerPartyID>
+            <buyerPartyName>BLACKWOOODS</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>new901</buyerPartyID>
+            <buyerPartyName>PT NEWMONT</buyerPartyName>
+            <bableFileToUse>AXIST2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>NEWMONT_PO_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>RIO</buyerPartyID>
+            <buyerPartyName>RIO TINTO</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>BHP</buyerPartyID>
+            <buyerPartyName>BHP</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+         <buyerMapping>
+            <buyerPartyID>JBS</buyerPartyID>
+            <buyerPartyName>BLACKWOODS</buyerPartyName>
+            <bableFileToUse>BLACKWOODS2MSAPOBABLE</bableFileToUse>
+            <bableTemplateFile>JBS_BABLE_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+      </BableFileList>
+   </Transaction>
+   <Transaction>
+      <schemaName>ChangeOrder.xsd</schemaName>
+      <sendMethod>MSAPO2SO</sendMethod>
+      <transType>CO</transType>
+      <fullTransType>ChangeOrder</fullTransType>
+      <transDesc>Change Order that needs to be resolved.</transDesc>
+      <destDesc>Change Order going to Chess</destDesc>
+      <appToUse>Trans_Disp_FS</appToUse>
+      <followOnMethod>nextCOStep</followOnMethod>
+      <destDir>C:\TradeRoute\TRSRelator\Change_Order_Queue</destDir>
+      <destID>0</destID>
+      <destMail>False</destMail>
+      <destFax>False</destFax>
+      <defaultTransStatus>unresolved</defaultTransStatus>
+      <fileNamePrefix>COAXIS2MSA</fileNamePrefix>
+      <schemaPath>C:/Dynex/Xsd/xCBL30/singleRoot/ChangeOrder.xsd</schemaPath>
+      <emailSubject>Change Order Validation Failure</emailSubject>
+      <schemaAttrib1>ChangeOrder.xsd</schemaAttrib1>
+      <schemaAttrib2>http://www.w3.org/2001/XMLSchema-instance</schemaAttrib2>
+      <schemaAttrib3>ChangeOrder.xsd C:/Dynex/Xsd/xCBL30/singleRoot/ChangeOrder.xsd</schemaAttrib3>
+      <BableFileList>
+         <buyerMapping>
+            <buyerPartyID>new901</buyerPartyID>
+            <buyerPartyName>PT NEWMONT</buyerPartyName>
+            <bableFileToUse>AXIST2MSACOBABLE</bableFileToUse>
+            <bableTemplateFile>NEWMONT_CO_FILE_TEMPLATE.xml</bableTemplateFile>
+         </buyerMapping>
+      </BableFileList>
+   </Transaction>
+   <Transaction>
+      <schemaName>TRS_EXPINV_STRUCTUREONLY.xsd</schemaName>
+      <sendMethod>MSAEXP</sendMethod>
+      <transType>EXP</transType>
+      <fullTransType>ExportDocument</fullTransType>
+      <transDesc>Export Document that needs to be resolved.</transDesc>
+      <destDesc>Export Document going to Chess</destDesc>
+      <appToUse>Trans_Disp_FS</appToUse>
+      <followOnMethod>nextEXPStep</followOnMethod>
+      <destDir>C:\TradeRoute\TRSRelator\Export_Queue</destDir>
+      <destID>0</destID>
+      <destMail>False</destMail>
+      <destFax>False</destFax>
+      <defaultTransStatus>unresolved</defaultTransStatus>
+      <fileNamePrefix>MSAEXP</fileNamePrefix>
+      <schemaPath>C:/Dynex/Xsd/XMLYesSchemas/TRSExportInvoice.xsd</schemaPath>
+      <emailSubject>Export Document Validation Failure</emailSubject>
+      <schemaAttrib1>TRS_EXPINV_STRUCTUREONLY.xsd</schemaAttrib1>
+      <schemaAttrib2>http://www.w3.org/2001/XMLSchema-instance</schemaAttrib2>
+      <schemaAttrib3>TRS_EXPINV_STRUCTUREONLY.xsd C:/Dynex/Xsd/XMLYesSchemas/TRS_EXPINV_STRUCTUREONLY.xsd</schemaAttrib3>
+      <defaultBableFile>MSAEXPBABLE</defaultBableFile>
+      <defaultBableTemplateFile>TRS_ExpInv_Babaliser_Setup_template_v7-New Version .xml</defaultBableTemplateFile>
+      <BableFileList>
+         <buyerMapping>
+            <buyerPartyID>NEWMONT,519415,730000</buyerPartyID>
+            <buyerPartyName>MSA</buyerPartyName>
+            <bableFileToUse>MSAEXPBABLE</bableFileToUse>
+            <bableTemplateFile>TRS_ExpInv_Babaliser_Setup_template_v7-New Version .xml</bableTemplateFile>
+         </buyerMapping>
+      </BableFileList>
+   </Transaction>
+</TRANSRESSTORE>

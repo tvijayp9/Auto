@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="ItemDetailChangeCoded" type="DetailChangeCode"/><xsd:simpleType name="DetailChangeCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="AbideOutcomeOfNegotiations"/>
+         <xsd:enumeration value="AddAdditionalItems"/>
+         <xsd:enumeration value="AdditionalSubOrdinateStructureWillFollow"/>
+         <xsd:enumeration value="AdditionalSubOrdinateStructureWillNotFollow"/>
+         <xsd:enumeration value="Audited"/>
+         <xsd:enumeration value="BuyerClaimsAgainstInvoice"/>
+         <xsd:enumeration value="BuyerHasDeductedAmount"/>
+         <xsd:enumeration value="CallOffDelivery"/>
+         <xsd:enumeration value="Cancelled"/>
+         <xsd:enumeration value="ChangeOfDates"/>
+         <xsd:enumeration value="ChangeOfDateTerms"/>
+         <xsd:enumeration value="ChangesToItemLevelAllowanceOrCharges"/>
+         <xsd:enumeration value="ChangesToLineItems"/>
+         <xsd:enumeration value="ChangesToTerms"/>
+         <xsd:enumeration value="ChargeBackToSeller"/>
+         <xsd:enumeration value="Closed"/>
+         <xsd:enumeration value="ClosedAfterReopening"/>
+         <xsd:enumeration value="ConditionallyPaid"/>
+         <xsd:enumeration value="CorrectionOfError"/>
+         <xsd:enumeration value="EquipmentProvisionallyRepaired"/>
+         <xsd:enumeration value="ForUnitPriceQuantityRescheduleChangeMultiple"/>
+         <xsd:enumeration value="ItemDeleted"/>
+         <xsd:enumeration value="ItemNumberChanged"/>
+         <xsd:enumeration value="New"/>
+         <xsd:enumeration value="NoAction"/>
+         <xsd:enumeration value="NoDelivery"/>
+         <xsd:enumeration value="NotPaidPredeterminationPricingOnly"/>
+         <xsd:enumeration value="OnAppeal"/>
+         <xsd:enumeration value="PreviousPaymentDecisionReversed"/>
+         <xsd:enumeration value="PriceChanged"/>
+         <xsd:enumeration value="Proposed"/>
+         <xsd:enumeration value="ProposedAmendment"/>
+         <xsd:enumeration value="QuantityDecrease"/>
+         <xsd:enumeration value="QuantityIncrease"/>
+         <xsd:enumeration value="Reaudited"/>
+         <xsd:enumeration value="Redetermined"/>
+         <xsd:enumeration value="ReferredIemRejected"/>
+         <xsd:enumeration value="ReferredItemAccepted"/>
+         <xsd:enumeration value="Reopened"/>
+         <xsd:enumeration value="ReplaceAllDates"/>
+         <xsd:enumeration value="ReplaceAllValues"/>
+         <xsd:enumeration value="Replaced"/>
+         <xsd:enumeration value="ReplacementItem"/>
+         <xsd:enumeration value="ReplacementItemWithModifications"/>
+         <xsd:enumeration value="ReplaceModeOfShipment"/>
+         <xsd:enumeration value="Reschedule"/>
+         <xsd:enumeration value="Reschedule-QuantityChange"/>
+         <xsd:enumeration value="Reviewed"/>
+         <xsd:enumeration value="Schedule"/>
+         <xsd:enumeration value="SellerWillIssueACreditNote"/>
+         <xsd:enumeration value="TermsChangedForNewTerms"/>
+         <xsd:enumeration value="TransferItem"/>
+         <xsd:enumeration value="UnitPrice-QuantityChange"/>
+         <xsd:enumeration value="UnitPrice-RescheduleChange"/>
+         <xsd:enumeration value="CancelPreviouslyTransmittedPurchaseOrder"/>
+         <xsd:enumeration value="ChangeToTotalLevelAllowanceOrCharge"/>
+         <xsd:enumeration value="ChangeToOriginalConfirmationOfOriginalAnnouncement"/>
+         <xsd:enumeration value="ChangeToConfirmationOfRevisedAnnouncment"/>
+         <xsd:enumeration value="ConcurrentItemNoChange"/>
+         <xsd:enumeration value="OriginalConfirmationOfRevisedAnnouncment"/>
+         <xsd:enumeration value="OriginalConfirmationOfOriginalAnnouncement"/>
+      </xsd:restriction>
+   </xsd:simpleType></xsd:schema>

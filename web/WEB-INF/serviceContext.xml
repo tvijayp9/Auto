@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+    <bean id="tradingPartnerService" class="com.nexus.services.TradingPartnerServiceImpl">
+        <property name="partnerLinkDAO" ref="partnerLinkDAO"/>
+        <property name="registrationDAO" ref="registrationDAO"/>
+        <property name="microcatDAO" ref="microcatDAO"/>
+    </bean>
+    <bean id="transactionService" class="com.nexus.services.TransactionServiceImpl">
+        <property name="messageDAO" ref="messageDAO"/>
+        <property name="orderDAO" ref="orderDAO"/>
+        <property name="partnerLinkDAO" ref="partnerLinkDAO"/>
+        <property name="productHistoryDAO" ref="productHistoryDAO"/>
+        <property name="registrationDAO" ref="registrationDAO"/>
+        <property name="productsUMGDAO" ref="productsUMGDAO"/>
+    </bean>
+    <bean id="catalogueService" class="com.nexus.services.CatalogueServiceImpl">
+        <property name="orderDAO" ref="orderDAO"/>
+        <property name="productHistoryDAO" ref="productHistoryDAO"/>
+        <property name="autoOrderCountDAO" ref="autoOrderCountDAO"/>
+        <property name="favouriteOrderDAO" ref="favouriteOrderDAO"/>
+        <property name="favouriteLineItemsDAO" ref="favouriteLineItemsDAO"/>
+        <property name="partnerLinkDAO" ref="partnerLinkDAO"/>
+        <property name="memberLogosDAO" ref="memberLogosDAO"/>
+        <property name="messageDAO" ref="messageDAO"/>
+        <property name="productsUMGDAO" ref="productsUMGDAO"/>
+        <property name="registrationDAO" ref="registrationDAO"/>
+        <property name="orderItemsUMGDAO" ref="orderItemsUMGDAO"/>
+        <property name="microcatDAO" ref="microcatDAO"/>
+        <property name="microcatOrderDAO" ref="microcatOrderDAO"/>
+        <property name="microcatOrderItemsDAO" ref="microcatOrderItemsDAO"/>
+        <property name="quotesDAO" ref="quotesDAO"/>
+        <property name="quotesItemsDAO" ref="quotesItemsDAO"/>
+        <property name="umgOrdersQuotesDAO" ref="umgOrdersQuotesDAO"/>
+		<property name="rulesDAO" ref="rulesDAO"/>
+    </bean>
+    <bean id="accountService" class="com.nexus.services.AccountServiceImpl">
+        <property name="registrationDAO" ref="registrationDAO"/>
+        <property name="userDAO" ref="userDAO"/>
+        <property name="microcatDAO" ref="microcatDAO"/>
+        <property name="tabsDAO" ref="tabsDAO"/>
+        <property name="memberLogosDAO" ref="memberLogosDAO"/>
+    </bean>
+    <bean id="administrationService" class="com.nexus.services.AdministrationServiceImpl">
+        <property name="partnerLinkDAO" ref="partnerLinkDAO"/>
+        <property name="rolesDAO" ref="rolesDAO"/>
+        <property name="userDAO" ref="userDAO"/>
+        <property name="tabsDAO" ref="tabsDAO"/>
+    </bean>
+    <bean id="dataResolutionService" class="com.nexus.services.DataResolutionServiceImpl">
+        <property name="dataResolutionDAO" ref="dataResolutionDAO"/>
+    </bean>
+    <bean id="productManagementService" class="com.nexus.services.ProductManagementServiceImpl">
+        <property name="productManagementDAO" ref="productManagementDAO"/>
+        <property name="quotesDAO" ref="quotesDAO"/>
+        <property name="quotesItemsDAO" ref="quotesItemsDAO"/>
+    </bean>
+</beans>

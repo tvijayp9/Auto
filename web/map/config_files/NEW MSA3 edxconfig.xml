@@ -1,0 +1,99 @@
+<PROPERTYBAG>
+   <TRADEROUTE>
+      <PROP_THREADS_TO_RUN Desc="Should be in the form : Transformer,Relater,Bableiser,Resolver,Processor">Bableiser</PROP_THREADS_TO_RUN>
+      <PROP_ENCRYPT_KEY>dj4e9c%m</PROP_ENCRYPT_KEY>
+      <PROP_DBCOMM_USERDB_URL>jdbc:odbc:UserLog</PROP_DBCOMM_USERDB_URL>
+      <PROP_DBCOMM_TRANSDB_URL>jdbc:odbc:TransLog</PROP_DBCOMM_TRANSDB_URL>
+      <PROP_DBCOMM_ERRORLOGDB_URL>jdbc:odbc:ErrorLog</PROP_DBCOMM_ERRORLOGDB_URL>
+      <PROP_DBCOMM_DB_USER>admin</PROP_DBCOMM_DB_USER>
+      <PROP_DBCOMM_DB_PASSWORD>""</PROP_DBCOMM_DB_PASSWORD>
+      <PROP_BLANK/>
+      <PROP_ADMIN_EMAIL>dynex@msa.net.au</PROP_ADMIN_EMAIL>
+      <PROP_BLANK/>
+      <PROP_DYNEX_IN_DIR>C:\Dynex\datadynex\drp</PROP_DYNEX_IN_DIR>
+      <PROP_DYNEX_ARCHIVING_DIR>C:\Dynex\archive</PROP_DYNEX_ARCHIVING_DIR>
+      <PROP_ADAPTER_QUEUE_DIR>C:\WebSphere\PAC\Partners\Partner97000389837\mincomadapter\MincomAdapterOutgoing</PROP_ADAPTER_QUEUE_DIR>
+      <PROP_DATA_IN_DIR>C:\WebSphere\PAC\Partners\Partner97000389837\mincomadapter\MincomAdapterIncoming</PROP_DATA_IN_DIR>
+      <PROP_ADAPTER_TEMP_FILE>C:\WebSphere\PAC\Partners\Partner97000389837\mincomadapter\MincomAdapterTemp\TempData.xml</PROP_ADAPTER_TEMP_FILE>
+      <PROP_ADAPTER_ERROR_DIR>C:\WebSphere\PAC\Partners\Partner97000389837\mincomadapter\MincomAdapterError</PROP_ADAPTER_ERROR_DIR>
+      <PROP_BLANK/>
+      <PROP_TRANS_RES_FILE>C:\TradeRoute\config_files\Transaction_Resolution_Store.xml</PROP_TRANS_RES_FILE>
+      <PROP_DBCOMM_XML_DIR>C:\TradeRoute\config_files\SQLSTORE.xml</PROP_DBCOMM_XML_DIR>
+      <PROP_SQL_STATEMENT_FILE>C:\TradeRoute\config_files\SQL_STATEMENTS.xml</PROP_SQL_STATEMENT_FILE>
+      <PROP_EXP_PRINT_LIST>C:\TradeRoute\config_files\Export_Forms.xml</PROP_EXP_PRINT_LIST>
+      <PROP_PACKAGING_BOX_LIST>C:\TradeRoute\config_files\Packaging_Box_Types.xml</PROP_PACKAGING_BOX_LIST>
+      <PROP_PARTNER_RES_FILE>C:\TradeRoute\config_files\Partner_Resolution_Store.xml</PROP_PARTNER_RES_FILE>
+      <PROP_BLANK/>
+      <PROP_BABLE_FILES_DIR>Z:\TradeRoute\bable_Files</PROP_BABLE_FILES_DIR>
+      <PROP_TRS_TEMP_DIR>C:\TradeRoute\Temp_Files</PROP_TRS_TEMP_DIR>
+      <PROP_SMALL_SCHEMA_DIR>C:\TradeRoute\Mini_Schemas</PROP_SMALL_SCHEMA_DIR>
+      <PROP_LOG_DIR>C:\TradeRoute\logs</PROP_LOG_DIR>
+      <PROP_BLANK/>
+      <PROP_RESOLVER_DIR>Z:\TradeRoute\TRANSACTIONS\resolver</PROP_RESOLVER_DIR>
+      <PROP_DATA_BABLEISER_DIR>C:\TradeRoute\TRANSACTIONS\data_in</PROP_DATA_BABLEISER_DIR>
+      <PROP_ORDER_DIR>Y:\TradeRoute\TRANSACTIONS\traderoute_queue\Purchase_Orders</PROP_ORDER_DIR>
+      <PROP_CHANGEORDER_DIR>Y:\TradeRoute\TRANSACTIONS\traderoute_queue\Purchase_Orders</PROP_CHANGEORDER_DIR>
+      <PROP_EXPORT_DIR>Y:\TradeRoute\TRANSACTIONS\traderoute_queue\Export_Documents</PROP_EXPORT_DIR>
+      <PROP_PACKAGING_DIR>Y:\TradeRoute\TRANSACTIONS\traderoute_queue\Packaging_Documents</PROP_PACKAGING_DIR>
+      <PROP_PROCESS_DIR>Y:\TradeRoute\TRANSACTIONS\Processing</PROP_PROCESS_DIR>
+      <PROP_PROCESS_ACCEPT_DIR>Y:\TradeRoute\TRANSACTIONS\Processing\Accept</PROP_PROCESS_ACCEPT_DIR>
+      <PROP_PROCESS_REJECT_DIR>Y:\TradeRoute\TRANSACTIONS\Processing\Reject</PROP_PROCESS_REJECT_DIR>
+      <PROP_PROCESS_UPLOAD_DIR>Y:\TradeRoute\TRANSACTIONS\Processing\Upload</PROP_PROCESS_UPLOAD_DIR>
+      <PROP_DATA_ERR_DIR>C:\TradeRoute\TRANSACTIONS\data_err</PROP_DATA_ERR_DIR>
+      <PROP_BLANK/>
+      <PROP_XML_STRUCTURE_DIR>C:\TradeRoute\xml_structures</PROP_XML_STRUCTURE_DIR>
+      <PROP_BABLE_STRUCTURE>C:\TradeRoute\xml_structures\Template_Bable_Structure.xml</PROP_BABLE_STRUCTURE>
+      <PROP_VALUES_STRUCTURE>C:\TradeRoute\xml_structures\Template_Values.xml</PROP_VALUES_STRUCTURE>
+      <PROP_TEMPLATE_FILE>C:\TradeRoute\xml_structures\Template_Bable.xml</PROP_TEMPLATE_FILE>
+      <PROP_PO_ACK_TEMPLATE>C:\TradeRoute\xml_structures\PO_Ack_Template.xml</PROP_PO_ACK_TEMPLATE>
+      <PROP_EMAIL_MESSAGE_TEMPLATE>C:\TradeRoute\xml_structures\Email_Message_Template.xml</PROP_EMAIL_MESSAGE_TEMPLATE>
+      <PROP_SCHEMA_TEMPLATE>C:\TradeRoute\xml_structures\Schema_Template.xsd</PROP_SCHEMA_TEMPLATE>
+      <PROP_PART_NUMBERS_TEMPLATE>C:\TradeRoute\xml_structures\Template_Part_Numbers.xml</PROP_PART_NUMBERS_TEMPLATE>
+      <PROP_EXPORT_TEMPLATE>C:\TradeRoute\xml_structures\Template_Export_Doc.xml</PROP_EXPORT_TEMPLATE>
+      <PROP_DYNEX_STRUCTURE>C:\TradeRoute\xml_structures\Dynex_Structure.xml</PROP_DYNEX_STRUCTURE>
+      <PROP_PACKAGING_BOX_TEMPLATE>C:\TradeRoute\xml_structures\Packaging_Box_Template.xml</PROP_PACKAGING_BOX_TEMPLATE>
+      <PROP_PACKAGING_ROOT_TEMPLATE>C:\TradeRoute\xml_structures\Packaging_Root_Template.xml</PROP_PACKAGING_ROOT_TEMPLATE>
+      <PROP_BLANK/>
+      <PROP_CHANGE_ORDER_QUEUE>C:\TradeRoute\TRSRelator\Change_Order_Queue</PROP_CHANGE_ORDER_QUEUE>
+      <PROP_PURCHASE_ORDER_QUEUE>C:\TradeRoute\TRSRelator\Purchase_Order_Queue</PROP_PURCHASE_ORDER_QUEUE>
+      <PROP_EXPORT_QUEUE>C:\TradeRoute\TRSRelator\Export_Queue</PROP_EXPORT_QUEUE>
+      <PROP_BLANK/>
+      <PROP_PO_SCHEMA_LOCATION>C:\Dynex\Xsd\xCBL30\singleRoot\Order.xsd</PROP_PO_SCHEMA_LOCATION>
+      <PROP_CO_SCHEMA_LOCATION>C:\Dynex\Xsd\xCBL30\singleRoot\ChangeOrder.xsd</PROP_CO_SCHEMA_LOCATION>
+      <PROP_EXP_SCHEMA_LOCATION>C:\Dynex\Xsd\XMLYesSchemas\TRSExportInvoice_DocMasterStructurev50.xsd</PROP_EXP_SCHEMA_LOCATION>
+      <PROP_ORDER_RESPONSE_SCHEMA_LOCATION>C:\Dynex\Xsd\xCBL30\singleRoot\OrderResponse.xsd</PROP_ORDER_RESPONSE_SCHEMA_LOCATION>
+      <PROP_BLANK/>
+      <PROP_ADD_BABLE_NODES_STYLESHEET>C:\Dynex\Xsl\TRS_BuildBableNodes.xsl</PROP_ADD_BABLE_NODES_STYLESHEET>
+      <PROP_PO2RESPONSE_STYLESHEET>C:\Dynex\Xsl\Order2OrderResponse_HeaderLevel_Accepted&amp;Rejected.xsl</PROP_PO2RESPONSE_STYLESHEET>
+      <PROP_CO2RESPONSE_STYLESHEET>C:\Dynex\Xsl\ChangeOrder2OrderResponse_HeaderLevel_Accepted&amp;Rejected.xsl</PROP_CO2RESPONSE_STYLESHEET>
+      <PROP_EXP_TO_PRINT>C:\Dynex\Xsl\TRSExportBabelised2Print.xsl</PROP_EXP_TO_PRINT>
+      <PROP_UPLOAD_STYLESHEET>C:\Dynex\Xsl\xCBLOrder2Upload.xsl</PROP_UPLOAD_STYLESHEET>
+      <PROP_JBS_UPLOAD_STYLESHEET>C:\Dynex\Xsl\xCBLOrder2Upload_JBS.xsl</PROP_JBS_UPLOAD_STYLESHEET>
+      <PROP_NEWMONT_UPLOAD_STYLESHEET>C:\Dynex\Xsl\xCBLOrder2Upload_Newmont.xsl</PROP_NEWMONT_UPLOAD_STYLESHEET>
+      <PROP_PO_PRINT_STYLESHEET>C:\Dynex\Xsl\xCBLOrder2Print.xsl</PROP_PO_PRINT_STYLESHEET>
+      <PROP_PO_PRINT_STYLESHEET_NEWMONT>C:\Dynex\Xsl\xCBLOrder2Print_NEWMONT.xsl</PROP_PO_PRINT_STYLESHEET_NEWMONT>
+      <PROP_PO_PRINT_STYLESHEET_JBS>C:\Dynex\Xsl\xCBLOrder2Print_JBS.xsl</PROP_PO_PRINT_STYLESHEET_JBS>
+      <PROP_CO_PRINT_STYLESHEET>C:\Dynex\Xsl\xCBLChangeOrder2Print.xsl</PROP_CO_PRINT_STYLESHEET>
+      <PROP_BLANK/>
+      <PROP_ADMIN_EMAIL>admin@xmlyes.com.au</PROP_ADMIN_EMAIL>
+      <PROP_ERROR_LINE_1>An Error occurred in the Trade Route Server, Error Details:</PROP_ERROR_LINE_1>
+      <PROP_ERROR_LINE_2>While Validating the XML Transaction:</PROP_ERROR_LINE_2>
+      <PROP_ERROR_LINE_3>Against the Schema:</PROP_ERROR_LINE_3>
+      <PROP_ERROR_LINE_4>The Following error occurred :</PROP_ERROR_LINE_4>
+      <PROP_ERROR_LINE_5/>
+      <PROP_ERROR_LINE_6/>
+      <PROP_BLANK/>
+      <PROP_APP_NAME>TradeRoute v1.4</PROP_APP_NAME>
+      <PROP_BLANK/>
+      <PROP_ORDER_RESPONSE_PREFIX>PORESPMSA2AXIS</PROP_ORDER_RESPONSE_PREFIX>
+      <PROP_CHANGEORDER_RESPONSE_PREFIX>CORESPMSA2AXIS</PROP_CHANGEORDER_RESPONSE_PREFIX>
+      <PROP_UPLOAD_SO_FILE_PREFIX>MSASO</PROP_UPLOAD_SO_FILE_PREFIX>
+      <PROP_BLANK/>
+      <PROP_RESP_ATTRIB1>xmlns=OrderResponse.xsd</PROP_RESP_ATTRIB1>
+      <PROP_RESP_ATTRIB2>xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance</PROP_RESP_ATTRIB2>
+      <PROP_RESP_ATTRIB3>xsi:schemaLocation=OrderResponse.xsd C:/Dynex/Xsd/xCBL30/singleRoot/OrderResponse.xsd</PROP_RESP_ATTRIB3>
+      <PROP_BLANK/>
+      <PROP_SOAP_RPC_URL>http://localhost:8081/soap/servlet/rpcrouter</PROP_SOAP_RPC_URL>
+      <PROP_SOAP_SERVICE_NAME>urn:RPC-soapservice</PROP_SOAP_SERVICE_NAME>
+   </TRADEROUTE>
+</PROPERTYBAG>

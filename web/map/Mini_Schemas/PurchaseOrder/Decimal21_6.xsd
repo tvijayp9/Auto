@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="UnitPriceValue" type="Decimal21_6"/><xsd:simpleType name="Decimal21_6">
+        <xsd:restriction base="xsd:decimal">
+            <xsd:totalDigits value="21"/>
+            <xsd:fractionDigits value="6"/>
+        </xsd:restriction>
+    </xsd:simpleType><xsd:element name="MonetaryAmount" type="Decimal21_6"/><xsd:element name="TaxAmount" type="Decimal21_6"/></xsd:schema>

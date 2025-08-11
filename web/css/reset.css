@@ -1,0 +1,209 @@
+/*		Resetting Stylesheet		*/
+
+/*		1.	RESET MAIN ELEMENTS		*/
+/*		2.	COMMON CLASSES			*/
+/*		3.	TYPOGRAPHY				*/
+/*		4.	FORMS					*/
+
+												/** 1.	RESET MAIN ELEMENTS **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, 
+ .x {												/* .x removes any inherent styling to elements below. 5/12/07 REMOVED * from list to the left to get back default form button styling */
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background: transparent;
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1em;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: baseline;
+	line-height: 1.50em;
+	border: 0;
+	outline: 0;
+	}
+	:focus {
+		outline: 0;
+		}
+ul, ol, dd {
+	list-style-position: outside;
+	list-style: none;
+	}
+ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+	}
+	dt { font-weight: bold; }
+	dd { padding: 0; }
+table { 
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+	table th { font-weight: bold; }
+hr {
+	display: block;
+	width: 100%;
+	height: 1px;
+	color: #aaa;
+	background: #aaa;
+	border: none;
+	}
+
+
+
+
+
+
+												/** 2.	COMMON CLASSES **/
+.hide	{ display: none;	}
+.inline	{ display: inline;	}
+.block	{ display: block;	}
+.nfloat	{ float: none;		}
+.lfloat	{ float: left;		}
+.rfloat	{ float: right;		}
+.clear	{ clear: both;		}
+.lclear	{ clear: left;		}
+.rclear	{ clear: right;		}
+
+.lowercase	{ text-transform: lowercase;	}
+.uppercase	{ text-transform: uppercase;	}
+.capitalize	{ text-transform: capitalize;	}
+
+.navigation		{ list-style: none; }
+.navigation li	{ display: inline; 	}
+
+div#uhoh p {
+	width: 400px;
+	margin: 5em auto;
+	padding: 2em;
+	color: inherit;
+	background: #ffc;
+	}
+
+
+
+
+
+
+												/** 3.	TYPOGRAPHY **/
+
+code, pre, var, .monospace {
+	margin: 0.80em 0;
+	font-family: "Palatino Linotype", "Courier New", monospace;
+	line-height: 1.50em;
+	}
+	code strong, pre strong, 
+	var strong, .monospace strong {
+		color: #c33;
+		background: inherit;
+		}
+del {
+	color: #888;
+	background-color: inherit;
+	text-decoration: line-through;
+	}
+abbr {
+	font-size: 0.90em;
+	text-transform: uppercase;
+	border-bottom: 1px dashed #ddd;
+	cursor: help;
+	}
+acronym {
+	font-size: 0.90em;
+	text-transform: uppercase;
+	letter-spacing: 0.10em;
+	}
+strong			{ font-weight: 		bold;		}
+em, i, cite		{ font-style: 		italic;		}
+u, .u			{ text-decoration: 	underline;	}
+
+h1, h2, h3, 
+h4, h5, h6 { font-weight: bold; }
+h1 {  font-size: 3.00em; 	}
+h2 {  font-size: 2.50em; 	}
+h3 {  font-size: 2.00em; 	}
+h4 {  font-size: 1.60em; 	}
+h5 {  font-size: 1.20em; 	}
+h6 {  font-size: 1.00em; 	}
+
+s, strike 	{ text-decoration: line-through; }
+sub 		{ vertical-align: sub; 			 }
+sup 		{ vertical-align: sup; 			 }
+u 			{ text-decoration: underline; 	 }
+
+p {
+	margin: 0.50em 0 1.00em 0;
+	line-height: 1.60em;
+	}
+a {
+	color: #36c;
+	background-color: inherit;
+	text-decoration: underline;
+	}
+	a:visited 	{ color: #99c; background: inherit; }
+	a:hover 	{ color: #c33; background: inherit; }
+	a:active 	{ color: #333; background: inherit; }
+
+blockquote, q {
+	margin: 0.80em 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	quotes: "" "";
+	}
+	blockquote p, q p {
+		margin: 0;
+		padding: 0.80em;
+		color: #666;
+		background: inherit;
+		}
+
+
+
+
+
+
+												/** 4.	FORMS **/
+
+fieldset 	{ border: 0; 	}
+.input 		{ clear: left; 	}					/* form control wrapper */
+label {
+	display: block;
+	float: left;
+	}
+
+input.default, textarea.default
+select.default {
+	float: left;
+	padding: 3px;
+	border: 1px solid #aaa;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+	.xs { width: 20px; 	}
+	.s 	{ width: 50px; 	}
+	.m 	{ width: 120px; }
+	.l 	{ width: 200px; }
+	.xl { width: 300px; }
+button {
+	color: white;
+	background-color: black;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+	}
+
+
+
+
+
+
+															/** END **/

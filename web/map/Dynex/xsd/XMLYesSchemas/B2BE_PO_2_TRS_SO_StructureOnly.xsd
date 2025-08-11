@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="BUYLOCATION" type="xsd:string"/>
+    <xsd:element name="CARRIERAC" type="xsd:string"/>
+    <xsd:element name="CARRIERCODE">
+        <xsd:complexType/>
+    </xsd:element>
+    <xsd:element name="COMMENT1">
+        <xsd:complexType/>
+    </xsd:element>
+    <xsd:element name="COMMENT2">
+        <xsd:complexType/>
+    </xsd:element>
+    <xsd:element name="CURRCODE" type="xsd:string"/>
+    <xsd:element name="CUSTOMER" type="xsd:string"/>
+    <xsd:element name="CUSTOMERPOLINENUMBER" type="xsd:string"/>
+    <xsd:element name="CUSTPARTNO" type="xsd:string"/>
+    <xsd:element name="CUSTPO" type="xsd:string"/>
+    <xsd:element name="CUSTPODATE" type="xsd:string"/>
+    <xsd:element name="DELIVERYDATE" type="xsd:string"/>
+    <xsd:element name="DETAIL">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="CUSTPO"/>
+                <xsd:element ref="ITEM"/>
+                <xsd:element ref="UOM"/>
+                <xsd:element ref="ITEMDESC"/>
+                <xsd:element ref="UNITPRICE"/>
+                <xsd:element ref="QUANTITY"/>
+                <xsd:element ref="DELIVERYDATE"/>
+                <xsd:element ref="CUSTOMERPOLINENUMBER"/>
+                <xsd:element ref="CUSTPARTNO"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="DETAILS">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" minOccurs="1" ref="DETAIL"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="DOCDATA">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="HEADER"/>
+                <xsd:element ref="DETAILS"/>
+            </xsd:sequence>
+            <xsd:attribute name="DESTDESC" type="xsd:string" use="optional"/>
+            <xsd:attribute name="DESTEMAIL" type="xsd:string" use="optional"/>
+            <xsd:attribute name="DESTFAX" type="xsd:string" use="optional"/>
+            <xsd:attribute name="DESTID" type="xsd:string" use="optional"/>
+            <xsd:attribute name="DESTPATH" type="xsd:string" use="optional"/>
+            <xsd:attribute name="DESTPRINT" type="xsd:string" use="optional"/>
+            <xsd:attribute name="DOCID" type="xsd:string" use="optional"/>
+            <xsd:attribute name="EDXSENDMETH" type="xsd:string" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="EDXDATA">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="DOCDATA"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="HEADER">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="CUSTPO"/>
+                <xsd:element ref="CUSTOMER"/>
+                <xsd:element ref="BUYLOCATION"/>
+                <xsd:element ref="REQDATE"/>
+                <xsd:element ref="CUSTPODATE"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRESSFLAG"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRNAME"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRLINE1"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRLINE2"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRLINE3"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRESSSCITY"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRCOUNTRYCODE"/>
+                <xsd:element ref="OVERRIDESHIPPINGPOSTCODE"/>
+                <xsd:element ref="SHIPLINESCOMPLETEFLAG"/>
+                <xsd:element ref="CARRIERCODE"/>
+                <xsd:element ref="CURRCODE"/>
+                <xsd:element ref="OVERRIDESHIPPINGADDRNAME2"/>
+                <xsd:element ref="COMMENT1"/>
+                <xsd:element ref="COMMENT2"/>
+                <xsd:element ref="CARRIERAC"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="ITEM" type="xsd:string"/>
+    <xsd:element name="ITEMDESC" type="xsd:string"/>
+    <xsd:element name="OVERRIDESHIPPINGADDRCOUNTRYCODE" type="xsd:string"/>
+    <xsd:element name="OVERRIDESHIPPINGADDRESSFLAG" type="xsd:string"/>
+    <xsd:element name="OVERRIDESHIPPINGADDRESSSCITY">
+        <xsd:complexType/>
+    </xsd:element>
+    <xsd:element name="OVERRIDESHIPPINGADDRLINE1" type="xsd:string"/>
+    <xsd:element name="OVERRIDESHIPPINGADDRLINE2">
+        <xsd:complexType/>
+    </xsd:element>
+    <xsd:element name="OVERRIDESHIPPINGADDRLINE3" type="xsd:string"/>
+    <xsd:element name="OVERRIDESHIPPINGADDRNAME" type="xsd:string"/>
+    <xsd:element name="OVERRIDESHIPPINGADDRNAME2">
+        <xsd:complexType/>
+    </xsd:element>
+    <xsd:element name="OVERRIDESHIPPINGPOSTCODE" type="xsd:string"/>
+    <xsd:element name="QUANTITY" type="xsd:string"/>
+    <xsd:element name="REQDATE" type="xsd:string"/>
+    <xsd:element name="SHIPLINESCOMPLETEFLAG" type="xsd:string"/>
+    <xsd:element name="UNITPRICE" type="xsd:string"/>
+    <xsd:element name="UOM" type="xsd:string"/>
+</xsd:schema>

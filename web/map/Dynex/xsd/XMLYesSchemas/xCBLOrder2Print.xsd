@@ -1,0 +1,468 @@
+<?xml version="1.0"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+ <xsd:element name="RecordTypeHeader">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="CustomerCode">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="BuyLocation">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="RequiredDate">
+  <xsd:complexType>
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="CustomerPODate">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddress">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressName">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressLine1">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressLine2">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressLine3">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressCity">
+  <xsd:complexType>
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressCountryCode">
+  <xsd:complexType>
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressPostCode">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="ShipLinesCompleted">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="CarrierCode">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="CurrencyCode">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="OverRideAddressName2">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="Comment1">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="Comment2TradeRouteSaleOrderNumber">
+  <xsd:complexType>
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="SalesOrderHeader">
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref="RecordTypeHeader"/>
+    <xsd:element ref="CustomerPO"/>
+    <xsd:element ref="CustomerCode"/>
+    <xsd:element ref="BuyLocation"/>
+    <xsd:element ref="RequiredDate"/>
+    <xsd:element ref="CustomerPODate"/>
+    <xsd:element ref="OverRideAddress"/>
+    <xsd:element ref="OverRideAddressName"/>
+    <xsd:element ref="OverRideAddressLine1"/>
+    <xsd:element ref="OverRideAddressLine2"/>
+    <xsd:element ref="OverRideAddressLine3"/>
+    <xsd:element ref="OverRideAddressCity"/>
+    <xsd:element ref="OverRideAddressCountryCode"/>
+    <xsd:element ref="OverRideAddressPostCode"/>
+    <xsd:element ref="ShipLinesCompleted"/>
+    <xsd:element ref="CarrierCode"/>
+    <xsd:element ref="CurrencyCode"/>
+    <xsd:element ref="OverRideAddressName2"/>
+    <xsd:element ref="Comment1"/>
+    <xsd:element ref="Comment2TradeRouteSaleOrderNumber"/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="RecordTypeDetail">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="CustomerPO">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="Item">
+  <xsd:complexType>
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="UnitOfMeasure">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="EndUser">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="ItemDescription">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="UnitPrice">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="Quantity">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="DeliveryDate">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="CustPoLineNumber">
+  <xsd:complexType>
+  <xsd:simpleContent>
+  <xsd:extension base="xsd:string">
+   <xsd:attribute name="FAlign" type="xsd:string" use="required"/>
+   <xsd:attribute name="FTrim" type="xsd:string" use="required"/>
+   <xsd:attribute name="FDecimal" type="xsd:string" use="required"/>
+   <xsd:attribute name="FType" type="xsd:string" use="required"/>
+   <xsd:attribute name="FLength" type="xsd:string" use="required"/>
+   </xsd:extension>
+   </xsd:simpleContent>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="DetailLine">
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref="RecordTypeDetail"/>
+    <xsd:element ref="CustomerPO"/>
+    <xsd:element ref="Item"/>
+    <xsd:element ref="UnitOfMeasure"/>
+    <xsd:element ref="EndUser"/>
+    <xsd:element ref="ItemDescription"/>
+    <xsd:element ref="UnitPrice"/>
+    <xsd:element ref="Quantity"/>
+    <xsd:element ref="DeliveryDate"/>
+    <xsd:element ref="CustPoLineNumber"/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="SalesOrderDetailS">
+  <xsd:complexType>
+   <xsd:sequence maxOccurs="unbounded">
+    <xsd:element ref="DetailLine"/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="DOCDATA">
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref="SalesOrderHeader"/>
+    <xsd:element ref="SalesOrderDetailS"/>
+   </xsd:sequence>
+   <xsd:attribute name="DESTEMAIL" type="xsd:string" use="required"/>
+   <xsd:attribute name="DESTDESC" type="xsd:string" use="required"/>
+   <xsd:attribute name="DESTID" type="xsd:string" use="required"/>
+   <xsd:attribute name="DESTPRINT" type="xsd:string" use="required"/>
+   <xsd:attribute name="DESTPATH" type="xsd:string" use="required"/>
+   <xsd:attribute name="EDXSENDMETH" type="xsd:string" use="required"/>
+   <xsd:attribute name="DESTFAX" type="xsd:string" use="required"/>
+   <xsd:attribute name="DOCID" type="xsd:string" use="required"/>
+   <xsd:attribute name="DOCKEY" type="xsd:string" use="required"/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name="EDXDATA">
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref="DOCDATA"/>
+   </xsd:sequence>
+   <xsd:attribute name="xsi:noNamespaceSchemaLocation" type="xsd:string" use="required"/>
+   <xsd:attribute name="xmlns:xsi" type="xsd:string" use="required"/>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>

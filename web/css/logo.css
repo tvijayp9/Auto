@@ -1,0 +1,80 @@
+/*
+    Document   : logo
+    Created on : 01/05/2009, 11:47:23 AM
+    Author     : Terry
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#showhere {
+    margin-left: 50px;
+    width: 530px;
+}
+#showhere .subject {
+    color: #f96e13;
+    font-size: 14px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#news_button{
+    display:none;
+    margin-left: 400px;
+}
+#showhere .title a:link {
+	text-decoration: none;
+    color: #0038a9;
+    font-size: 14px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#showhere .title a:visited{
+	text-decoration: none;
+    color: #0038a9;
+    font-size: 14px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#showhere .title a:hover{
+	text-decoration: underline;
+    color: #0038a9;
+    font-size: 14px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#showhere .title a:active{
+	text-decoration: underline;
+    color: #0038a9;
+    font-size: 14px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#showhere .read a:link {
+	text-decoration: none;
+    color: #0038a9;
+    font-size: 12px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#showhere .read a:visited{
+	text-decoration: none;
+    color: #0038a9;
+    font-size: 12px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#showhere .read a:hover{
+	text-decoration: underline;
+    color: #0038a9;
+    font-size: 12px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#showhere .read a:active{
+	text-decoration: underline;
+    color: #0038a9;
+    font-size: 12px;
+    font-family:Georgia, "Trebuchet MS", Arial, Sans-Serif;
+}
+#news_display{
+    display:none;
+}
+#mynews{
+    display:none;
+}

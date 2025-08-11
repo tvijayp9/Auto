@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>/WEB-INF/jdbc.properties</value>
+        </property>
+    </bean>
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="idleConnectionTestPeriod" value="${jdbc.idleConnectionTestPeriod}"/>
+        <property name="initialPoolSize" value="${jdbc.initialPoolSize}"/>
+        <property name="maxIdleTime" value="${jdbc.maxIdleTime}"/>
+        <property name="maxPoolSize" value="${jdbc.maxPoolSize}"/>
+        <property name="minPoolSize" value="${jdbc.minPoolSize}"/>
+        <property name="acquireIncrement" value="${jdbc.acquireIncrement}"/>
+    </bean>
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>com.nexus.domain.NexusOrder</value>
+                <value>com.nexus.domain.OrderLineItems</value>
+                <value>com.nexus.domain.Registration</value>
+                <value>com.nexus.domain.Products_History</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">
+					${hibernate.dialect}
+                </prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <tx:annotation-driven/>
+    <bean id="dao" abstract="true">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="SpringHibernateDao" parent="dao" class="com.nexus.dao.SpringHibernateDAOImpl"/>
+    <bean id="partnerLinkDAO" parent="dao" class="com.nexus.dao.PartnerLinkDAOImpl"/>
+    <bean id="registrationDAO" parent="dao" class="com.nexus.dao.RegistrationDAOImpl"/>
+    <bean id="messageDAO" parent="dao" class="com.nexus.dao.MessageDAOImpl"/>
+    <bean id="orderDAO" parent="dao" class="com.nexus.dao.OrderDAOImpl"/>
+    <bean id="productHistoryDAO" parent="dao" class="com.nexus.dao.ProductHistoryDAOImpl"/>
+    <bean id="autoOrderCountDAO" parent="dao" class="com.nexus.dao.AutoOrderCountDAOImpl"/>
+    <bean id="userDAO" parent="dao" class="com.nexus.dao.UserDAOImpl"/>
+    <bean id="favouriteOrderDAO" parent="dao" class="com.nexus.dao.FavouriteOrderDAOImpl"/>
+    <bean id="favouriteLineItemsDAO" parent="dao" class="com.nexus.dao.FavouriteLineItemsDAOImpl"/>
+    <bean id="memberLogosDAO" parent="dao" class="com.nexus.dao.MemberLogosDAOImpl"/>
+    <bean id="productsUMGDAO" parent="dao" class="com.nexus.dao.ProductsUMGDAOImpl"/>
+    <bean id="orderItemsUMGDAO" parent="dao" class="com.nexus.dao.OrderItemsUMGDAOImpl"/>
+    <bean id="microcatDAO" parent="dao" class="com.nexus.dao.MicrocatDAOImpl"/>
+    <bean id="microcatOrderDAO" parent="dao" class="com.nexus.dao.MicrocatOrderDAOImpl"/>
+    <bean id="microcatOrderItemsDAO" parent="dao" class="com.nexus.dao.MicrocatOrderItemsDAOImpl"/>
+    <bean id="rolesDAO" parent="dao" class="com.nexus.dao.RolesDAOImpl"/>
+	<bean id="rulesDAO" parent="dao" class="com.nexus.dao.RulesDAOImpl"/>
+    <bean id="tabsDAO" parent="dao" class="com.nexus.dao.TabsDAOImpl"/>
+    <bean id="quotesDAO" parent="dao" class="com.nexus.dao.QuotesDAOImpl"/>
+    <bean id="quotesItemsDAO" parent="dao" class="com.nexus.dao.QuotesItemsDAOImpl"/>
+    <bean id="umgOrdersQuotesDAO" parent="dao" class="com.nexus.dao.UMGOrdersQuotesDAOImpl"/>
+    <bean id="dataResolutionDAO" parent="dao" class="com.nexus.dao.DataResolutionDAOImpl"/>
+    <bean id="productManagementDAO" parent="dao" class="com.nexus.dao.ProductManagementDAOImpl"/>
+</beans>

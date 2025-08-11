@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="PurposeCoded" type="PurposeCode"/><xsd:simpleType name="PurposeCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="Cancellation"/>
+         <xsd:enumeration value="Replace"/>
+         <xsd:enumeration value="Confirmation"/>
+         <xsd:enumeration value="Duplicate"/>
+         <xsd:enumeration value="Original"/>
+         <xsd:enumeration value="Change"/>
+         <xsd:enumeration value="InformationOnly"/>
+      </xsd:restriction>
+   </xsd:simpleType></xsd:schema>

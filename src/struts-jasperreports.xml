@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+    
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />      
+    <package name="jasperreports" extends="jasperreports-default">
+        <action name="viewOrderFromArchivedInboundTransaction" class="viewOrderFromArchivedInboundTransaction">
+            <result type="jasper">
+                <param name="location">/reports/viewOrderFromInBoundTransaction.jasper</param>
+                <param name="dataSource">items</param>
+                <param name="format">PDF</param>
+                <param name="reportParameters">reportParams</param>
+            </result>
+        </action>
+        <action name="viewOrderFromOutboundTransaction" class="viewOrderFromOutboundTransaction">
+            <result type="jasper">
+                <param name="location">/reports/viewOrderFromOutBoundTransaction.jasper</param>
+                <param name="dataSource">items</param>
+                <param name="format">PDF</param>
+                <param name="reportParameters">reportParams</param>
+            </result>
+        </action>
+        <action name="viewOrderFromArchivedOutboundTransaction" class="viewOrderFromArchivedOutboundTransaction">
+            <result type="jasper">
+                <param name="location">/reports/viewOrderFromOutBoundTransaction.jasper</param>
+                <param name="dataSource">items</param>
+                <param name="format">PDF</param>
+                <param name="reportParameters">reportParams</param>
+            </result>
+        </action>
+        <action name="viewSelectedOrderFromInboundTransaction" class="viewSelectedOrderFromInboundTransaction">
+            <result type="jasper">
+                <param name="location">/reports/viewInBoundPurchaseOrder.jasper</param>
+                <param name="dataSource">allSelectedOrders</param>
+                <param name="format">PDF</param>
+                <param name="reportParameters">reportParams</param>
+            </result>
+        </action>
+        <action name="viewSelectedOrderFromArchivedInboundTransaction" class="viewSelectedOrderFromArchivedInboundTransaction">
+            <result type="jasper">
+                <param name="location">/reports/viewInBoundPurchaseOrder.jasper</param>
+                <param name="dataSource">allSelectedArchivedOrders</param>
+                <param name="format">PDF</param>
+                <param name="reportParameters">reportParams</param>
+            </result>
+        </action>
+        <action name="viewNewOrderFromInboundTransaction" class="viewNewOrderFromInboundTransaction">
+            <result type="jasper">
+                <param name="location">/reports/viewInBoundPurchaseOrder.jasper</param>
+                <param name="dataSource">allNewOrders</param>
+                <param name="format">PDF</param>
+                <param name="reportParameters">reportParams</param>
+            </result>
+        </action>
+                <action name="printQuote" class="printQuoteAction">
+            <result type="jasper">
+                <param name="location">/reports/printQuote.jasper</param>
+                <param name="dataSource">items</param>
+                <param name="format">PDF</param>
+                <param name="reportParameters">reportParams</param>
+            </result>
+        </action>
+    </package>    
+</struts>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="FreeDomicile" type="TRSBooleanYesNoType"/><xsd:simpleType name="TRSBooleanYesNoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Yes"/>
+			<xsd:enumeration value="No"/>
+		</xsd:restriction>
+	</xsd:simpleType><xsd:element name="DutyDrawBack" type="TRSBooleanYesNoType"/><xsd:element default="No" name="Applicable" type="TRSBooleanYesNoType"/><xsd:element name="HazardousGoods" type="TRSBooleanYesNoType"/></xsd:schema>

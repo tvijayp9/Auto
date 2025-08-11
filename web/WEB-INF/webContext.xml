@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+    <bean id="showPartnerListDetailsAction" class="com.nexus.web.ShowPartnerListDetailsAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="showMemberListDetailsAction" class="com.nexus.web.ShowMemberListDetailsAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="showInBoundListDetailsAction" class="com.nexus.web.ShowInBoundListDetailsAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+	<bean id="showInvoiceDetailsAction" class="com.nexus.web.ShowInvoiceDetailsAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+		<!--<property name="catalogueService" ref="catalogueService"/> -->
+    </bean>
+
+    <bean id="archiveInBoundMessageAction" class="com.nexus.web.ArchiveInBoundMessageAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="showOutBoundListDetailsAction" class="com.nexus.web.ShowOutBoundListDetailsAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="showOutBoundArchivedListDetailsAction" class="com.nexus.web.ShowOutBoundArchivedListDetailsAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="showInBoundArchivedListDetailsAction" class="com.nexus.web.ShowInBoundArchivedListDetailsAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="showOrderListDetailsAction" class="com.nexus.web.ShowOrderListDetailsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showArchivedOrderListDetailsAction" class="com.nexus.web.ShowArchivedOrderListDetailsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showOrderItemDetailsAction" class="com.nexus.web.ShowOrderItemDetailsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showArchivedOrderItemDetailsAction" class="com.nexus.web.ShowArchivedOrderItemDetailsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showFutureOrderListAction" class="com.nexus.web.ShowFutureOrderListAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createOrderAction" class="com.nexus.web.CreateOrderAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createOrderItemsAction" class="com.nexus.web.CreateOrderItemsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="registerAction" class="com.nexus.web.RegisterAction" scope="prototype">
+    </bean>
+    <bean id="registerConfirmationAction" class="com.nexus.web.RegisterConfirmationAction" scope="prototype">
+        <property name="accountService" ref="accountService"/>
+    </bean>
+    <bean id="viewOrderFromInboundTransaction" class="com.nexus.web.ViewOrderFromInboundTransactionAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+	<bean id="viewinvoiceTransactionAction" class="com.nexus.web.ViewInvoiceTransactionAction" scope="prototype">
+        <!--<property name="transactionService" ref="transactionService"/>
+        <property name="catalogueService" ref="catalogueService"/>-->
+    </bean>
+	<bean id="generateInvoiceAction" class="com.nexus.web.GenerateInvoiceAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+		<property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="viewOrderFromArchivedInboundTransaction" class="com.nexus.web.ViewOrderFromArchivedInboundTransactionAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="viewOrderFromOutboundTransaction" class="com.nexus.web.ViewOrderFromOutboundTransactionAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="viewOrderFromArchivedOutboundTransaction" class="com.nexus.web.ViewOrderFromArchivedOutboundTransactionAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="printQuoteAction" class="com.nexus.web.umg.PrintQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="viewSelectedOrderFromInboundTransaction" class="com.nexus.web.ViewSelectedOrderFromInboundTransactionAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="viewSelectedOrderFromArchivedInboundTransaction" class="com.nexus.web.ViewSelectedOrderFromArchivedInboundTransactionAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="viewNewOrderFromInboundTransaction" class="com.nexus.web.ViewNewOrderFromInboundTransactionAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="allNewOrdersCountAction" class="com.nexus.web.AllNewOrdersCountAction" scope="prototype">
+        <property name="transactionService" ref="transactionService"/>
+    </bean>
+    <bean id="newsListAction" class="com.nexus.web.NewsListAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+   <bean id="createNewsAction" class="com.nexus.web.CreateNewsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="saveNewsAction" class="com.nexus.web.SaveNewsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="editNewsAction" class="com.nexus.web.EditNewsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="deleteNewsAction" class="com.nexus.web.DeleteNewsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="updateNewsAction" class="com.nexus.web.UpdateNewsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="addFavouriteOrderAction" class="com.nexus.web.AddFavouriteOrderAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="favouriteOrderListAction" class="com.nexus.web.FavouriteOrderListAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="quotesListAction" class="com.nexus.web.umg.QuotesListAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="deleteFavouriteOrderAction" class="com.nexus.web.DeleteFavouriteOrderAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="deleteQuotesAction" class="com.nexus.web.umg.DeleteQuotesAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="CreateProductAction" class="com.nexus.web.Catalogue.CreateProductAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="ShowProductsAndBuyerToLinkAction" class="com.nexus.web.Catalogue.ShowProductsAndBuyerToLinkAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="ShowBuyerToLinkAction" class="com.nexus.web.Catalogue.ShowBuyerToLinkAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="LinkProductsToBuyerAction" class="com.nexus.web.Catalogue.LinkProductsToBuyerAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="showCategoriesAction" class="com.nexus.web.Catalogue.ShowCategoriesAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createCategoryAction" class="com.nexus.web.Catalogue.CreateCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showProductsWithoutCategoryAction" class="com.nexus.web.Catalogue.ShowProductsWithoutCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="linkProductsWithCategoryAction" class="com.nexus.web.Catalogue.LinkProductsWithCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="checkCategoryNameAction" class="com.nexus.web.Catalogue.CheckCategoryNameAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="updateCategoryNameAction" class="com.nexus.web.Catalogue.UpdateCategoryNameAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showProductsByCategoryAction" class="com.nexus.web.Catalogue.ShowProductsByCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="deleteCategoryAction" class="com.nexus.web.Catalogue.DeleteCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="unlinkProductsWithCategoryAction" class="com.nexus.web.Catalogue.UnlinkProductsWithCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="copyCategoryAction" class="com.nexus.web.Catalogue.CopyCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="ShowProductsAction" class="com.nexus.web.Catalogue.ShowProductsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="DeleteProductAction" class="com.nexus.web.Catalogue.DeleteProductAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="EditProductAction" class="com.nexus.web.Catalogue.EditProductAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="UpdateProductAction" class="com.nexus.web.Catalogue.UpdateProductAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="ShowMyBuyerProductsAction" class="com.nexus.web.Catalogue.ShowMyBuyerProductsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showSupplierListAction" class="com.nexus.web.Catalogue.ShowSupplierListAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="viewCategoriesProductsAction" class="com.nexus.web.Catalogue.ViewCategoriesProductsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showCategoriesBySupplierAction" class="com.nexus.web.Catalogue.ShowCategoriesBySupplierAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showSupplierProductsByCategoryAction" class="com.nexus.web.Catalogue.ShowSupplierProductsByCategoryAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showBuyerProductsBySupplierAction" class="com.nexus.web.Catalogue.ShowBuyerProductsBySupplierAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="showShoppingCartAction" class="com.nexus.web.Catalogue.ShowShoppingCartAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showCatalogueShoppingCartAction" class="com.nexus.web.Catalogue.ShowCatalogueShoppingCartAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="showQuoteShoppingCartAction" class="com.nexus.web.umg.ShowQuoteShoppingCartAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="addShoppingCartItemAction" class="com.nexus.web.Catalogue.AddShoppingCartItemAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="addCatalogueShoppingCartItemAction" class="com.nexus.web.Catalogue.AddCatalogueShoppingCartItemAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="SearchCategoriesForAmcapAction" class="com.nexus.web.Catalogue.SearchCategoriesForAmcapAction"  scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="deleteShoppingCartItemAction" class="com.nexus.web.Catalogue.DeleteShoppingCartItemAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="deleteCatalogueShoppingCartItemAction" class="com.nexus.web.Catalogue.DeleteCatalogueShoppingCartItemAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="uploadpartsAction" class="com.nexus.struts.action.FileUploadAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="deleteProductItemAction" class="com.nexus.web.Catalogue.DeleteProductItemAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="editShoppingCartAction" class="com.nexus.web.Catalogue.EditShoppingCartAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="editProductDetailsAction" class="com.nexus.web.Catalogue.EditProductDetailsAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="editCatalogueShoppingCartAction" class="com.nexus.web.Catalogue.EditCatalogueShoppingCartAction" scope='prototype'>
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="editQuoteAction" class="com.nexus.web.umg.EditQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="editQuoteItemQuantityAction" class="com.nexus.web.umg.EditQuoteItemQuantityAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="editAmcapQuoteItemQuantityAction" class="com.nexus.web.umg.EditAmcapQuoteItemQuantityAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="quoteCheckOutAction" class="com.nexus.web.umg.QuoteCheckOutAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="amcapQuoteCheckOutAction" class="com.nexus.web.umg.AmcapQuoteCheckOutAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="checkOutAction" class="com.nexus.web.Catalogue.CheckOutAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+	<bean id="checkOutQuoteAction" class="com.nexus.web.Catalogue.CheckOutQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="punchOutAction" class="com.nexus.web.Catalogue.PunchOutAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="cxmlpunchOutAction" class="com.nexus.web.Catalogue.CXMLPunchOutAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+		<property name="accountService" ref="accountService"/>
+    </bean>
+	<bean id="purchaseOrderAction" class="com.nexus.web.Catalogue.PurchaseOrderAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+	</bean>
+	<bean id="resetShoppingCartAction" class="com.nexus.web.Catalogue.ResetShoppingCartAction" >
+            <property name="catalogueService" ref="catalogueService"/>
+            <property name="accountService" ref="accountService"/>
+	</bean>
+    <bean id="checkShoppingCartAction" class="com.nexus.web.Catalogue.CheckShoppingCartAction" scope="prototype"/>
+    <bean id="gotoCategoriesProductsAction" class="com.nexus.web.Catalogue.GotoCategoriesProductsAction" scope="prototype"/>
+	<bean id="modifyQuoteAction" class="com.nexus.web.Catalogue.ModifyQuoteAction" scope="prototype"/>
+    <bean id="gotoQuoteItemsAction" class="com.nexus.web.umg.GotoQuoteItemsAction" scope="prototype"/>
+    <bean id="createOrderFromShoppingCartAction" class="com.nexus.web.Catalogue.CreateOrderFromShoppingCartAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createOrderFromQuoteAction" class="com.nexus.web.umg.CreateOrderFromQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createOrderItemsForShoppingCartAction" class="com.nexus.web.Catalogue.CreateOrderItemsForShoppingCartAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createOrderItemsForQuoteAction" class="com.nexus.web.umg.CreateOrderItemsForQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createNewOrderForShoppingCartAction" class="com.nexus.web.Catalogue.CreateNewOrderForShoppingCartAction" scope="prototype"/>
+    <bean id="DeleteMyBuyerProductAction" class="com.nexus.web.Catalogue.DeleteMyBuyerProductAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createNewOrderForAmcapAction" class="com.nexus.web.Catalogue.CreateNewOrderForAmcapAction" scope="prototype"/>
+    <bean id="createNewOrderForAmcapActionBhp" class="com.nexus.web.Catalogue.CreateNewOrderForAmcapActionBhp" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="editbuyerproductmapping" class="com.nexus.web.Catalogue.EditBuyerProductMappingAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="updatebuyerproductmapping" class="com.nexus.web.Catalogue.UpdateBuyerProductMappingAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showTransactionTypesAction" class="com.nexus.web.admin.ShowTransactionTypesAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="addTransactionTypesAction" class="com.nexus.web.admin.AddTransactionTypesAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="getMyTransTypes" class="com.nexus.web.admin.ShowMyTransTypesAction" scope="prototype"/>
+    <bean id="deleteMyTransTypes" class="com.nexus.web.admin.DeleteMyTransTypesAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="mapProductsFileAction" class="com.nexus.web.Catalogue.MapProductsFileAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="uploadProductsFileAction" class="com.nexus.web.Catalogue.UploadProductsFileAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="doUploadProductsFileAction" class="com.nexus.web.Catalogue.DoUploadProductsFileAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showPartnerPriceTypeAction" class="com.nexus.web.umg.ShowPartnerPriceTypeAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="changePriceTypeAction" class="com.nexus.web.umg.ChangePriceTypeAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="printOrderAction" class="com.nexus.struts.action.PrintOrderAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createNewTemplateAction" class="com.nexus.web.umg.CreateNewTemplateAction" scope="prototype"/>
+    <bean id="createNewQuoteAction" class="com.nexus.web.umg.CreateNewQuoteAction" scope="prototype"/>
+    <bean id="createNewAmcapQuoteAction" class="com.nexus.web.umg.CreateNewAmcapQuoteAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="showTemplateAction" class="com.nexus.web.umg.ShowTemplateAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showQuoteAction" class="com.nexus.web.umg.ShowQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showAmcapQuoteAction" class="com.nexus.web.umg.ShowAmcapQuoteAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="addTemplateOrderItemAction" class="com.nexus.web.umg.AddTemplateOrderItemAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="addQuoteItemAction" class="com.nexus.web.umg.AddQuoteItemAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="addAmcapQuoteItemAction" class="com.nexus.web.umg.AddAmcapQuoteItemAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="addAmcapProductItemAction" class="com.nexus.web.umg.AddAmcapProductItemAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="deleteTemplateOrderItemAction" class="com.nexus.web.umg.DeleteTemplateOrderItemAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="deleteQuoteItemAction" class="com.nexus.web.umg.DeleteQuoteItemAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="checkTemplateAction" class="com.nexus.web.umg.CheckTemplateAction" scope="prototype"/>
+    <bean id="checkQuoteAction" class="com.nexus.web.umg.CheckQuoteAction" scope="prototype"/>
+    <bean id="saveNewTemplateAction" class="com.nexus.web.umg.SaveNewTemplateAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="saveNewQuoteAction" class="com.nexus.web.umg.SaveNewQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="saveNewAmcapQuoteAction" class="com.nexus.web.umg.SaveNewAmcapQuoteAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="viewTemplateOrderItemsAction" class="com.nexus.web.umg.ViewTemplateOrderItemsAction" scope="prototype"/>
+    <bean id="viewQuoteItemsAction" class="com.nexus.web.umg.ViewQuoteItemsAction" scope="prototype"/>
+    <bean id="viewAmcapQuoteItemsAction" class="com.nexus.web.umg.ViewAmcapQuoteItemsAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="showTemplateOrderItemsAction" class="com.nexus.web.umg.ShowTemplateOrderItemsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showQuoteItemsAction" class="com.nexus.web.umg.ShowQuoteItemsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="showAmcapQuoteItemsAction" class="com.nexus.web.umg.ShowAmcapQuoteItemsAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="deleteTemplateOrderItemsAction" class="com.nexus.web.umg.DeleteTemplateOrderItemsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="deleteQuoteItemsAction" class="com.nexus.web.umg.DeleteQuoteItemsAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="addTemplateOrderItemsToShoppingcartAction" class="com.nexus.web.umg.AddTemplateOrderItemsToShoppingcartAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="addMoreTemplateOrderItemsAction" class="com.nexus.web.umg.AddMoreTemplateOrderItemsAction" scope="prototype"/>
+    <bean id="addMoreQuoteItemsAction" class="com.nexus.web.umg.AddMoreQuoteItemsAction" scope="prototype"/>
+    <bean id="addMoreAmcapQuoteItemsAction" class="com.nexus.web.umg.AddMoreAmcapQuoteItemsAction" scope="prototype">
+        <property name="productManagementService" ref="productManagementService"/>
+    </bean>
+    <bean id="saveModifiedTemplateAction" class="com.nexus.web.umg.SaveModifiedTemplateAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="saveModifiedQuoteAction" class="com.nexus.web.umg.SaveModifiedQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="saveModifiedAmcapQuoteAction" class="com.nexus.web.umg.SaveModifiedAmcapQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="getMicrocatInfoAction" class="com.nexus.web.umg.GetMicrocatInfoAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="getScaniaInfoAction" class="com.nexus.web.umg.GetScaniaInfoAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="combineOrdersFromMicrocatAction" class="com.nexus.web.umg.CombineOrdersFromMicrocatAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+	<bean id="orderFromScaniaAction" class="com.nexus.web.umg.OrderFromScaniaAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+        <bean id="combineOrdersFromMicrocatForFavouriteAction" class="com.nexus.web.umg.CombineOrdersFromMicrocatForFavouriteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+            <bean id="combineOrdersFromMicrocatForQuoteAction" class="com.nexus.web.umg.CombineOrdersFromMicrocatForQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+    <bean id="createMicrocatAccountAction" class="com.nexus.web.umg.CreateMicrocatAccountAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="logoutAction" class="com.nexus.struts.action.Logout" scope="prototype">
+        <property name="accountService" ref="accountService"/>
+    </bean>
+    <bean id="LoginAction" class="com.nexus.struts.action.LoginAction" scope="prototype">
+        <property name="accountService" ref="accountService"/>
+        <property name="catalogueService" ref="catalogueService"/>
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="showRolesAction" class="com.nexus.web.umg.ShowRolesAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="deleteRoleAction" class="com.nexus.web.umg.DeleteRoleAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="showTabsAction" class="com.nexus.web.umg.ShowTabsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="createRoleWithTabAction" class="com.nexus.web.umg.CreateRoleWithTabAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="editRoleAction" class="com.nexus.web.umg.EditRoleAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="showExistingTabsAction" class="com.nexus.web.umg.ShowExistingTabsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="showMoreTabsAction" class="com.nexus.web.umg.ShowMoreTabsAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="editRoleWithTabAction" class="com.nexus.web.umg.EditRoleWithTabAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="showUsersAction" class="com.nexus.web.umg.ShowUsersAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="createUserAction" class="com.nexus.web.umg.CreateUserAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="createUserWithRoleAction" class="com.nexus.web.umg.CreateUserWithRoleAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="deleteUserAction" class="com.nexus.web.umg.DeleteUserAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="editUserAction" class="com.nexus.web.umg.EditUserAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="saveUserAction" class="com.nexus.web.umg.SaveUserAction" scope="prototype">
+        <property name="administrationService" ref="administrationService"/>
+    </bean>
+    <bean id="showMicrocatsAction" class="com.nexus.web.umg.ShowMicrocatsAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="doCreateOneMicrocatAccountAction" class="com.nexus.web.umg.DoCreateOneMicrocatAccountAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="editMicrocatAccountAction" class="com.nexus.web.umg.EditMicrocatAccountAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="doEditMicrocatAccountAction" class="com.nexus.web.umg.DoEditMicrocatAccountAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="deleteMicrocatAccountAction" class="com.nexus.web.umg.DeleteMicrocatAccountAction" scope="prototype">
+        <property name="tradingPartnerService" ref="tradingPartnerService"/>
+    </bean>
+    <bean id="exportQuoteAction" class="com.nexus.web.umg.ExportQuoteAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+	 <bean id="showTransactionListDetailsAction" class="com.nexus.web.DR.ShowTransactionListDetailsAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	 <bean id="ShowProcessedTransactionListAction" class="com.nexus.web.DR.ShowProcessedTransactionListAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	<bean id="FilterTransactionsAction" class="com.nexus.web.DR.FilterTransactionsAction" scope="prototype">
+        
+    </bean>
+    <bean id="opentransaction" class="com.nexus.web.DR.DataResolutionAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+    <bean id="updatetransactionAction" class="com.nexus.web.DR.UnlockTransactionAction" scope="prototype">
+            <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	<bean id="usermanagementAction" class="com.nexus.web.DR.UserManagementAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	<bean id="showAssignedPartnersAction" class="com.nexus.web.DR.ShowAssignedPartnersAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	<bean id="showExistingPartnersAction" class="com.nexus.web.DR.ShowExistingPartnersAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	<bean id="showDrUsersAction" class="com.nexus.web.DR.ShowDrUsersAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	<bean id="drPartnerAction" class="com.nexus.web.DR.DrPartnerAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	<bean id="processedPrintTransactionAction" class="com.nexus.web.DR.ProcessedPrintTransactionAction" scope="prototype">
+        <property name="dataResolutionService" ref="dataResolutionService"/>
+    </bean>
+	 <bean id="editInvoiceProductAction" class="com.nexus.web.Catalogue.EditInvoiceProductAction" scope="prototype">
+        <property name="catalogueService" ref="catalogueService"/>
+    </bean>
+</beans>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="QuantityValue" type="QuantityValue"/><xsd:complexType name="QuantityValue">
+      <xsd:simpleContent>
+         <xsd:extension base="xsd:decimal">
+            <xsd:attribute name="SignificanceCoded" type="SignificanceCode" use="optional"/>
+            <xsd:attribute name="SignificanceCodedOther" type="xsd:string" use="optional"/>
+            <xsd:attribute name="ConditionsCoded" type="ConditionsCode" use="optional"/>
+            <xsd:attribute name="ConditionsCodedOther" type="xsd:string" use="optional"/>
+         </xsd:extension>
+      </xsd:simpleContent>
+   </xsd:complexType><xsd:simpleType name="SignificanceCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="Approximately"/>
+         <xsd:enumeration value="EqualTo"/>
+         <xsd:enumeration value="GreaterThanOrEqualTo"/>
+         <xsd:enumeration value="GreaterThan"/>
+         <xsd:enumeration value="LessThan"/>
+         <xsd:enumeration value="LessThanOrEqualTo"/>
+         <xsd:enumeration value="NotEqualTo"/>
+         <xsd:enumeration value="Trace"/>
+         <xsd:enumeration value="TrueValue"/>
+         <xsd:enumeration value="ObservedValue"/>
+         <xsd:enumeration value="OutOfRange"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="ConditionsCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="WhereAirEquals1"/>
+         <xsd:enumeration value="WhereButylAcetateEquals1"/>
+         <xsd:enumeration value="WhereH2OEquals1OrWaterEquals1"/>
+         <xsd:enumeration value="CorrectedTo60DegreesFahrenheit"/>
+         <xsd:enumeration value="WhereTolueneEquals1"/>
+         <xsd:enumeration value="VaporInAir"/>
+         <xsd:enumeration value="VaporInOtherThanAir"/>
+         <xsd:enumeration value="StandardTemperatureAndPressure"/>
+         <xsd:enumeration value="ConditionsOtherThanStandardTemperatureAndPressure"/>
+         <xsd:enumeration value="InEthylAlcohol"/>
+         <xsd:enumeration value="InEthylEther"/>
+         <xsd:enumeration value="InWater"/>
+         <xsd:enumeration value="At1AtmospherePressure"/>
+         <xsd:enumeration value="WhereEtherEquals1"/>
+         <xsd:enumeration value="Actual"/>
+         <xsd:enumeration value="Predicted"/>
+         <xsd:enumeration value="Air-DriedBasis"/>
+         <xsd:enumeration value="As-ReceivedBasis"/>
+         <xsd:enumeration value="DryBasis"/>
+         <xsd:enumeration value="EquilibriumBasis"/>
+         <xsd:enumeration value="MoistureAndAsh-FreeBasis"/>
+         <xsd:enumeration value="OxidizingAtmosphere"/>
+         <xsd:enumeration value="ReducingAtmosphere"/>
+         <xsd:enumeration value="Calculated"/>
+         <xsd:enumeration value="ScaledWeight"/>
+         <xsd:enumeration value="Ratchet"/>
+         <xsd:enumeration value="SaturatedVapor"/>
+         <xsd:enumeration value="Unconditional"/>
+         <xsd:enumeration value="Short-Term"/>
+         <xsd:enumeration value="Time-Weighted"/>
+         <xsd:enumeration value="Corrected"/>
+         <xsd:enumeration value="Uncorrected"/>
+         <xsd:enumeration value="OffPeak"/>
+         <xsd:enumeration value="OnPeak"/>
+         <xsd:enumeration value="Intermediate"/>
+         <xsd:enumeration value="Average"/>
+         <xsd:enumeration value="PerGallon"/>
+         <xsd:enumeration value="Estimated"/>
+         <xsd:enumeration value="Minimum"/>
+         <xsd:enumeration value="Mist"/>
+         <xsd:enumeration value="Predominant"/>
+         <xsd:enumeration value="Total"/>
+         <xsd:enumeration value="Cost"/>
+         <xsd:enumeration value="Tenant"/>
+         <xsd:enumeration value="Owner"/>
+         <xsd:enumeration value="ForSale"/>
+         <xsd:enumeration value="RealEstateOwnedOrCorporateOwned"/>
+         <xsd:enumeration value="BoardedOrBlockedUp"/>
+         <xsd:enumeration value="Planned"/>
+         <xsd:enumeration value="Completed"/>
+         <xsd:enumeration value="Sold"/>
+         <xsd:enumeration value="Rented"/>
+         <xsd:enumeration value="Current"/>
+         <xsd:enumeration value="CurrentList"/>
+         <xsd:enumeration value="Effective"/>
+         <xsd:enumeration value="ListWhenSold"/>
+         <xsd:enumeration value="Sales"/>
+         <xsd:enumeration value="FinalList"/>
+         <xsd:enumeration value="AsIs"/>
+         <xsd:enumeration value="AsRepairedOrImproved"/>
+         <xsd:enumeration value="Instantaneous"/>
+         <xsd:enumeration value="Low"/>
+         <xsd:enumeration value="LowToGood"/>
+         <xsd:enumeration value="LowToHigh"/>
+         <xsd:enumeration value="LowToMedium"/>
+         <xsd:enumeration value="LowToModerate"/>
+         <xsd:enumeration value="Medium"/>
+         <xsd:enumeration value="MediumToGood"/>
+         <xsd:enumeration value="MediumToHigh"/>
+         <xsd:enumeration value="Moderate"/>
+         <xsd:enumeration value="ModerateToGood"/>
+         <xsd:enumeration value="ModerateToHigh"/>
+         <xsd:enumeration value="ModerateToMedium"/>
+         <xsd:enumeration value="Good"/>
+         <xsd:enumeration value="GoodToHigh"/>
+         <xsd:enumeration value="High"/>
+         <xsd:enumeration value="Budgeted"/>
+         <xsd:enumeration value="Forecast"/>
+         <xsd:enumeration value="Adjusted"/>
+         <xsd:enumeration value="Allocated"/>
+         <xsd:enumeration value="Increasing"/>
+         <xsd:enumeration value="Stable"/>
+         <xsd:enumeration value="Declining"/>
+         <xsd:enumeration value="Previous"/>
+         <xsd:enumeration value="Potential"/>
+         <xsd:enumeration value="Modeled"/>
+         <xsd:enumeration value="Measured"/>
+         <xsd:enumeration value="Maximum"/>
+         <xsd:enumeration value="SummerOn-Peak"/>
+         <xsd:enumeration value="SummerMid-Peak"/>
+         <xsd:enumeration value="SummerOff-Peak"/>
+         <xsd:enumeration value="SummerSuperOn-Peak"/>
+         <xsd:enumeration value="SummerSuperOff-Peak"/>
+         <xsd:enumeration value="WinterOn-Peak"/>
+         <xsd:enumeration value="WinterMid-Peak"/>
+         <xsd:enumeration value="WinterOff-Peak"/>
+         <xsd:enumeration value="WinterSuperOn-Peak"/>
+         <xsd:enumeration value="WinterSuperOff-Peak"/>
+         <xsd:enumeration value="SummerDay"/>
+         <xsd:enumeration value="SummerNight"/>
+         <xsd:enumeration value="WinterDay"/>
+         <xsd:enumeration value="WinterNight"/>
+         <xsd:enumeration value="Summer"/>
+         <xsd:enumeration value="Winter"/>
+         <xsd:enumeration value="Day"/>
+         <xsd:enumeration value="Night"/>
+         <xsd:enumeration value="Peak-2"/>
+         <xsd:enumeration value="Peak-3"/>
+         <xsd:enumeration value="Peak-4"/>
+         <xsd:enumeration value="Shoulder"/>
+         <xsd:enumeration value="NonTimeRelatedDemand"/>
+      </xsd:restriction>
+   </xsd:simpleType></xsd:schema>

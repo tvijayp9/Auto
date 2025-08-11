@@ -1,0 +1,19 @@
+<SQLSTORE>
+   <!--This is a sample of an xml file you can return SQL
+statments from-->
+   <SQLSTATMENTS>
+      <STATMENT NAME="MYSQLAlias1" KEY="1" DESCRIPTION="This is a sample SQL statmwents" CODE="SELECT ParentKey,DOCKEY,DocumentCreatorsTransactionID,DocumentCreatorTPID,DocumentType,RootParentTransactionUniqueID,PreviousParentTransactionUniqueID,TransactionNote, LogDate from Parent_Transactions"/>
+      <STATMENT NAME="MYSQLAlias2" KEY="2" DESCRIPTION="Select all rows in table Parent_Transactions" CODE="SELECT * from Parent_Transactions"/>
+      <STATMENT NAME="MYSQLAlias3" KEY="3" DESCRIPTION="Select all rows in table Transaction_Status" CODE="SELECT * from Transaction_Status"/>
+      <STATMENT NAME="MYSQLAlias6" KEY="6" DESCRIPTION="Select row with key=DOCKEY" CODE="SELECT * from Parent_Transactions where DOCKEY= ?"/>
+      <STATMENT NAME="MYSQLAlias7" KEY="7" DESCRIPTION="Select from both tables with a DOCKEY=? using Join" CODE="SELECT * FROM Parent_Transactions INNER JOIN Transaction_Status ON Parent_Transactions.DOCKEY = Transaction_Status.DOCKEY WHERE ((Parent_Transactions.DOCKEY=?))"/>
+      <STATMENT NAME="MYSQLAlias8" KEY="8" DESCRIPTION="Select all rows in table Transaction_Status with a DOCKEY=?" CODE="SELECT * from Transaction_Status where DOCKEY= ?"/>
+      <STATMENT NAME="InsertStat1" KEY="11" DESCRIPTION="This is a SQL INSERT into Parent_Transactions statement" CODE="INSERT INTO Parent_Transactions values(?,?,?,?,?,?,?,?,?,?)"/>
+      <STATMENT NAME="InsertStat2" KEY="12" DESCRIPTION="This is a insert into Transation_Status" CODE="INSERT INTO Transaction_Status values(?,?,?,?,?,?,?,?,?,?,?,?,?)"/>
+      <STATMENT NAME="Update Parent_Transactions Statement1" KEY="21" DESCRIPTION="Update all field (Except DOCKEY, ParentKey) in Parent_Transactions" CODE="UPDATE Parent_Transactions SET Parent_Transactions.DocumentCreatorsTransactionID = ?, Parent_Transactions.DocumentCreatorTPID = ?, Parent_Transactions.SequenceNumber = ?, Parent_Transactions.DocumentType = ?, Parent_Transactions.RootParentTransactionUniqueID = ?, Parent_Transactions.PreviousParentTransactionUniqueID = ?, Parent_Transactions.TransactionNote = ?, Parent_Transactions.LogDate = ? WHERE Parent_Transactions.DOCKEY=?"/>
+      <STATMENT NAME="Update Transaction_Status Statement1" KEY="22" DESCRIPTION="Update a fields in Transaction_Status" CODE="UPDATE Transaction_Status SET Transaction_Status.userid = ?, Transaction_Status.CreationDate = ?, Transaction_Status.openstate = ?, Transaction_Status.resolvedstate = ?, Transaction_Status.filetype = ?, Transaction_Status.SendDate = ?, Transaction_Status.RecievedDate = ?, Transaction_Status.SendMethod = ?, Transaction_Status.Direction = ?, Transaction_Status.DestinationAddress = ?, Transaction_Status.ArchivePath = ? WHERE Transaction_Status.StatusID=? AND Transaction_Status.DOCKEY=?"/>
+      <STATMENT NAME="QueryErrorLog1" KEY="31" DESCRIPTION="Select all Fields from ErrorLog" CODE="select * from AdministratorErrorLogs"/>
+      <STATMENT NAME="QueryErrorLog2" KEY="32" DESCRIPTION="Select all fields where SendStatus =true/false" CODE="select * from AdministratorErrorLogs where SendStatus=?"/>
+      <STATMENT NAME="InsertErrorLog1" KEY="35" DESCRIPTION="Insert row into ErrorLog.AministratorErrorLogs" CODE="insert into AdministratorErrorLogs values(?,?,?,?,?,?,?,?)"/>
+   </SQLSTATMENTS>
+</SQLSTORE>

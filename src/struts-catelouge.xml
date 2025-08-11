@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>    
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+    
+    <package name="catelouge" extends="struts-default">
+<!--        <action name="showpricelist" class="com.nexus.struts.action.CatelogueAction" method="pricelist">
+            <result>/pages/catelouge/pricelist.jsp</result>
+        </action>-->
+        <action name="showpricelist" class="showSupplierListAction">
+            <result>/pages/catelouge/pricelist.jsp</result>
+        </action>
+        <action name="PrintItemList" class="com.nexus.struts.action.CatelogueAction" method="showmyitemlist">
+            <result>/pages/catelouge/printmyitemlist.jsp</result>
+        </action>
+        <action name="ConfirmOrder" class="com.nexus.struts.action.CatelogueAction" method="confirmorder">
+            <result>/pages/catelouge/confirmorder.jsp</result>
+        </action>
+     <!--   <action name="CreateOrder" class="createOrderAction">
+            <result>/pages/catelouge/confirmorder1.jsp</result>
+        </action>
+        <action name="CreateOrderItems" class="createOrderItemsAction">
+            <result>/pages/catelouge/createorder.jsp</result>
+        </action> 
+        <action name="CreateFavouriteOrder" class="createFavouriteOrderAction">
+            <result>/pages/catelouge/createFavouriteOrder.jsp</result>
+        </action> -->
+        <action name="showorderlist">
+            <result>/pages/catelouge/orderlist.jsp</result>
+        </action>
+        <action name="showarchivedorderlist">
+            <result>/pages/catelouge/archivedorderlist.jsp</result>
+        </action>
+        <action name="showforwardorderlist">
+            <result>/pages/catelouge/forwardorderlist.jsp</result>
+        </action>
+        <action name="Favorder" class="createOrderItemsAction">
+            <result>/pages/catelouge/favouriteorder.jsp</result>
+        </action>
+        <action name="AddFavouriteOrder" class="addFavouriteOrderAction">
+            <result name="favouriteOrder" type="redirect">showfavouritelist.action</result>
+            <result name="quote" type="redirect">ShowQuotesList.action</result>
+        </action>
+        <action name="ShowQuotesList">
+            <result>/pages/catelouge/quoteslist.jsp</result>
+        </action>
+        <action name="ShowAmcapQuotesList">
+            <result>/pages/catelouge/amcapquoteslist.jsp</result>
+        </action>
+        <action name="showfavouritelist">
+            <result>/pages/catelouge/favouriteorderlist.jsp</result>
+        </action>
+        <action name="cancelorderreason">
+            <result>/pages/catelouge/cancelreason.jsp</result>
+        </action>
+        <action name="cancelorderreasonforquote">
+            <result>/pages/catelouge/cancelreason.jsp</result>
+        </action>
+        <action name="cancelorder" class="com.nexus.struts.action.CatelogueAction" method="cancelorder">
+            <result>/pages/catelouge/cancelorder.jsp</result>
+        </action>
+        <action name="cancelorderforquote" class="com.nexus.struts.action.CatelogueAction" method="cancelorderforquote">
+            <result>/pages/catelouge/cancelorder.jsp</result>
+        </action>
+        <action name="printorder" class="printOrderAction">
+            <result>/pages/catelouge/printorder.jsp</result>
+        </action>
+        <action name="printarchivedorder" class="com.nexus.struts.action.PrintArchivedOrderAction">
+            <result>/pages/catelouge/printarchivedorder.jsp</result>
+        </action>
+      <!--  <action name="ConfirmFavouriteOrder" class="confirmFavouriteOrderAction">
+            <result>/pages/catelouge/confirmFavouriteOrder.jsp</result>
+        </action>
+        <action name="PrintFavouriteItemList" class="createFavouriteOrderAction">
+            <result>/pages/catelouge/printFavouriteItemList.jsp</result>
+        </action> -->
+        <action name="ShowCategories" class="showCategoriesAction">
+            <result name = "success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">text/plain</param>
+                <param name="bufferSize">4096</param>
+                <param name="contentDisposition">inline</param>
+            </result>
+        </action>
+        <action name="ShowProductsAndBuyerToLink" class="ShowBuyerToLinkAction">
+            <result>/pages/catelouge/ShowProductsAndBuyerToLink.jsp</result>
+        </action>
+        <action name="LinkProductsCategories">
+            <result>/pages/catelouge/linkProductsCategories.jsp</result>
+        </action>
+        <action name="EditProductsCategoriesLinks">
+            <result>/pages/catelouge/editProductsCategoriesLinks.jsp</result>
+        </action>
+        <action name="DeleteProductsCategoriesLinks">
+            <result>/pages/catelouge/deleteProductsCategoriesLinks.jsp</result>
+        </action>
+        <action name="ShowMyCatalogue">
+            <result>/pages/catelouge/showMyCatalogue.jsp</result>
+        </action>
+        <action name="ProductsManagement">
+            <result>/pages/catelouge/Products.jsp</result>
+        </action>
+        <action name="CreateProduct">
+            <result>/pages/catelouge/createproduct.jsp</result>
+        </action>
+        <action name="EditProduct" class="EditProductAction">
+            <result>/pages/catelouge/editproduct.jsp</result>
+        </action>
+        <action name="updateproduct" class="UpdateProductAction">
+            <result name="error">/pages/catelouge/editproduct.jsp</result>
+            <result name="input">/pages/catelouge/editproduct.jsp</result>
+            <result>/pages/catelouge/ProductsUpdated.jsp</result>
+        </action>
+        <action name="ShowMyBuyers" class="ShowBuyerToLinkAction">
+            <result>/pages/catelouge/ShowMyBuyersList.jsp</result>
+        </action>
+        <action name="ShowMyBuyersProducts" class="ShowBuyerToLinkAction">
+            <result>/pages/catelouge/ShowMyBuyerProductList.jsp</result>
+        </action>
+
+        <action name="ViewCategoriesProducts" class="viewCategoriesProductsAction">
+            <result>/pages/catelouge/viewCategoriesProducts.jsp</result>
+        </action>
+        <action name="ShowCategoriesBySupplier" class="showCategoriesBySupplierAction">
+            <result name = "success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">text/plain</param>
+                <param name="bufferSize">4096</param>
+                <param name="contentDisposition">inline</param>
+            </result>
+        </action>
+        <action name="SaveNewTemplate" class="saveNewTemplateAction">
+            <result name="success" type="redirect">showfavouritelist.action</result>
+        </action>
+        <action name="SaveNewQuote" class="saveNewQuoteAction">
+            <result name="success" type="redirect">ShowQuotesList.action</result>
+        </action>
+        <action name="SaveNewAmcapQuote" class="saveNewAmcapQuoteAction">
+            <result name="success" type="redirect">ShowAmcapQuotesList.action</result>
+        </action>
+        <action name="CheckOut" class="checkOutAction">
+            <result>/pages/catelouge/checkout.jsp</result>
+        </action>
+		<action name="CheckoutNewQuote" class="checkOutQuoteAction">
+            <result>/pages/catelouge/checkoutQuote.jsp</result>
+        </action>
+        <action name="punchOut" class="punchOutAction">
+            <result name="punchout">/pages/catelouge/punchout.jsp</result>
+	    <result  name="punchout_amcap">/pages/catelouge/punchout_amcap.jsp</result>
+            <result  name="punchout_midway">/pages/catelouge/punchout_midway.jsp</result>
+			<result  name="punchout_scania">/pages/catelouge/punchout_scania.jsp</result>
+			<result  name="punchout_johnhughes">/pages/catelouge/punchout_JohnHuges.jsp</result>
+        </action>
+        <action name="cxmlpunchOut" class="cxmlpunchOutAction">
+           <result name="cxmlpunchOut">/pages/catelouge/punchout_AusDrill.jsp</result>
+        </action>
+	
+        <action name="resetShoppingCart" class="resetShoppingCartAction" >
+            <result name="resetCart" type="redirect">/pages/catelouge/Logout.jsp</result>
+        </action>
+        <action name="QuoteCheckOut" class="quoteCheckOutAction">
+            <result>/pages/catelouge/quotecheckout.jsp</result>
+        </action>
+        <action name="AmcapQuoteCheckOut" class="amcapQuoteCheckOutAction">
+             <result name="punchout_amcap">/pages/catelouge/punchout_amcap.jsp</result>
+        </action>
+        <action name="GotoCategoriesProducts" class="gotoCategoriesProductsAction">
+            <result>/pages/catelouge/viewCategoriesProducts.jsp</result>
+        </action>
+		<action name="modifyQuote" class="modifyQuoteAction">
+            <result>/pages/catelouge/createNewQuote.jsp</result>
+        </action>
+        <action name="GotoQuoteItems" class="gotoQuoteItemsAction">
+            <result>/pages/catelouge/viewQuoteItems.jsp</result>
+        </action>
+        <action name="CreateOrderFromShoppingCart" class="createOrderFromShoppingCartAction">
+            <result>/pages/catelouge/createOrderFromShoppingCart.jsp</result>
+        </action>
+        <action name="CreateOrderFromQuote" class="createOrderFromQuoteAction">
+            <result>/pages/catelouge/createOrderFromQuote.jsp</result>
+        </action>
+        <action name="CreateOrderItemsForShoppingCart" class="createOrderItemsForShoppingCartAction">
+            <result>/pages/catelouge/createorder.jsp</result>
+        </action>
+        <action name="CreateOrderItemsForQuote" class="createOrderItemsForQuoteAction">
+            <result>/pages/catelouge/createorder.jsp</result>
+        </action>
+        <action name="CreateFavouriteOrderForShoppingCart" class="createOrderItemsForShoppingCartAction">
+            <result>/pages/catelouge/favouriteorderforshoppingcart.jsp</result>
+        </action>
+        <action name="CreateNewOrderForShoppingCart" class="createNewOrderForShoppingCartAction">
+            <result>/pages/catelouge/viewCategoriesProducts.jsp</result>
+        </action>
+	<action name="CreateNewOrderForAmcap" class="createNewOrderForAmcapAction">
+            <result>/pages/catelouge/viewAmcapProducts.jsp</result>
+        </action>
+        <action name="CreateNewOrderForAmcapBhp" class="createNewOrderForAmcapActionBhp">
+            <result>/pages/catelouge/viewAmcapProductsBhp.jsp</result>
+        </action>
+		<action name="scartlist">
+		<result>/pages/catelouge/viewShopping.jsp</result>
+		 </action>
+        <action name="editbuyerproductmapping" class="editbuyerproductmapping">
+            <result>/pages/catelouge/editbuyerproductmapping.jsp</result>
+        </action>
+        <action name="updatebuyerproductmapping" class="updatebuyerproductmapping">
+            <result>/pages/catelouge/updatebuyerproductmapping.jsp</result>
+        </action>
+        <action name="showProductDetails" class="EditProductAction">
+            <result>/pages/catelouge/showProductDetails.jsp</result>
+        </action>
+        <action name="MapProductsFile" class="mapProductsFileAction">
+            <result>/pages/catelouge/mapProductsFile.jsp</result>
+        </action>
+        <action name="UploadProductsMapping" class="com.nexus.struts.action.MapDocumentAction" method="uploadProductsMapping">
+            <result>/pages/catelouge/uploadProductsMapping.jsp</result>
+            <result name="input">/pages/catelouge/mapProductsFile.jsp</result>
+        </action>
+        <action name="DoMapProductsFile" class="com.nexus.struts.action.MapDocumentAction" method="doMapProductsFile">
+            <result>/pages/catelouge/doMapProductsFile.jsp</result>
+            <result name="input">/pages/catelouge/uploadProductsMapping.jsp</result>
+        </action>
+        <action name="UploadProductsFile" class="uploadProductsFileAction">
+            <result name="success">/pages/catelouge/uploadProductsFile.jsp</result>
+            <result name="input">/pages/catelouge/mapProductsFile.jsp</result>
+        </action>
+        <action name="DoUploadProductsFile" class="doUploadProductsFileAction">
+            <param name="savePath">/partners</param>
+            <result name="success">/pages/catelouge/upload-success.jsp</result>
+            <result name="input">/pages/catelouge/uploadProductsFile.jsp</result>
+        </action>
+        <action name="CreateNewTemplate" class="createNewTemplateAction">
+            <result>/pages/catelouge/createNewTemplate.jsp</result>
+        </action>
+        <action name="CreateNewQuote" class="createNewQuoteAction">
+            <result>/pages/catelouge/createNewQuote.jsp</result>
+        </action>
+        <action name="CreateNewAmcapQuote" class="createNewAmcapQuoteAction">
+            <result>/pages/catelouge/createNewAmcapQuote.jsp</result>
+        </action>
+        <action name="ViewTemplateOrderItems" class="viewTemplateOrderItemsAction">
+            <result>/pages/catelouge/viewTemplateOrderItems.jsp</result>
+        </action>
+        <action name="ViewQuoteItems" class="viewQuoteItemsAction">
+            <result>/pages/catelouge/viewQuoteItems.jsp</result>
+        </action>
+        <action name="ViewAmcapQuoteItems" class="viewAmcapQuoteItemsAction">
+            <result>/pages/catelouge/viewAmcapQuoteItems.jsp</result>
+        </action>
+        <action name="AddMoreTemplateOrderItems" class="addMoreTemplateOrderItemsAction">
+            <result>/pages/catelouge/addMoreTemplateOrderItems.jsp</result>
+        </action>
+        <action name="AddMoreQuoteItems" class="addMoreQuoteItemsAction">
+            <result>/pages/catelouge/addMoreQuoteItems.jsp</result>
+        </action>
+        <action name="AddMoreAmcapQuoteItems" class="addMoreAmcapQuoteItemsAction">
+            <result>/pages/catelouge/addMoreAmcapQuoteItems.jsp</result>
+        </action>
+        <action name="SaveModifiedTemplate" class="saveModifiedTemplateAction">
+            <result>/pages/catelouge/viewTemplateOrderItems.jsp</result>
+        </action>
+        <action name="SaveModifiedQuote" class="saveModifiedQuoteAction">
+            <result>/pages/catelouge/viewQuoteItems.jsp</result>
+        </action>
+        <action name="SaveModifiedAmcapQuote" class="saveModifiedAmcapQuoteAction">
+            <result>/pages/catelouge/viewAmcapQuoteItems.jsp</result>
+        </action>
+        <action name="ExportQuote"  class="exportQuoteAction">
+            <result name = "success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/octet- stream;charset=ISO8859-1</param>
+                <param name="bufferSize">4096</param>
+                <param name="contentDisposition">attachment;filename="${downloadName}"</param>
+            </result>
+        </action>
+    </package>
+</struts>

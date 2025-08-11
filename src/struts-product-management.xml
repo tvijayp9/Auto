@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>    
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+
+    <package name="productmgmt" extends="struts-default">
+        <action name="uploadparts" class="com.nexus.struts.action.ProductManagementAction">
+            <result name="success">/pages/productmanagement/fileupload.jsp</result>
+        </action>
+        <action name="productmanagement" class="com.nexus.struts.action.ProductManagementAction">
+            <result name="success">/pages/productmanagement/fileupload.jsp</result>
+        </action>
+        <action name="uploadpartsAction" class="com.nexus.struts.action.FileUploadAction">
+            <interceptor-ref name="exception"/>
+            <interceptor-ref name="i18n"/>
+            <interceptor-ref name="fileUpload">
+                <param name="allowedTypes">text/plain,text/csv</param>
+                <param name="maximumSize">100485760</param>
+            </interceptor-ref>
+            <interceptor-ref name="params">
+                <param name="excludeParams">dojo\..*,^struts\..*</param>
+            </interceptor-ref>
+            <interceptor-ref name="validation">
+                <param name="excludeMethods">input,back,cancel,browse</param>
+            </interceptor-ref>
+            <interceptor-ref name="workflow">
+                <param name="excludeMethods">input,back,cancel,browse</param>
+            </interceptor-ref>
+            <result name="success">pages/productmanagement/fileupload.jsp</result>
+            <result name="error">pages/productmanagement/fileupload.jsp</result>
+            <result name="input">pages/productmanagement/fileupload.jsp</result>
+        </action>
+        <action name="products">
+            <result>/pages/productmanagement/products.jsp</result>
+        </action>
+        <action name="deleteProductItemAction" class="deleteProductItemAction">
+            <result>/pages/productmanagement/products.jsp</result>
+            </action>
+    </package>
+</struts>

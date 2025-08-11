@@ -1,0 +1,5587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BABLE>
+	<OPTIONS>
+		<IFNOERRORSENDTHROUGH>false</IFNOERRORSENDTHROUGH>
+	</OPTIONS>
+	<VALUEPAIRS>
+		<EDXBABLE>
+			<EDXID>0</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Purchase Order</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>true</DISPLAYINTREE>
+					<DISPLAYINCONTENT>false</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE />
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>1</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Order Header</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>true</DISPLAYINTREE>
+					<DISPLAYINCONTENT>false</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE />
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>4</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderNumber/BuyerOrderNumber</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Buyer Order No</ENGLISHNAME>
+				<HELPNOTE>The number which your trading partner created for this Order.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>confirmed</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>955548</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955548</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955550</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955550</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955556</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955556</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955552</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955552</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955582</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955582</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955583</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955583</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955584</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955584</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955585</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955585</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955586</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955586</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955594</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955594</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955593</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955593</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955545</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955545</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955546</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955546</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>955551</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>955551</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>957576</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>957576</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>958093</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>958093</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>958308</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>958308</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>956020</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>956020</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>958451</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>958451</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>958511</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>958511</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>959053</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>959053</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>959052</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>959052</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>959230</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>959230</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>959315</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>959315</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>959375</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>959375</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>959788</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>959788</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960070</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960070</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960103</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960103</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960054</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960054</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960107</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960107</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960109</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960109</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960112</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960112</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960188</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960188</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960189</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960189</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960190</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960190</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960198</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960198</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>960199</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>960199</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961062</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961062</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961150</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961150</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961105</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961105</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961243</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961243</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961244</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961244</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961279</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961279</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961280</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961280</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961360</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961360</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961992</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961992</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961773</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961773</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961928</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961928</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961927</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961927</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962046</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962046</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962071</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962071</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962116</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962116</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962198</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962198</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962199</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962199</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962247</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962247</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962370</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962370</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962392</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962392</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962414</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962414</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962415</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962415</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961537</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961537</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961606</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961606</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>961607</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>961607</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962683</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962683</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962682</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962682</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962684</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962684</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962685</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962685</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963053</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963053</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962977</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962977</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963065</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963065</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963066</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963066</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963164</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963164</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963156</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963156</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963389</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963389</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963390</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963390</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963440</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963440</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963548</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963548</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963695</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963695</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963697</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963697</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>963705</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>963705</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>964084</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>964084</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>964148</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>964148</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>964270</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>964270</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>964271</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>964271</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>964272</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>964272</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>964273</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>964273</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>962111</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>962111</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>965319</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>965319</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>965441</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>965441</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>965448</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>965448</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967629</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967629</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967634</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967634</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967760</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967760</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967858</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967858</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967899</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967899</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967940</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967940</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967996</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967996</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967997</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967997</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968465</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968465</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967098</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967098</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>967099</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>967099</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968372</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968372</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968374</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968374</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968494</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968494</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968918</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968918</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968919</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968919</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968944</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968944</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>968981</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>968981</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969063</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969063</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969335</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969335</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969336</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969336</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969337</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969337</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969658</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969658</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969684</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969684</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969729</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969729</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969945</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969945</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969946</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969946</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>969949</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>969949</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>970052</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>970052</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>970271</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>970271</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>970317</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>970317</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>970319</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>970319</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>6</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderIssueDate</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Order Issue Date</ENGLISHNAME>
+				<HELPNOTE>The date on which you trading partner created this order.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>confirmed</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>10</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderReferences/AccountCode/Reference/RefNum</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Customer Code</ENGLISHNAME>
+				<HELPNOTE>The Code by which MSA refers to this customer.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE>C:/Dynex/Xsd/UserSchemas/MSA_PARTNERS.xsd</SCHEMATOUSE>
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>ptntest</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>153332</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>153332</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>153332</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>19</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderCurrency/Currency/CurrencyCoded</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Order Currency</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>AUD</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>AUD</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>USD</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>USD</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>52</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderParty/BuyerParty/Party/NameAddress/Country/CountryCoded</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Country Code</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE>C:/Dynex/Xsd/UserSchemas/MSA_COUNTRY_CODES.xsd</SCHEMATOUSE>
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>ID</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>IND</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>132</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderParty/ShipToParty/Party/PartyID/Identifier/Ident</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Buy Location</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>new901</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE></VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>134</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderParty/ShipToParty/Party/NameAddress/Name1</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Name</ENGLISHNAME>
+				<HELPNOTE>The shipping location name.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>KUEHNE &amp; NAGEL AUST. PTY. LTD. BRISBANE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PT NEWMONT NUSA TENGGARA</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>KUEHNE &amp; NAGEL LOGISTICS PTE. LTD</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PT NEWMONT NUSA TENGGARA</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>KUEHNE &amp; NAGEL AUST. PTY. LTD.</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PT NEWMONT NUSA TENGGARA</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>KUEHNE &amp; NAGEL PTY LTD - BRISBANE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PT NEWMONT NUSA TENGGARA</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>KUEHNE &amp; NAGEL HOUSTON</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>KUEHNE &amp; NAGEL HOUSTON</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>135</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderParty/ShipToParty/Party/NameAddress/Name2</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Address 1</ENGLISHNAME>
+				<HELPNOTE>The second address line of the shipping address for this order.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>32 NORTHLINK PLACE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BATU HIJAU PROJECT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>UNIT 1 /32</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>C/- KUEHNE &amp; NAGEL</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>UNIT 1/32 NORTHLINK PLACE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BATU HIJAU PROJECT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>UNIT 1/32 NORTHLINKK PLACE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>C/-KUEHNE &amp; NAGEL</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>15700 INTERNATIONAL PLAZA DRIVE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>15700 INTERNATIONAL PLAZA DRIVE</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>136</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderParty/ShipToParty/Party/NameAddress/Name3</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Address 2</ENGLISHNAME>
+				<HELPNOTE>The third address line of the shipping address for this order.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>UNIT 1</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>DESTINATION PORT:BENETE BAY</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NORTHLINK PLACE, VIRGINIA, QLD 4014</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>8 BRADFORD STREET</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>VIRGINIA, QLD 4014</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>DEST PORT:BENETE BAY</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SUITE 100</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SUITE 100</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE />
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>137</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderParty/ShipToParty/Party/NameAddress/City</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>City</ENGLISHNAME>
+				<HELPNOTE>The City of the shipping address for this order.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>VIRGINIA, / QLD / 4014 / AUSTRALIA</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SUMBAWA, INDONESIA</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CONTACT: PAUL NORRIS, JEFF SMITH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>ALEXANDRIA  NSW  2015</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>VIRGINIA, QLD 4014 - AUSTRALIA</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SUMBAWA NTB INDONESIA</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CONTACT: TORY MURRAY (HP: 0417 628899)</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SUMBAWA NTB</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HOUSTON, TX 77032 - USA</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HOUSTON, TX 77032 - USA</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>208</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/ListOfTransport/Transport/TransportMode/TransportModeCoded</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Transport Mode</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>false</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>Other</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>Other</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>209</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/ListOfTransport/Transport/TransportMode/TransportModeCodedOther</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Transport Mode</ENGLISHNAME>
+				<HELPNOTE>The transportation type that is required for this order.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>SEA FREIGHT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SEA FREIGHT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>AIR FREIGHT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>AIR FREIGHT</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>214</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/ListOfTransport/Transport/CarrierID/Identifier/Ident</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Carrier ID</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>AS ARRANGED BY K&amp;N</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>AS ARRANGED BY K &amp; N</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE></VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>AS ARRANGED BY K &amp; N HOUSTON</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>AS ARRANGED KUEHNE &amp; NAGEL</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>AS ARRANGED KUEHNE &amp; NAGEL</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>215</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/ListOfTransport/Transport/ShippingInstructions</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Address 3</ENGLISHNAME>
+				<HELPNOTE>These shipping instructions will appear on the invoice and the shipping label with the Deliver To information.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUSTRALIA,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: CONCENTRATOR WAREHOUSE #1</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CONCENTRATOR W/HOUSE #1</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUSTRALIA,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: TOWNSITE WAREHOUSE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TOWNSITE WAREHOUSE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUSTRALIA,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: MINE WAREHOUSE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>MINE WAREHOUSE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUST CONTACT K&amp;N BRISBANE SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: CONCENTRATOR WAREHOUSE #1</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CONCENTRATOR WAREHOUSE #1</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUSTRALIA,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: POWER PLANT WAREHOUSE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>POWER PLANT WAREHOUSE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUSTRALIA,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: ELECTRIC MOTOR WAREHOUSE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>ELECTRIC MOTOR WAREHOUSE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUSTRALIA,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: CONCENTRATOR WAREHOUSE #2</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CONCENTRATOR WAREHOUSE #2</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT USA,CONTACT K&amp;N HOUSTON FO SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: CONCENTRATOR WAREHOUSE #1</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CPT NOM.POINT USA,CONTACT K&amp;N HOUSTON FO SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: CONCENTRATOR WAREHOUSE #1</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>EX WORKS NOM.POINT AUST,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: CONCENTRATOR WAREHOUSE #1</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CONCENTRATOR WAREHOUSE #1</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>EX WORKS-NOM.POINT AUST CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: CONCENTRATOR WAREHOUSE #1</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CONCENTRATOR WAREHOUSE #1</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CPT NOM.POINT AUSTRALIA,CONTACT K&amp;N BRIS SUPPLIER TO CONTACT PTNNT FREIGHT FORWARDER FOR SHIPPING AND DELIVERY INSTRUCTIONS. **PTNNT SITE DESTINATION: TOWNSITE WHSE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TOWNSITE WHSE</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>218</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/ListOfStructuredNote/StructuredNote/GeneralNote</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>General Note</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			<PAIR>
+         <ORIG>
+            <VALUE>This Purchase Order is raised in accordance with our General Terms and Conditions, standard Shipping, Packing and Marking, and Invoicing Instructions.  If you do not have a copy of these documents, please contact PTNNT Purchasing Department on Fax: 62 372 635 213 and a copy of these will be forwarded to you.</VALUE>
+            <RULEVALUES />
+         </ORIG>
+         <DEST>
+            <VALUE></VALUE>
+         </DEST>
+      </PAIR></VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>222</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/TempOrderResponseHeaderNote</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Reject Comments</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE />
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>Enter reason for document rejection if rejecting this document.</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>223</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Order Detail</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>true</DISPLAYINTREE>
+					<DISPLAYINCONTENT>false</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE />
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>225</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Item Line</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>true</DISPLAYINTREE>
+					<DISPLAYINCONTENT>false</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE />
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>229</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/BaseItemDetail/LineItemNum/BuyerLineItemNum</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Line Item</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>confirmed</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>237</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/BaseItemDetail/ItemIdentifiers/PartNumbers/SellerPartNumber/PartNum/PartID</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Seller Item No</ENGLISHNAME>
+				<HELPNOTE>This is your item number for this particular product.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE>C:/Dynex/Xsd/UserSchemas/Item.xsd</SCHEMATOUSE>
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>225716S</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225716S</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>226836L</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>226836L</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>228976</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>228976</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225228</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225228</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>2156</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>2156</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225717M</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225717M</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>222312M</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>222312M</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>13004</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229129</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225716M</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225716M</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225716L</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225716L</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>224761</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>224761</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>223360</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>223360</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>10008369</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>10008369</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225716X</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225716X</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225716XX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225716XX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225717S</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225717S</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>5-15</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220815</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>MSA-123456</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220815</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>224247</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>224247</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220175BC</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220175BC</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>222312S</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>222312S</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>222312XX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>222312XX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220815</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220815</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NO PART NUMBER</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>/9013</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229531-SD</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229531-SD</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>222158</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>222158</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>10001799</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>10001799</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>503WH759B</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>227503WH759B</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>221411CL</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>221411CL</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220723</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220723</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>227769</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>227769</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>227387</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>227387</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>223020</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>223020</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>MANUFACTURE 220553</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>MANUFACTURE 220553</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>221091</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>221091</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>224248</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>224248</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>33974</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>33974</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229298X</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229298X</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220175BS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220175BS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220111</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220111</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>871 SIZE 7</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>871 SIZE 7</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229298M</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229298M</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>110703 RED</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811RE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>110703 YELLOW</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811YE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>222151</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>222151</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>696533</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>696533</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225717L</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225717L</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229298L</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229298L</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>222155</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>222155</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>110703 GREEN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811GN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229459</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>S71276</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220082BC</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220082BC</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220082BS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220082BS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>225689U</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>225689U</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>10001790</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>10001790</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>N/A</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762810</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>110703 BLUE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811BU</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>4012</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>4012</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>5152</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>5152</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>227775 L</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>227775L</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>227774 L</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>227774L</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>871 SIZE 8</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762819E</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>762811RE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811RE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>762811BU</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811BU</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229111</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229111</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229140</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229140</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>815333</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>815333</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>449649</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229135</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>12749</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229127</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>871 SIZE 6</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762819A</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>EAGU2-26-S</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>EAGUII-26-S</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>762811GN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811GN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>222986</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>222986</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220875</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220875</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>223363</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>223363</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>223361</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>223361</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>220113</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>220113</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>762819C</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>S4523</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>227814</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>227814</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229141</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229141</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>86RACQAUS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762051</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>762819A</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762819A</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>229468</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229468</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>762819E</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762819E</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>224759</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>224759</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>762811YE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>762811YE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>473332</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>229053</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>EAGUII-51-S</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>EAGUII-51-S</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>241</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/BaseItemDetail/ItemIdentifiers/PartNumbers/BuyerPartNumber/PartNum/PartID</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Buyer Item No</ENGLISHNAME>
+				<HELPNOTE>This is you trading partners item number for this particular product.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>confirmed</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028662</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028662</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028944</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028944</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028951</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028951</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029009</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029009</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000361972</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000361972</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028720</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028720</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028779</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028779</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000362012</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000362012</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028670</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028670</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028688</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028688</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028985</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028985</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029199</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029199</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029264</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029264</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028696</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028696</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028704</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028704</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028712</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028712</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NO PART NUMBER</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NO PART NUMBER</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000476150</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000476150</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000729137</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000729137</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028761</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028761</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028803</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028803</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028902</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028902</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029256</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029256</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028860</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028860</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029124</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029124</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028811</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028811</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028852</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028852</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028910</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028910</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029108</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029108</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000448688</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000448688</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029165</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029165</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029181</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029181</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000476176</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000476176</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>003402823</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>003402823</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028795</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028795</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000729178</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000729178</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029140</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029140</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>003393352</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>003393352</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000690495</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000690495</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000690552</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000690552</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028845</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028845</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029280</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029280</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028738</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028738</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028787</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028787</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028878</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028878</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000690529</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000690529</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000387258</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000387258</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000729129</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000729129</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000729160</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000729160</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028886</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028886</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029116</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029116</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000870527</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000870527</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000690545</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000690545</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000311688</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000311688</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000311654</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000311654</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>003393360</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>003393360</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000361949</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000361949</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000362061</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000362061</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000362038</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000362038</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000361998</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000361998</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>003393345</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>003393345</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000439760</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000439760</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029173</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029173</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028928</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028928</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029322</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029322</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029207</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029207</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029157</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029157</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000739003</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000739003</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000362087</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000362087</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000895433</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000895433</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000387290</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000387290</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028993</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028993</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000028829</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000028829</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>000029306</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>000029306</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>251</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/BaseItemDetail/ItemIdentifiers/ItemDescription</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Item Description</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: SIZE:SMALL;3/4 LENGTH;YELLOW PVC W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: SIZE:SMALL;3/4 LENGTH;YELLOW PVC W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: SIZE: LARGE X 32CM; NITROSOLV FLOCK LINED;CHEMICAL RESISTANT *** SOLD IN BOX OF 144 PAIR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: SIZE: LARGE X 32CM; NITROSOLV FLOCK LINED;CHEMICAL RESISTANT *** SOLD IN BOX OF 144 PAIR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>EAR MUFFS: FREE STANDING;26.5DB RATING SILENTA ERGO II *** SOLD IN BOX OF 4 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>EAR MUFFS: FREE STANDING;26.5DB RATING SILENTA ERGO II *** SOLD IN BOX OF 4 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR; WRAP AROUND STYLE; IMPACT SCRATCH RESISTANT LENS 100% UV PROTECTION *** SOLD IN BOX OF 144 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR; WRAP AROUND STYLE; IMPACT SCRATCH RESISTANT LENS 100% UV PROTECTION *** SOLD IN BOX OF 144 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>INHALANT AMMONIA TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 10 BOTTLE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>INHALANT AMMONIA TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 10 BOTTLE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TROUSERS,WET WEATHER: MEDIUM(M),BIB STYLE,PVC/POLYESTER **SOLD IN BOX OF 25 EACH**</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TROUSERS,WET WEATHER: MEDIUM(M),BIB STYLE,PVC/POLYESTER **SOLD IN BOX OF 25 EACH**</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE: MEDIUM; FOR DRY PARTICULATES DISPOSABLE; MATERIAL:SPUN BONDED OLEFIN *** SOLD IN BOX OF 50 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE: MEDIUM; FOR DRY PARTICULATES DISPOSABLE; MATERIAL:SPUN BONDED OLEFIN *** SOLD IN BOX OF 50 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BANDAGE COMPRESS 4" TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 10 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BANDAGE COMPRESS 4" TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 10 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: SIZE:MEDIUM;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: SIZE:MEDIUM;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: SIZE:LARGE;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: SIZE:LARGE;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GOGGLES,INDUSTRIAL: GENERAL PURPOSE;STANDARD VENT;FLEXITUFF; FLEXIBLE PVC FRAME;PERFORATED SIDE VENT; WIDE ANGLE ANTI FOG LENS; *** SOLD IN BOX OF 6 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GOGGLES,INDUSTRIAL: GENERAL PURPOSE;STANDARD VENT;FLEXITUFF; FLEXIBLE PVC FRAME;PERFORATED SIDE VENT; WIDE ANGLE ANTI FOG LENS; *** SOLD IN BOX OF 6 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>MESH,BARRIER: 122CM X 25M; ORANGE;HIGH VISIBILITY; HIGH DENSITY, PE MATERIAL;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>MESH,BARRIER: 122CM X 25M; ORANGE;HIGH VISIBILITY; HIGH DENSITY, PE MATERIAL;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>LANYARD,SHOCK ABSORBING,SAFETY: 1.8M LONG X 200MM WIDE; YELLOW WEBBING, C/W DOUBLE ACTION SELF LOCKING HOOKS;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>LANYARD,SHOCK ABSORBING,SAFETY: 1.8M LONG X 200MM WIDE; YELLOW WEBBING, C/W DOUBLE ACTION SELF LOCKING HOOKS;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: SIZE:X LARGE;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: SIZE:X LARGE;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: SIZE:XX LARGE;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: SIZE:XX LARGE;3/4 LG;YELLOW PVC;W/O HOOD *** SOLD IN BOX OF 25 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TROUSERS,WET WEATHER: SMALL(S),BIB STYLE,PVC/POLYESTER,YELLOW ** SOLD IN BOX OF 25 EACH**</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TROUSERS,WET WEATHER: SMALL(S),BIB STYLE,PVC/POLYESTER,YELLOW ** SOLD IN BOX OF 25 EACH**</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HARD HAT, WHITE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HARD HAT, WHITE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>DUSTFOE RESPIRATOR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>DUSTFOE RESPIRATOR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: 7-1/2 X 27CM,SOLVGARD CHEMICAL,PETROLEUM &amp; SOLVENT PROTECTION *** SOLD IN BOX OF 60 PAIRS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: 7-1/2 X 27CM,SOLVGARD CHEMICAL,PETROLEUM &amp; SOLVENT PROTECTION *** SOLD IN BOX OF 60 PAIRS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR,MSA DISCOVERY *** SOLD IN BOX OF 144 PAIRS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR,MSA DISCOVERY *** SOLD IN BOX OF 144 PAIRS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE:SMALL;FOR DRY PARTICULATES; DISPOSABLE; MATERIAL:SPUN BONDED OLEFIN; *** SOLD IN BOX OF 50 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE:SMALL;FOR DRY PARTICULATES; DISPOSABLE; MATERIAL:SPUN BONDED OLEFIN; *** SOLD IN BOX OF 50 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE: XX LARGE; FOR DRY PARTICULATES; DISPOSABLE; MATERIAL:SPUN BONDED OLEFIN; *** SOLD IN BOX OF 50 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE: XX LARGE; FOR DRY PARTICULATES; DISPOSABLE; MATERIAL:SPUN BONDED OLEFIN; *** SOLD IN BOX OF 50 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,MEN'S: WORK; LEATHER PALM; COTTON BACK C/W KNUCKLE BAR &amp; FINGER TIP PROTECTION INDUSTRIAL QUALITY *** SOLD IN BOX OF 120 PAIR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,MEN'S: WORK; LEATHER PALM; COTTON BACK C/W KNUCKLE BAR &amp; FINGER TIP PROTECTION INDUSTRIAL QUALITY *** SOLD IN BOX OF 120 PAIR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>INFECTIOUS CONTROL KIT #IC-05</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>INFECTIOUS CONTROL KIT #IC-05</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HARNESS,SAFETY: FULL BODY; C/W QUICK FIT BUCKLES, REAR D RING WEBBING; LIGHT WEIGHT;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HARNESS,SAFETY: FULL BODY; C/W QUICK FIT BUCKLES, REAR D RING WEBBING; LIGHT WEIGHT;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CONNECTOR: SLOTTED; FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 20 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CONNECTOR: SLOTTED; FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 20 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2;DUST,MIST &amp; FUMES; AFFINITY PRO TO AS/NZS 1716</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2;DUST,MIST &amp; FUMES; AFFINITY PRO TO AS/NZS 1716</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HELMET,SAFETY: WHITE;PLASTIC; V-GARD ELITE C/W FAS-TRAC RATCHET SUSPENSION PTNNT LOGO EMBOSSED ON BOTH SIDES *** SOLD IN BOX OF 20 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HELMET,SAFETY: WHITE;PLASTIC; V-GARD ELITE C/W FAS-TRAC RATCHET SUSPENSION PTNNT LOGO EMBOSSED ON BOTH SIDES *** SOLD IN BOX OF 20 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>VISOR,FACESHIELD,INDUSTRIAL: CLEAR,FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 20 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>VISOR,FACESHIELD,INDUSTRIAL: CLEAR,FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 20 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,MEN'S: COTTON; PVC DOT PALM; C/W KNITTED CUFF; *** SOLD IN BOX 240 PAIR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,MEN'S: COTTON; PVC DOT PALM; C/W KNITTED CUFF; *** SOLD IN BOX 240 PAIR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RESPIRATOR,AIR FILTERING: P1, DUST &amp; MIST; DISPOSABLE GENERAL PURPOSE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RESPIRATOR,AIR FILTERING: P1, DUST &amp; MIST; DISPOSABLE GENERAL PURPOSE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: SIZE: LARGE X 30CM; NEOPRENE; COTTON INTERLOCK LINING ACID RESISTENT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: SIZE: LARGE X 30CM; NEOPRENE; COTTON INTERLOCK LINING ACID RESISTENT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SOLUTION,LENS CLEANING: 0.25 LITRE IN PLASTIC BOTTLE; FOR LENS CLEANING STATION; USE WITH ATOMISER - STOCK CODE 29173</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SOLUTION,LENS CLEANING: 0.25 LITRE IN PLASTIC BOTTLE; FOR LENS CLEANING STATION; USE WITH ATOMISER - STOCK CODE 29173</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CHINSTRAP MSA ELASTIC, SUIT V-GARD ELITE SAFETY HELMET</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CHINSTRAP MSA ELASTIC, SUIT V-GARD ELITE SAFETY HELMET</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>VEST,REFLECTIVE: MESH STYLE; C/W REFLECTIVE TAPE;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>VEST,REFLECTIVE: MESH STYLE; C/W REFLECTIVE TAPE;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: 8-1/2 X 27CM,SOLVGARD; CHEMICAL,PETROLEUM &amp; SOLVENT PROTECTION; *** SOLD IN BOX OF 60 PAIRS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: 8-1/2 X 27CM,SOLVGARD; CHEMICAL,PETROLEUM &amp; SOLVENT PROTECTION; *** SOLD IN BOX OF 60 PAIRS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAPE,BARRICADE: 3IN W, 2IN H BARRICADE TAPE,MADE FROM VIRGIN POLY FOR DEMARCATION BLAST PATTERN SLEEP LOAD</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAPE,BARRICADE: 3IN W, 2IN H BARRICADE TAPE,MADE FROM VIRGIN POLY FOR DEMARCATION BLAST PATTERN SLEEP LOAD</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE X LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE X LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPECTACLES,INDUSTRIAL: SMOKE,MSA DISCOVERY *** SOLD IN BOX OF 144 PAIRS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPECTACLES,INDUSTRIAL: SMOKE,MSA DISCOVERY *** SOLD IN BOX OF 144 PAIRS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>LENS CLEANING STATION: METAL; C/W TISSUES,SOLUTION &amp; ATOMISER WALL MOUNTED *** SOLD IN BOX OF 10 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>LENS CLEANING STATION: METAL; C/W TISSUES,SOLUTION &amp; ATOMISER WALL MOUNTED *** SOLD IN BOX OF 10 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BOOTS,SAFETY: SIZE 7,STYLE 871,UPPER HEIGHT 230MM SMELTER BOOT WITH METATARSAL GUARD ****RESTRICTED ISSUE***** **FOR MAINTENANCE &amp; WAREHOUSE CREW ONLY</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BOOTS,SAFETY: SIZE 7,STYLE 871,UPPER HEIGHT 230MM SMELTER BOOT WITH METATARSAL GUARD ****RESTRICTED ISSUE***** **FOR MAINTENANCE &amp; WAREHOUSE CREW ONLY</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE MEDIUM,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE MEDIUM,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAG,MARKER,ELECTRICAL: RED COLOUR-JANUARY/SEPTEMBER PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAG,MARKER,ELECTRICAL: RED COLOUR-JANUARY/SEPTEMBER PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAG,MARKER,ELECTRICAL: YELLOW COLOUR-JUNE/OCTOBER PLASTIC W/ SELF-ADHESIVE 100/PKT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAG,MARKER,ELECTRICAL: YELLOW COLOUR-JUNE/OCTOBER PLASTIC W/ SELF-ADHESIVE 100/PKT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HOLDER,VISOR: FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 20 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HOLDER,VISOR: FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 20 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BOOM,HYDROCARBON: 8FT X 3"; FOR SPILL ABSORPTION; QTY = 4 EACH PER BOX;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BOOM,HYDROCARBON: 8FT X 3"; FOR SPILL ABSORPTION; QTY = 4 EACH PER BOX;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TROUSERS,WET WEATHER: LARGE(L),BIB STYLE,PVC/POLYESTER **SOLD IN BOX OF 25 EACH**</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TROUSERS,WET WEATHER: LARGE(L),BIB STYLE,PVC/POLYESTER **SOLD IN BOX OF 25 EACH**</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE LARGE,FOR DRY PARTICULATES DISPOSABLE,SPUN BONDED OLEFIN MATERIAL</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE LARGE,FOR DRY PARTICULATES DISPOSABLE,SPUN BONDED OLEFIN MATERIAL</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>VISOR,FACESHIELD,INDUSTRIAL: WELDING; FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 5 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>VISOR,FACESHIELD,INDUSTRIAL: WELDING; FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *** SOLD IN BOX OF 5 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAG,MARKER,ELECTRICAL: GREEN COLOUR-APRIL/AUGUST PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAG,MARKER,ELECTRICAL: GREEN COLOUR-APRIL/AUGUST PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>PADLOCK: 38MM SHKL LG,45MM BODY LG,YELLOW COLOR, METAL,LIGHT WEIGHT XENOY;C/W KEYS; FOR INDIVIDUAL LOCKOUT USE;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PADLOCK: 38MM SHKL LG,45MM BODY LG,YELLOW COLOR, METAL,LIGHT WEIGHT XENOY;C/W KEYS; FOR INDIVIDUAL LOCKOUT USE;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR,MSA ARROW BOX QTY = 12 EACH *** SOLD IN BOX OF 144</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR,MSA ARROW BOX QTY = 12 EACH *** SOLD IN BOX OF 144</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPECTACLES,INDUSTRIAL: SMOKE,MSA ARROW *** SOLD IN BOX OF 144</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPECTACLES,INDUSTRIAL: SMOKE,MSA ARROW *** SOLD IN BOX OF 144</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: LARGE,32CM,NITROSOLV FLOCK LINED,CHEMICAL RESISTANT SOLD IN BOX OF 144 PAIR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: LARGE,32CM,NITROSOLV FLOCK LINED,CHEMICAL RESISTANT SOLD IN BOX OF 144 PAIR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BRIM,SAFETY HELMET: SUIT V-GARD ELITE HELMET; C/W NECK FLAP COLOR:NAVY BLUE *** SOLD IN BOX OF 20 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BRIM,SAFETY HELMET: SUIT V-GARD ELITE HELMET; C/W NECK FLAP COLOR:NAVY BLUE *** SOLD IN BOX OF 20 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,DISPOSABLE AFFINITY PLUS,20EA BOXES</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,DISPOSABLE AFFINITY PLUS,20EA BOXES</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,AFFINITY PRO AS/NZS 1716,5EA PACK</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,AFFINITY PRO AS/NZS 1716,5EA PACK</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CABINET,FIRE HOSE: 1220MM H X 1060MM WD X 470MM D FIRE FIGHTING EQUIPMENT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CABINET,FIRE HOSE: 1220MM H X 1060MM WD X 470MM D FIRE FIGHTING EQUIPMENT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HARNESS,SAFETY: FULL BODY,C/W QUICK FIT BUCKLES REAR D RING WEBBING,LIGHT WEIGHT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HARNESS,SAFETY: FULL BODY,C/W QUICK FIT BUCKLES REAR D RING WEBBING,LIGHT WEIGHT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAG,MARKER,ELECTRICAL: BLUE COLOUR-FEBRUARY/JULY PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAG,MARKER,ELECTRICAL: BLUE COLOUR-FEBRUARY/JULY PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: LARGE X 30CM,NEOPRENE COTTON INTERLOCK LINING ACID RESISTENT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: LARGE X 30CM,NEOPRENE COTTON INTERLOCK LINING ACID RESISTENT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>LANYARD,SHOCK ABSORBING,SAFETY: 200MM WIDE,1.8M LG,YELLOW WEBBING C/W DOUBLE ACTION SELF LOCKING HOOKS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>LANYARD,SHOCK ABSORBING,SAFETY: 200MM WIDE,1.8M LG,YELLOW WEBBING C/W DOUBLE ACTION SELF LOCKING HOOKS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPECTACLES,INDUSTRIAL: DISCOVERY,CLEAR,AS/INZS 1337,LIC NO.1502 *** SOLD IN BOX OF 144 PAIRS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPECTACLES,INDUSTRIAL: DISCOVERY,CLEAR,AS/INZS 1337,LIC NO.1502 *** SOLD IN BOX OF 144 PAIRS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SRM, DEMAND</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SRM, DEMAND</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SRM, SOLID</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SRM, SOLID</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HOLDER,VISOR: FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *SOLD IN BOX OF 20 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HOLDER,VISOR: FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET *SOLD IN BOX OF 20 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TROUSERS,FIREFIGHTER'S: SIZE:LARGE(L),STYLE:OVER TROUSERS, OUTER FABRIC:NOMEX,C/W ZIP LEGS AND SUSPENDERS,YELLOW COLOR;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TROUSERS,FIREFIGHTER'S: SIZE:LARGE(L),STYLE:OVER TROUSERS, OUTER FABRIC:NOMEX,C/W ZIP LEGS AND SUSPENDERS,YELLOW COLOR;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>JACKET,FIREFIGHTER'S: SIZE:LARGE(L),OUTER FABRIC NOMEX, QUILTED LINER,C/W MOISTURE BARRIER, YELLOW COLOR;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>JACKET,FIREFIGHTER'S: SIZE:LARGE(L),OUTER FABRIC NOMEX, QUILTED LINER,C/W MOISTURE BARRIER, YELLOW COLOR;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BOOTS,SAFETY: SIZE 8,STYLE 871,UPPER HEIGHT 230MM SMELTER BOOT WITH METATARSAL GUARD</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BOOTS,SAFETY: SIZE 8,STYLE 871,UPPER HEIGHT 230MM SMELTER BOOT WITH METATARSAL GUARD</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,MEN'S: WORK LEATHER PALM,COTTON BACK C/W KNUCKLE BAR &amp; FINGER TIP PROTECTION INDUSTRIAL QUALITY *SOLD IN BOX OF 120 PAIR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,MEN'S: WORK LEATHER PALM,COTTON BACK C/W KNUCKLE BAR &amp; FINGER TIP PROTECTION INDUSTRIAL QUALITY *SOLD IN BOX OF 120 PAIR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SAFETY GLASSES NEW TYPE (PHOTO GRAY LENSES SPECTACKLES) REF TO QUOTE DATED 03/28/03. REF#. PO.960680</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SAFETY GLASSES NEW TYPE (PHOTO GRAY LENSES SPECTACKLES) REF TO QUOTE DATED 03/28/03. REF#. PO.960680</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>FIRST AID KIT,GENERAL PURPOSE: 24 UNIT C/W CONTENTS WALL MOUNTED METAL BOX *MINIMUM ORDER 10 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>FIRST AID KIT,GENERAL PURPOSE: 24 UNIT C/W CONTENTS WALL MOUNTED METAL BOX *MINIMUM ORDER 10 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BLISTEX CREAM 1/8 OZ POUCH TO SUIT 24 FIRST AID KIT 6/BOX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BLISTEX CREAM 1/8 OZ POUCH TO SUIT 24 FIRST AID KIT 6/BOX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE XX LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE XX LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>OXYGEN SENSOR FIVE STAR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>OXYGEN SENSOR FIVE STAR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>EYE WASH 1OZ IRRIGATION BOTTLE 5/PKT TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 5 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>EYE WASH 1OZ IRRIGATION BOTTLE 5/PKT TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 5 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BANDAGE ADHESIVE PLASTIC 1" X 3" TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 10 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BANDAGE ADHESIVE PLASTIC 1" X 3" TO SUIT 24 FIRST AID KIT *** MINIMUM ORDER 10 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>PADLOCK: 38MM OPENING,45MM BODY LG,YELLOW COLOR METAL,LIGHT WEIGHT XENOY,WITH KEYS FOR INDIVIDUAL LOCKOUT USE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PADLOCK: 38MM OPENING,45MM BODY LG,YELLOW COLOR METAL,LIGHT WEIGHT XENOY,WITH KEYS FOR INDIVIDUAL LOCKOUT USE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BOOTS,SAFETY: SIZE 6,STYLE 871,UPPER HEIGHT 230MM SMELTER BOOT WITH METATARSAL GUARD ****RESTRICTED ISSUE***** **FOR MAINTENANCE &amp; WAREHOUSE CREW ONLY</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BOOTS,SAFETY: SIZE 6,STYLE 871,UPPER HEIGHT 230MM SMELTER BOOT WITH METATARSAL GUARD ****RESTRICTED ISSUE***** **FOR MAINTENANCE &amp; WAREHOUSE CREW ONLY</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CAN,SAFETY: 2 GALLONS; EAGLE TYPE II; C/W TRIGER RELEASE CAP HANDLE POURING/FILL SPOUT &amp; FLEX STEEL HOSE;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CAN,SAFETY: 2 GALLONS; EAGLE TYPE II; C/W TRIGER RELEASE CAP HANDLE POURING/FILL SPOUT &amp; FLEX STEEL HOSE;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,AFFINITY PRO AS/NZS 1716,5/PKT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,AFFINITY PRO AS/NZS 1716,5/PKT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HELMET,SAFETY: WHITE,PLASTIC,V-GARD ELITE C/W FAS-TRAC RATCHET SUSPENSION PTNNT LOGO EMBOSSED ON BOTH SIDES *SOLD IN BOX OF 20 EACH</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HELMET,SAFETY: WHITE,PLASTIC,V-GARD ELITE C/W FAS-TRAC RATCHET SUSPENSION PTNNT LOGO EMBOSSED ON BOTH SIDES *SOLD IN BOX OF 20 EACH</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,DISPOSABLE AFFINITY PLUS,20/BOX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RESPIRATOR,AIR FILTERING: P2,DUST,MIST &amp; FUMES,DISPOSABLE AFFINITY PLUS,20/BOX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>LANYARD,SHOCK ABSORBING,SAFETY: 200MM WIDE,1.8M LG,YELLOW WEBBING WITH DOUBLE ACTION SELF LOCKING HOOKS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>LANYARD,SHOCK ABSORBING,SAFETY: 200MM WIDE,1.8M LG,YELLOW WEBBING WITH DOUBLE ACTION SELF LOCKING HOOKS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>ATOMISER: TO USE WITH LENS CLEANING SOLUTION - STOCK CODE 29165</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>ATOMISER: TO USE WITH LENS CLEANING SOLUTION - STOCK CODE 29165</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SIZE SMALL,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SIZE SMALL,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>O'RING P/N090E005</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>O'RING P/N090E005</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPRING P/N701E002</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPRING P/N701E002</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>DISK P/N333E004</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>DISK P/N333E004</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>FOAM PAD P/N333E007</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>FOAM PAD P/N333E007</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BAFFEL CONE P/N331E028</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BAFFEL CONE P/N331E028</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GUIDE WASHER P/N609E004</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GUIDE WASHER P/N609E004</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>FILTER ELEMENT P/N302E006</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>FILTER ELEMENT P/N302E006</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BAFFEL DISK P/N609E005</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BAFFEL DISK P/N609E005</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CENTRE SCREW P/N331E030</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CENTRE SCREW P/N331E030</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>O'RING P/N090E086</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>O'RING P/N090E086</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,MEN'S: COTTON,PVC DOT PALM,C/W KNITTED CUFF *SOLD IN BOX 240 PAIR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,MEN'S: COTTON,PVC DOT PALM,C/W KNITTED CUFF *SOLD IN BOX 240 PAIR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,MEN'S: PVC,8-1/2 X 27CM,METAL GUARD COLOR GREEN,WITH NONS-SLIP GRIP *SOLD IN BOX 60 PAIR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,MEN'S: PVC,8-1/2 X 27CM,METAL GUARD COLOR GREEN,WITH NONS-SLIP GRIP *SOLD IN BOX 60 PAIR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CREAM,SUNSCREEN: 15+ 500ML JAR; HAMILTON PLUS C/W PUMP ACTION DISPENSER *** SOLD IN BOX OF 12 JAR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CREAM,SUNSCREEN: 15+ 500ML JAR; HAMILTON PLUS C/W PUMP ACTION DISPENSER *** SOLD IN BOX OF 12 JAR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAPE,BARRIER: "DANGER" ; BLACK LETTERING; RED &amp; WHITE BACKGROUND; 75MM WIDE X 300M LG ROLL;</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAPE,BARRIER: "DANGER" ; BLACK LETTERING; RED &amp; WHITE BACKGROUND; 75MM WIDE X 300M LG ROLL;</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RETURN EMPTY CILINDER OF CALIBRATION CHECK GAS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RETURN EMPTY CILINDER OF CALIBRATION CHECK GAS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TISSUE,LENS CLEANING: FOR LENS CLEANING STATION</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TISSUE,LENS CLEANING: FOR LENS CLEANING STATION</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: X LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: X LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: LARGE,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: LARGE,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: SMALL,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: SMALL,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: MEDIUM,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: MEDIUM,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>PROBE 1 FT PN: 8003322</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PROBE 1 FT PN: 8003322</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SAMPLING LINE 10 FT PN: 497333</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SAMPLING LINE 10 FT PN: 497333</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>MASK,AIR FILTERING: PICCODOR,FFP2 SV PROTECTS AGAINST GASES &amp; ODOURS 12EA BOX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>MASK,AIR FILTERING: PICCODOR,FFP2 SV PROTECTS AGAINST GASES &amp; ODOURS 12EA BOX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: XX LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: XX LARGE,FOR DRY PARTICULATES DISPOSABLE,MATERIAL SPUN BONDED OLEFIN</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>VISOR,FACESHIELD,INDUSTRIAL: CLEAR,FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET Sold in 20/Box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>VISOR,FACESHIELD,INDUSTRIAL: CLEAR,FOR HELMET FACESHIELD SYSTEM 4 SUIT V-GARD ELITE HELMET Sold in 20/Box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RESPIRATOR,AIR FILTERING: P1,DUST &amp; MIST,DISPOSABLE,GEN PURPOSE 10/BOX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RESPIRATOR,AIR FILTERING: P1,DUST &amp; MIST,DISPOSABLE,GEN PURPOSE 10/BOX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: MEDIUM,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: MEDIUM,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAPE,BARRIER: "DANGER",75MM W X 300M LG PER ROLL BLACK LETTERING,RED &amp; WHITE BACKGROUND</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAPE,BARRIER: "DANGER",75MM W X 300M LG PER ROLL BLACK LETTERING,RED &amp; WHITE BACKGROUND</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TRIPLE ANTIBIOTIC SINGLE TO SUIT 24 FIRST AID KIT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TRIPLE ANTIBIOTIC SINGLE TO SUIT 24 FIRST AID KIT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TROUSERS,WET WEATHER: LARGE(L)SIZE,BIB STYLE,PVC/POLYESTER ** Sold in 25/box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TROUSERS,WET WEATHER: LARGE(L)SIZE,BIB STYLE,PVC/POLYESTER ** Sold in 25/box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>ALARM,SMOKE,AUTOMATIC: 86RACQAUS MODEL,240V,9VDC BATT BACK UP 50/60HZ,S/N.D669605,HIGH FEATURE IONISTATION SMOKE ALARM</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>ALARM,SMOKE,AUTOMATIC: 86RACQAUS MODEL,240V,9VDC BATT BACK UP 50/60HZ,S/N.D669605,HIGH FEATURE IONISTATION SMOKE ALARM</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR,DISCOVERY,AS/INZS 1337,LIC NO.1502 **Sold in 144/Box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SPECTACLES,INDUSTRIAL: CLEAR,DISCOVERY,AS/INZS 1337,LIC NO.1502 **Sold in 144/Box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>COVERALLS,MEN'S: LARGE,FOR DRY PARTICULATES DISPOSABLE,SPUN BONDED OLEFIN MATERIAL</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>COVERALLS,MEN'S: LARGE,FOR DRY PARTICULATES DISPOSABLE,SPUN BONDED OLEFIN MATERIAL</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BOOM,HYDROCARBON: 8FT X 3IN, FOR SPILL ABSORPTION 4 EA/BOX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BOOM,HYDROCARBON: 8FT X 3IN, FOR SPILL ABSORPTION 4 EA/BOX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>Gauge 630G016</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>Gauge 630G016</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: SMALL,3/4 LG,YELLOW PVC,W/O HOOD **Sold in 25 ea box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: SMALL,3/4 LG,YELLOW PVC,W/O HOOD **Sold in 25 ea box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: XX LARGE,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: XX LARGE,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RAINCOAT,MAN'S: X LARGE,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>RAINCOAT,MAN'S: X LARGE,3/4 LG,YELLOW PVC,W/O HOOD Sold in 25 ea box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>VEST,REFLECTIVE: MESH STYLE,C/W REFLECTIVE TAPE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>VEST,REFLECTIVE: MESH STYLE,C/W REFLECTIVE TAPE</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: 7-1/2 X 27CM,SOLVGARD CHEMICAL,PETROLEUM &amp; SOLVENT PROTECTION SOLD IN BOX OF 60 PAIRS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GLOVES,CHEMICAL PROTECTIVE: 7-1/2 X 27CM,SOLVGARD CHEMICAL,PETROLEUM &amp; SOLVENT PROTECTION SOLD IN BOX OF 60 PAIRS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>THREE STAGE TYPE 10 COMBINED FRAME AND CHARGER , TO ACCOMMODATE 10 CAPS LAMPS IN ROW OF 10</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>THREE STAGE TYPE 10 COMBINED FRAME AND CHARGER , TO ACCOMMODATE 10 CAPS LAMPS IN ROW OF 10</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TOOL KIT FOR MAINTENANCE CAP LIGHT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TOOL KIT FOR MAINTENANCE CAP LIGHT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>HASP,LOCK: 25MM DIA INNER,METAL,PREMIUM LOCKOUT ACCOMMODATING UP TO 6 PADLOCKS</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>HASP,LOCK: 25MM DIA INNER,METAL,PREMIUM LOCKOUT ACCOMMODATING UP TO 6 PADLOCKS</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CRM Solids Cat.No.5152</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CRM Solids Cat.No.5152</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>CRM DEMAND CAT.NO. 4012</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>CRM DEMAND CAT.NO. 4012</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>GOGGLES,INDUSTRIAL: CHEMICAL VENT;FLEXITUFF; CHEM AREA USE FLEXIBLE PVC FRAME; BAFFLED VENTS WIDE ANGLE ANTI FOG LENS *** SOLD IN BOX OF 6</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>GOGGLES,INDUSTRIAL: CHEMICAL VENT;FLEXITUFF; CHEM AREA USE FLEXIBLE PVC FRAME; BAFFLED VENTS WIDE ANGLE ANTI FOG LENS *** SOLD IN BOX OF 6</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>TAG,MARKER,ELECTRICAL: YELLOW - OCTOBER TO DECEMBER PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>TAG,MARKER,ELECTRICAL: YELLOW - OCTOBER TO DECEMBER PLASTIC W/SELF-ADHESIVE 100/PKT</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SUSPENSION ASSY,SAFETY HELMET: FAS-TRAC RATCHET SUSPENSION (HEADBAND) SUIT V-GARD ELITE HELMET **SOLD IN BOX OF 20 EACH**</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SUSPENSION ASSY,SAFETY HELMET: FAS-TRAC RATCHET SUSPENSION (HEADBAND) SUIT V-GARD ELITE HELMET **SOLD IN BOX OF 20 EACH**</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>SAFETY CAN: TYPE II,5 GALLON C/W TRIGER RELEASE CAP,SWINGING HANDLE POURING/FILL SPOUT &amp; FLEX STEEL HOSE</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>SAFETY CAN: TYPE II,5 GALLON C/W TRIGER RELEASE CAP,SWINGING HANDLE POURING/FILL SPOUT &amp; FLEX STEEL HOSE</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>259</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/BaseItemDetail/TotalQuantity/Quantity/QuantityValue</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Quantity</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>261</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/BaseItemDetail/TotalQuantity/Quantity/UnitOfMeasurement/UOMCoded</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>UOM</ENGLISHNAME>
+				<HELPNOTE>The Unit Of Measure for this particular item. Eg) Box, Pack, Carton... etc.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE>C:/Dynex/Xsd/UserSchemas/MSA_UOM.xsd</SCHEMATOUSE>
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>EA</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BOX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>PR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>PR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BO</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>Each</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>RO</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BOX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>PK</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>BX</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>BX</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>Box</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>JR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>JR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>Other</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>Other</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>267</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/PricingDetail/ListOfPrice/Price/UnitPrice/UnitPriceValue</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Item Unit Price</ENGLISHNAME>
+				<HELPNOTE>The unit price for this particular product.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>316</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/PricingDetail/TotalValue/MonetaryValue/MonetaryAmount</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Total Line Item Price</ENGLISHNAME>
+				<HELPNOTE>The total price for this particular line item.</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>333</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderSummary</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Order Summary</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>true</DISPLAYINTREE>
+					<DISPLAYINCONTENT>false</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE />
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>334</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderSummary/NumberOfLines</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>No Of Line Items</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>confirmed</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>337</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderSummary/TotalAmount/MonetaryValue/MonetaryAmount</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Total Order Amount</ENGLISHNAME>
+				<HELPNOTE />
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PDS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>266</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderDetail/ListOfItemDetail/ItemDetail/BaseItemDetail/ListOfItemReferences/ListOfReferenceCoded/ReferenceCoded/PrimaryReference/Reference/RefNum</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Purchase Req Num</ENGLISHNAME>
+				<HELPNOTE>The Purchase Requisition Number</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE />
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 034634 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 034634 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 034635 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 034635 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>EM</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>EM</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>UR</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>UR</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 034322 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE />
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 036689 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 036689 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NM</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NM</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 038469 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 038469 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 038469 002</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 038469 002</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 038641 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 038641 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 038220 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 038220 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 002</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 002</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 003</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 003</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 004</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 004</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 005</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 005</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 006</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 006</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 007</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 007</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 008</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 008</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 009</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 009</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039174 010</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039174 010</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039146 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039146 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039694 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039694 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 039694 002</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 039694 002</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>F45934501412</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>F45934501412</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 042101 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 042101 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>A13181231328</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>A13181231328</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 043022 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 043022 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 043022 002</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 043022 002</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>E40954021550</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>E40954021550</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 043191 001</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 043191 001</VALUE>
+					</DEST>
+				</PAIR>
+				<PAIR>
+					<ORIG>
+						<VALUE>NNT1 043191 002</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>NNT1 043191 002</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+		<EDXBABLE>
+			<EDXID>17</EDXID>
+			<KEYRULES />
+			<ORIGINATOR>
+				<NAME>Order/OrderHeader/OrderType/OrderTypeCodedOther</NAME>
+				<VALUE />
+				<DATATYPE>String</DATATYPE>
+			</ORIGINATOR>
+			<DESTINATION>
+				<ENGLISHNAME>Hold Pack List</ENGLISHNAME>
+				<HELPNOTE>Hold the Packing List? Y or N</HELPNOTE>
+				<DATATYPE>String</DATATYPE>
+				<REQUIRED>True</REQUIRED>
+				<STOREVALUEINBABLE>PS</STOREVALUEINBABLE>
+				<RESOLVETYPE>dontConfirm</RESOLVETYPE>
+				<CURRKEYVALUE />
+				<RESOLVEDVALUE />
+				<VALIDATEDOK>true</VALIDATEDOK>
+				<SCHEMATOUSE>C:/Dynex/Xsd/UserSchemas/MSA_SHIP_LINES_COMPLETE.xsd</SCHEMATOUSE>
+				<DISPLAYDETAILS>
+					<BGCOLOUR>FFFFFF</BGCOLOUR>
+					<FONTCOLOUR>000000</FONTCOLOUR>
+					<FONTSIZE>-1</FONTSIZE>
+					<DISPLAYINTREE>false</DISPLAYINTREE>
+					<DISPLAYINCONTENT>true</DISPLAYINCONTENT>
+				</DISPLAYDETAILS>
+			</DESTINATION>
+			<VALUES>
+				<PAIR>
+					<ORIG>
+						<VALUE>N</VALUE>
+						<RULEVALUES />
+					</ORIG>
+					<DEST>
+						<VALUE>N</VALUE>
+					</DEST>
+				</PAIR>
+			</VALUES>
+		</EDXBABLE>
+	</VALUEPAIRS>
+</BABLE>

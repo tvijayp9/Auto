@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="Tax" type="Tax"/><xsd:complexType name="Tax">
+      <xsd:sequence>
+         <xsd:element name="TaxFunctionQualifierCoded" type="TaxFunctionQualifierCode"/>
+         <xsd:element minOccurs="0" name="TaxFunctionQualifierCodedOther" type="xsd:string"/>
+         <xsd:element name="TaxCategoryCoded" type="TaxCategoryCode"/>
+         <xsd:element minOccurs="0" name="TaxCategoryCodedOther" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="ReasonTaxExemptCoded" type="ReasonTaxExemptCode"/>
+         <xsd:element minOccurs="0" name="ReasonTaxExemptCodedOther" type="xsd:string"/>
+         <xsd:element name="TaxTypeCoded" type="TaxTypeCode"/>
+         <xsd:element minOccurs="0" name="TaxTypeCodedOther">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element ref="Identifier"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element minOccurs="0" name="TaxPercent" type="Decimal10_4"/>
+         <xsd:element minOccurs="0" name="TaxPaymentMethodCoded" type="TaxPaymentMethodCode"/>
+         <xsd:element minOccurs="0" name="TaxPaymentMethodCodedOther" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="TaxableAmount" type="Decimal21_6"/>
+         <xsd:element minOccurs="0" name="TaxableAmountInTaxAccountingCurrency" type="Decimal21_6"/>
+         <xsd:element name="TaxAmount" type="Decimal21_6"/>
+         <xsd:element minOccurs="0" name="TaxAmountInTaxAccountingCurrency" type="Decimal21_6"/>
+         <xsd:element minOccurs="0" ref="TaxLocation"/>
+      </xsd:sequence>
+   </xsd:complexType><xsd:simpleType name="TaxFunctionQualifierCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="IndividualDutyTaxOrFeeCustomsItem"/>
+         <xsd:enumeration value="TotalOfAllDutiesTaxesAndFeesCustomsItem"/>
+         <xsd:enumeration value="TotalOfEachDutyTaxOrFeeTypeCustomsDeclaration"/>
+         <xsd:enumeration value="TotalOfAllDutiesTaxesAndFeeTypesCustomsDeclaration"/>
+         <xsd:enumeration value="CustomsDuty"/>
+         <xsd:enumeration value="Fee"/>
+         <xsd:enumeration value="Tax"/>
+         <xsd:enumeration value="TaxRelatedInformation"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="TaxCategoryCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="Agriculture"/>
+         <xsd:enumeration value="DirectPayID"/>
+         <xsd:enumeration value="Disabled"/>
+         <xsd:enumeration value="DisabledVeteran"/>
+         <xsd:enumeration value="DutyPaidBySupplier"/>
+         <xsd:enumeration value="ExemptForExport"/>
+         <xsd:enumeration value="ExemptForResale"/>
+         <xsd:enumeration value="ExemptfromCountyPropertyTax"/>
+         <xsd:enumeration value="ExemptfromLocalPropertyTax"/>
+         <xsd:enumeration value="ExemptfromSchoolPropertyTax"/>
+         <xsd:enumeration value="ExemptfromStatePropertyTax"/>
+         <xsd:enumeration value="ExemptFromTax"/>
+         <xsd:enumeration value="ExemptGoodsandServicesTax"/>
+         <xsd:enumeration value="ExemptLetterOnFile"/>
+         <xsd:enumeration value="ExemptLocalService"/>
+         <xsd:enumeration value="ExemptNotForResale"/>
+         <xsd:enumeration value="Exempt-PerStateLaw"/>
+         <xsd:enumeration value="ExemptProvincialSalesTax"/>
+         <xsd:enumeration value="ExemptSaleToUSGovernment"/>
+         <xsd:enumeration value="ExemptTollService"/>
+         <xsd:enumeration value="FreeExportItemTaxNotCharged"/>
+         <xsd:enumeration value="HigherRate"/>
+         <xsd:enumeration value="Homestead"/>
+         <xsd:enumeration value="LaborTaxableMaterialExempt"/>
+         <xsd:enumeration value="LowerRate"/>
+         <xsd:enumeration value="MaterialTaxableLaborExempt"/>
+         <xsd:enumeration value="MixedTaxRate"/>
+         <xsd:enumeration value="Non-Homestead"/>
+         <xsd:enumeration value="No-NotTaxExempt"/>
+         <xsd:enumeration value="NotExemptForResale"/>
+         <xsd:enumeration value="NotExemptNotForResale"/>
+         <xsd:enumeration value="NotTaxable"/>
+         <xsd:enumeration value="OpenSpace"/>
+         <xsd:enumeration value="OtherPropertyTaxExemption"/>
+         <xsd:enumeration value="Over65"/>
+         <xsd:enumeration value="RecurringExempt"/>
+         <xsd:enumeration value="ServicesOutsideScopeOfTax"/>
+         <xsd:enumeration value="StandardRate"/>
+         <xsd:enumeration value="TotallyExempt"/>
+         <xsd:enumeration value="Transferred"/>
+         <xsd:enumeration value="UsageExempt"/>
+         <xsd:enumeration value="ValueAddedTaxDueFromAPreviousInvoice"/>
+         <xsd:enumeration value="ValueAddedTaxNotNowDueForPayment"/>
+         <xsd:enumeration value="WorkingFarm"/>
+         <xsd:enumeration value="Yes-TaxExempt"/>
+         <xsd:enumeration value="ZeroRatedGoods"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="ReasonTaxExemptCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="Exempt-ForExport"/>
+         <xsd:enumeration value="Yes-TaxExempt"/>
+         <xsd:enumeration value="No-NotTaxExempt"/>
+         <xsd:enumeration value="Exempt-ForResale"/>
+         <xsd:enumeration value="NotExemptOrForResale"/>
+         <xsd:enumeration value="Exempt-NotForResale"/>
+         <xsd:enumeration value="NotExemptNotForResale"/>
+         <xsd:enumeration value="DirectPayId"/>
+         <xsd:enumeration value="Exempt-SaleToUSGovernment"/>
+         <xsd:enumeration value="Exempt-PerStateLaw"/>
+         <xsd:enumeration value="LaborTaxableMaterialExempt"/>
+         <xsd:enumeration value="MaterialTaxableLaborExempt"/>
+         <xsd:enumeration value="NotTaxable"/>
+         <xsd:enumeration value="Disabled"/>
+         <xsd:enumeration value="ExemptTollService"/>
+         <xsd:enumeration value="Exempt-GoodsAndServicesTax"/>
+         <xsd:enumeration value="Exempt-ProvincialSalesTax"/>
+         <xsd:enumeration value="Homestead"/>
+         <xsd:enumeration value="Agriculture"/>
+         <xsd:enumeration value="WorkingFarm"/>
+         <xsd:enumeration value="OpenSpace"/>
+         <xsd:enumeration value="ExemptLocalService"/>
+         <xsd:enumeration value="DisabledVeteran"/>
+         <xsd:enumeration value="Non-Homestead"/>
+         <xsd:enumeration value="Over65"/>
+         <xsd:enumeration value="ExemptFromSchoolPropertyTax"/>
+         <xsd:enumeration value="ExemptFromLocalPropertyTax"/>
+         <xsd:enumeration value="RecurringExempt"/>
+         <xsd:enumeration value="ExemptFromCountyPropertyTax"/>
+         <xsd:enumeration value="TotallyExempt"/>
+         <xsd:enumeration value="UsageExempt"/>
+         <xsd:enumeration value="ExemptFromStatePropertyTax"/>
+         <xsd:enumeration value="OtherPropertyTaxExemption"/>
+         <xsd:enumeration value="Exempt-LetterOnFile"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="TaxTypeCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="911CityTax"/>
+         <xsd:enumeration value="911CountyTax"/>
+         <xsd:enumeration value="911ExciseTax"/>
+         <xsd:enumeration value="911StateTax"/>
+         <xsd:enumeration value="911Tax"/>
+         <xsd:enumeration value="AccommodationsTax"/>
+         <xsd:enumeration value="AdValoremTax"/>
+         <xsd:enumeration value="AgriculturalExportRebate"/>
+         <xsd:enumeration value="Agriculturallevy"/>
+         <xsd:enumeration value="AlcoholicBeverageTax"/>
+         <xsd:enumeration value="AlcoholMarkTax"/>
+         <xsd:enumeration value="AllTaxes"/>
+         <xsd:enumeration value="Anti-DumpingDuty"/>
+         <xsd:enumeration value="Assessment"/>
+         <xsd:enumeration value="BusinessLicenseFee"/>
+         <xsd:enumeration value="BusinessPrivilegeTax"/>
+         <xsd:enumeration value="CarTax"/>
+         <xsd:enumeration value="CityRentalTax"/>
+         <xsd:enumeration value="CitySalesTax"/>
+         <xsd:enumeration value="CityTax"/>
+         <xsd:enumeration value="CoffeeTax"/>
+         <xsd:enumeration value="CoinOperatedDeviceTax"/>
+         <xsd:enumeration value="CommoditySpecificTax"/>
+         <xsd:enumeration value="CorporateIncomeTax"/>
+         <xsd:enumeration value="CountervailingDuty"/>
+         <xsd:enumeration value="CountyOrParishSalesTax"/>
+         <xsd:enumeration value="CountyRentalTax"/>
+         <xsd:enumeration value="CountyTax"/>
+         <xsd:enumeration value="CustomsDuty"/>
+         <xsd:enumeration value="DefaultLaborTax"/>
+         <xsd:enumeration value="EmploymentTax"/>
+         <xsd:enumeration value="EnergyTax"/>
+         <xsd:enumeration value="Enhanced911StateExciseTax"/>
+         <xsd:enumeration value="EnvironmentalTax"/>
+         <xsd:enumeration value="EquipmentTax"/>
+         <xsd:enumeration value="EstateTax"/>
+         <xsd:enumeration value="ExciseDuty"/>
+         <xsd:enumeration value="FederalExciseTax"/>
+         <xsd:enumeration value="FederalIncomeTaxWithholding"/>
+         <xsd:enumeration value="FederalTax"/>
+         <xsd:enumeration value="FederalValueAddedTaxOnGoods"/>
+         <xsd:enumeration value="FederalValueAddedTaxOnServices"/>
+         <xsd:enumeration value="FeeInLieu"/>
+         <xsd:enumeration value="FICAMedicareTax"/>
+         <xsd:enumeration value="FICASocialSecurityTax"/>
+         <xsd:enumeration value="FICATax"/>
+         <xsd:enumeration value="FranchiseTax"/>
+         <xsd:enumeration value="Free"/>
+         <xsd:enumeration value="FuelLUSTTax"/>
+         <xsd:enumeration value="FuelSpillTax"/>
+         <xsd:enumeration value="FuelSuperFundTax"/>
+         <xsd:enumeration value="GamingTax"/>
+         <xsd:enumeration value="GeneralConstructionTax"/>
+         <xsd:enumeration value="GiftTax"/>
+         <xsd:enumeration value="GoodsAndServicesTax"/>
+         <xsd:enumeration value="GrossReceiptsTax"/>
+         <xsd:enumeration value="HandicapTax"/>
+         <xsd:enumeration value="HazardousWasteTax"/>
+         <xsd:enumeration value="HighwayUseTax"/>
+         <xsd:enumeration value="IlluminantsTax"/>
+         <xsd:enumeration value="ImportTax"/>
+         <xsd:enumeration value="IndividualIncomeTax"/>
+         <xsd:enumeration value="IndividualTax"/>
+         <xsd:enumeration value="InheritanceTax"/>
+         <xsd:enumeration value="InternationalFuelTaxAgreementTax"/>
+         <xsd:enumeration value="LaborByTradeTax"/>
+         <xsd:enumeration value="LeakyUndergroundStorageTankTaxFederal"/>
+         <xsd:enumeration value="LeakyUndergroundStorageTankTaxState"/>
+         <xsd:enumeration value="LicenseTax"/>
+         <xsd:enumeration value="LightDuesPayable"/>
+         <xsd:enumeration value="LocalConstructionTax"/>
+         <xsd:enumeration value="LocalSalesTax"/>
+         <xsd:enumeration value="LocalTax"/>
+         <xsd:enumeration value="LustTax"/>
+         <xsd:enumeration value="MaterialTax"/>
+         <xsd:enumeration value="MetropolitanTransitTax"/>
+         <xsd:enumeration value="MinimumTax"/>
+         <xsd:enumeration value="MiscellaneousCashDeposit"/>
+         <xsd:enumeration value="MiscellaneousStateTax"/>
+         <xsd:enumeration value="MonetaryCompensatoryAmount"/>
+         <xsd:enumeration value="MotorFuelTax"/>
+         <xsd:enumeration value="MunicipalTax"/>
+         <xsd:enumeration value="OccupationalTax"/>
+         <xsd:enumeration value="OtherTaxes"/>
+         <xsd:enumeration value="PaperConsortiumTax-Italy"/>
+         <xsd:enumeration value="PersonalPropertyTax"/>
+         <xsd:enumeration value="PetroleumTax"/>
+         <xsd:enumeration value="PostThresholdTax"/>
+         <xsd:enumeration value="PreferenceDuty"/>
+         <xsd:enumeration value="PreThresholdTax"/>
+         <xsd:enumeration value="ProvisionalcountervailingDutyBond"/>
+         <xsd:enumeration value="ProvisionalCountervailingDutyCash"/>
+         <xsd:enumeration value="ProvisionalDutyBond"/>
+         <xsd:enumeration value="ProvisionalDutyCash"/>
+         <xsd:enumeration value="PublicHealthAndEducationTax"/>
+         <xsd:enumeration value="RealPropertyTax"/>
+         <xsd:enumeration value="SalesAndUseTax"/>
+         <xsd:enumeration value="SchoolTax"/>
+         <xsd:enumeration value="SecondaryPercentageTax"/>
+         <xsd:enumeration value="SeveranceTax"/>
+         <xsd:enumeration value="ShiftedSocialSecurities"/>
+         <xsd:enumeration value="ShiftedWageTax"/>
+         <xsd:enumeration value="SolidWasteTax"/>
+         <xsd:enumeration value="SpecialConstructionTax"/>
+         <xsd:enumeration value="StadiumTax"/>
+         <xsd:enumeration value="StampDuty-ImpostadiBollo"/>
+         <xsd:enumeration value="StateandLocalSalesTax"/>
+         <xsd:enumeration value="StateAndLocalTax"/>
+         <xsd:enumeration value="StateAndProvincialTax"/>
+         <xsd:enumeration value="StateExciseTax"/>
+         <xsd:enumeration value="StateorProvincialFuelTax"/>
+         <xsd:enumeration value="StateOrProvincialSalesTax"/>
+         <xsd:enumeration value="StateorProvincialTaxOnGoods"/>
+         <xsd:enumeration value="StateorProvincialTaxOnServices"/>
+         <xsd:enumeration value="StateRentalTax"/>
+         <xsd:enumeration value="StateTaxonSpecificLabor"/>
+         <xsd:enumeration value="SuperfundTax"/>
+         <xsd:enumeration value="SurTax"/>
+         <xsd:enumeration value="SuspendedDuty"/>
+         <xsd:enumeration value="TelecommunicationsDeviceForTheDeafServiceExciseTax"/>
+         <xsd:enumeration value="TelecommunicationsTax"/>
+         <xsd:enumeration value="ThresholdTax"/>
+         <xsd:enumeration value="TobaccoTax"/>
+         <xsd:enumeration value="TonnageTaxes"/>
+         <xsd:enumeration value="Total"/>
+         <xsd:enumeration value="TourismTax"/>
+         <xsd:enumeration value="TransitTax"/>
+         <xsd:enumeration value="TurnOverTax"/>
+         <xsd:enumeration value="UnemploymentTax"/>
+         <xsd:enumeration value="UseTax"/>
+         <xsd:enumeration value="UtilityUsersTax"/>
+         <xsd:enumeration value="ValuationDeposit"/>
+         <xsd:enumeration value="ValueAddedTax"/>
+         <xsd:enumeration value="WellService"/>
+         <xsd:enumeration value="WithholdingTax"/>
+         <xsd:enumeration value="WorkersCompensationTax"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="Decimal10_4">
+      <xsd:restriction base="xsd:decimal">
+         <xsd:totalDigits value="10"/>
+         <xsd:fractionDigits value="4"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="TaxPaymentMethodCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="Normal"/>
+         <xsd:enumeration value="DirectPay"/>
+         <xsd:enumeration value="SelfAssess"/>
+         <xsd:enumeration value="PayVendor"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="Decimal21_6">
+      <xsd:restriction base="xsd:decimal">
+         <xsd:totalDigits value="21"/>
+         <xsd:fractionDigits value="6"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="Decimal21_6">
+      <xsd:restriction base="xsd:decimal">
+         <xsd:totalDigits value="21"/>
+         <xsd:fractionDigits value="6"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="Decimal21_6">
+      <xsd:restriction base="xsd:decimal">
+         <xsd:totalDigits value="21"/>
+         <xsd:fractionDigits value="6"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="Decimal21_6">
+      <xsd:restriction base="xsd:decimal">
+         <xsd:totalDigits value="21"/>
+         <xsd:fractionDigits value="6"/>
+      </xsd:restriction>
+   </xsd:simpleType></xsd:schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="ChangeTypeCoded" type="ChangeTypeCode"/><xsd:simpleType name="ChangeTypeCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="AddAdditionalItems"/>
+         <xsd:enumeration value="ChangeInDetailSection"/>
+         <xsd:enumeration value="ChangeInHeadingSection"/>
+         <xsd:enumeration value="ChangeOfDates"/>
+         <xsd:enumeration value="ChangeOfDateTerms"/>
+         <xsd:enumeration value="ChangesToItemLevelAllowanceAndCharges"/>
+         <xsd:enumeration value="ChangesToLineItems"/>
+         <xsd:enumeration value="ChangesToTotalLevelAllowanceAndCharges"/>
+         <xsd:enumeration value="CorrectionOfError"/>
+         <xsd:enumeration value="LineItemsNumbersChanged"/>
+         <xsd:enumeration value="PreviousPaymentDecisionReversed"/>
+         <xsd:enumeration value="PriceChange"/>
+         <xsd:enumeration value="QuantityDecrease"/>
+         <xsd:enumeration value="QuantityIncrease"/>
+         <xsd:enumeration value="ReplaceAllDates"/>
+         <xsd:enumeration value="ReplaceAllValues"/>
+         <xsd:enumeration value="ReplaceHeadingSectionOnly"/>
+         <xsd:enumeration value="ReplaceItemDetailAndSummaryOnly"/>
+         <xsd:enumeration value="ReplaceModeOfShipment"/>
+         <xsd:enumeration value="Reschedule"/>
+         <xsd:enumeration value="ReversalForCancellation"/>
+         <xsd:enumeration value="ReversalOfACredit"/>
+         <xsd:enumeration value="ReversalOfADebit"/>
+         <xsd:enumeration value="SellerInitiatedChange"/>
+         <xsd:enumeration value="TermsChangedForNewTerms"/>
+      </xsd:restriction>
+   </xsd:simpleType></xsd:schema>

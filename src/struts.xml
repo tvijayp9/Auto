@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+    
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.multipart.saveDir" value="c:\upload" />
+    <constant name="struts.custom.i18n.resources" value="MessageResources" />
+    <constant name="struts.multipart.maxSize" value="100485760" />
+    <include file="struts-admin.xml" />
+    <include file="struts-json.xml" />
+    <include file="struts-jasperreports.xml" />
+    <include file="struts-catelouge.xml" />
+    <include file="struts-message.xml" />
+    <include file="struts-partner.xml" />
+    <include file="struts-resolution.xml" />
+    <include file="struts-product-management.xml" />
+
+    <package name="default" extends="struts-default">
+
+        <!-- General Actions -->
+
+        <action name="ntforgetpassword">
+            <result>/pages/user/ntforgetpassword.jsp</result>
+        </action>
+        <action name="ptforgetpassword">
+            <result>/pages/user/ptforgetpassword.jsp</result>
+        </action>
+        <action name="kforgetpassword">
+            <result>/pages/user/kforgetpassword.jsp</result>
+        </action>
+        <action name="welcome">
+            <result>Welcome.jsp</result>
+        </action>
+        <action name="contact">
+            <result>/pages/contact.jsp</result>
+        </action>
+        <action name="ntuserforgetpassword" class="com.nexus.struts.action.UserForgetPasswordAction">
+            <result>/pages/user/ntpasswordSend.jsp</result>
+            <result name="input">/pages/user/ntforgetpassword.jsp</result>
+        </action>
+        <action name="kuserforgetpassword" class="com.nexus.struts.action.UserForgetPasswordAction">
+            <result>/pages/user/kpasswordSend.jsp</result>
+            <result name="input">/pages/user/kforgetpassword.jsp</result>
+        </action>
+        <action name="ptuserforgetpassword" class="com.nexus.struts.action.UserForgetPasswordAction">
+            <result>/pages/user/ptpasswordSend.jsp</result>
+            <result name="input">/pages/user/ptforgetpassword.jsp</result>
+        </action>
+        <action name="resetpassword">
+            <result>/pages/user/resetpassword.jsp</result>
+        </action>
+        <action name="userresetpassword" class="com.nexus.struts.action.UserResetPasswordAction">
+            <result>/pages/user/passwordReset.jsp</result>
+            <result name="error">/pages/user/resetpassword.jsp</result>
+            <result name="input">/pages/user/resetpassword.jsp</result>
+        </action>
+        <action name="logout" class="logoutAction" >
+            <result name="input" type="redirect">${logoutpage}</result>
+            <!--<result name="result">/newtown.jsp</result>
+            <result name="sessionTimeout">/sessionTimeout.jsp</result>-->
+        </action>
+
+        <action name="setTransactionTypes" class="com.nexus.struts.action.PartnerAction" method="setTransTypes">
+            <result>/pages/partner/setTransTypes.jsp</result>
+        </action>
+
+        <action name="login" class="LoginAction">
+            <result name="userList" type="redirect">${redirectURL}</result>
+            <result  name="error" type="redirect">${errorLoginURL}</result>
+            <result name="partnerList" type="redirect">showpartnerlist.action</result>
+            <result  name="priceList" type="redirect">ViewCategoriesProducts.action</result>
+        </action>
+        <action name="punchoutSetup" class="com.nexus.struts.action.PunchoutSetupAction" />
+         <action name="purchaseOrder" class="purchaseOrderAction" />
+        <action name="ControlTagsIf">
+            <result>/pages/ControlTagsIf.jsf</result>
+        </action>
+    </package>
+    
+</struts>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2014-07-02T12:50:57</date>
+  <millis>1404269457453</millis>
+  <sequence>28</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>************************ TradeRoute Starting ************************</message>
+</record>
+<record>
+  <date>2014-07-02T12:50:57</date>
+  <millis>1404269457453</millis>
+  <sequence>29</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>Starting, Config Path: C:\TradeRoute\config_files\edxconfig.xml</message>
+</record>
+<record>
+  <date>2014-07-02T12:50:57</date>
+  <millis>1404269457453</millis>
+  <sequence>30</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>WARNING</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>readInPartnerResolutionFile</method>
+  <thread>11</thread>
+  <message>java.lang.Exception: [ReadinXMLFile] - File: C:\TradeRoute\config_files\Partner_Resolution_Store.xml, does not exist or is not a valid file.</message>
+</record>
+<record>
+  <date>2014-07-02T12:50:57</date>
+  <millis>1404269457546</millis>
+  <sequence>31</sequence>
+  <logger>traderoute.Trans_Disp_Bean</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.Trans_Disp_Bean</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>- initialise()...in</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2014-07-02T12:54:15</date>
+  <millis>1404269655000</millis>
+  <sequence>28</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>************************ TradeRoute Starting ************************</message>
+</record>
+<record>
+  <date>2014-07-02T12:54:15</date>
+  <millis>1404269655000</millis>
+  <sequence>29</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>Starting, Config Path: C:\TradeRoute\config_files\edxconfig.xml</message>
+</record>
+<record>
+  <date>2014-07-02T12:54:15</date>
+  <millis>1404269655000</millis>
+  <sequence>30</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>WARNING</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>readInPartnerResolutionFile</method>
+  <thread>11</thread>
+  <message>java.lang.Exception: [ReadinXMLFile] - File: C:\TradeRoute\config_files\Partner_Resolution_Store.xml, does not exist or is not a valid file.</message>
+</record>
+<record>
+  <date>2014-07-02T12:54:15</date>
+  <millis>1404269655046</millis>
+  <sequence>31</sequence>
+  <logger>traderoute.Trans_Disp_Bean</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.Trans_Disp_Bean</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>- initialise()...in</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2014-07-02T12:56:16</date>
+  <millis>1404269776750</millis>
+  <sequence>28</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>************************ TradeRoute Starting ************************</message>
+</record>
+<record>
+  <date>2014-07-02T12:56:16</date>
+  <millis>1404269776750</millis>
+  <sequence>29</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>Starting, Config Path: C:\TradeRoute\config_files\edxconfig.xml</message>
+</record>
+<record>
+  <date>2014-07-02T12:56:16</date>
+  <millis>1404269776750</millis>
+  <sequence>30</sequence>
+  <logger>traderoute.TransactionCentre</logger>
+  <level>WARNING</level>
+  <class>com.nexus.util.DR.traderoute.TransactionCentre</class>
+  <method>readInPartnerResolutionFile</method>
+  <thread>11</thread>
+  <message>java.lang.Exception: [ReadinXMLFile] - File: C:\TradeRoute\config_files\Partner_Resolution_Store.xml, does not exist or is not a valid file.</message>
+</record>
+<record>
+  <date>2014-07-02T12:56:16</date>
+  <millis>1404269776796</millis>
+  <sequence>31</sequence>
+  <logger>traderoute.Trans_Disp_Bean</logger>
+  <level>INFO</level>
+  <class>com.nexus.util.DR.traderoute.Trans_Disp_Bean</class>
+  <method>initialise</method>
+  <thread>11</thread>
+  <message>- initialise()...in</message>
+</record>

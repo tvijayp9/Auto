@@ -1,0 +1,188 @@
+table.dataTable a,
+table.dataTable a:link,
+table.dataTable a:visited {
+	border:none;
+	text-decoration: none;
+	color:#336699;
+	}							
+table.dataTable a:hover {text-decoration: none;}
+table.dataTable a.button {text-decoration: none;}
+.dataTable img {
+	border:0;
+	margin-top:.5em;
+	}	
+table.dataTable {
+	width:929px;
+	border-top:1px solid #ddebf7;
+	border-right:1px solid #ddebf7;
+	margin:0;
+	border-collapse:collapse;
+	}
+.dataTable caption {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #366a88;
+	letter-spacing:.1em;
+	margin:1em 0 0 0;
+	padding:0;
+	caption-side:top;
+	text-align:left;
+	}	
+.dataTable tr.odd td	{
+	background:#f0f7ff;
+	}
+.dataTable tr.unOpened td a	{
+	font-weight: bold;
+	}
+.dataTable tr.extraHeight td {
+	padding: 4px 5px;
+	}
+.dataTable tr.previewPanelHeader td {
+	padding: 4px 5px;
+	}
+.dataTable tr td.filePreview {
+	padding: 15px;
+	font: normal 12px Arial, Helvetica, sans-serif; 
+	font-color: #ffffff;
+	}
+.dataTable tr.odd .column1	{
+	background:#f4f9fe;
+	}	
+.column1	{
+	background:#f9fcfe;
+	}
+.dataTable td {
+	color:#678197;
+	border-bottom:1px solid #ddebf7;
+	border-left:1px solid #ddebf7;
+	padding:1px 4px 1px 12px;
+	text-align:left;
+	}	
+.dataTable td.alignLeft {
+	text-align:left;
+	}				
+.dataTable th {
+	font-weight:normal;
+	color: #336699;
+	text-align:left;
+	border-bottom: 1px solid #a8c8e2;
+	border-top: 1px solid #e6f0f8;
+	border-left:1px solid #a8c8e2;
+	border-right:1px solid #a8c8e2;
+	padding: 7px 5px;
+	}							
+.dataTable thead th {
+	background:#f4f9fe url('../images/bgTableHeader.gif') top left repeat;
+	text-align:left;
+	font: bold 13px Arial, Helvetica, sans-serif; 
+	color:#336699;
+	}	
+.dataTable thead th.previewFields {
+	text-align:left;
+	background:#f4f9fe url('../images/bgTableHeader-previewPanel.gif') top left repeat;
+	font: bold 13px Arial, Helvetica, sans-serif; 
+	color:#336699;
+	padding: 2px 2px 2px 10px;
+	}	
+.dataTable thead th.previewFields a {
+	text-align:left;
+	background: transparent;
+	font-weight: bold;
+	padding: 2px 2px 2px 10px;
+	}
+.dataTable thead th.previewDetails {
+	text-align:left;
+	background:#f4f9fe url('../images/bgTableHeader-previewPanel.gif') top left repeat;
+	font: normal 13px Arial, Helvetica, sans-serif; 
+	color:#000000;
+	padding: 2px 2px 2px 10px;
+	}	
+.dataTable tfoot th {
+	text-align:center;
+	background:#f4f9fe;
+	}	
+.dataTable tfoot th strong {
+	font:bold 1.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	margin:.5em .5em .5em 0;
+	color:#66a3d3;
+		}		
+.dataTable tfoot th em {
+	color:#f03b58;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: normal;
+	}	
+.rowLinks tbody tr:hover {background: #FFF9DF; cursor: pointer;}
+.rowLinks tr.odd:hover td {background: #FFF9DF; cursor: pointer;}
+.rowLinks tr:hover td, .rowLinks tr.odd:hover td {background: #FFF9DF; cursor: pointer;}
+.rowLinks tr.preview td {background: #fef0b2;}
+.rowLinks tr.preview:hover {background: #fef0b2;}
+.rowLinks tr.preview:hover td, .rowLinks tr.preview:hover td {background: #fef0b2; cursor: pointer;}
+
+
+/**--Sorting styles start here--**/
+thead th.sortable,
+thead th.sortable-text,
+thead th.sortable-date,
+thead th.sortable-keep,
+thead th.sortable-date-dmy,
+thead th.sortable-numeric,
+thead th.sortable-currency,
+thead th.sortable-sortByTwelveHourTimestamp,
+thead th.sortable-sortIPAddress,
+thead th.sortable-sortEnglishLonghandDateFormat,
+thead th.sortable-sortScientificNotation,
+thead th.sortable-sortImage,
+thead th.sortable-sortFileSize,
+thead th.sortable-sortAlphaNumeric
+{
+cursor: pointer;
+background: #ffffff url('../images/bgTableHeaderSortable.gif') no-repeat;
+}
+thead th.sortable a,
+thead th.sortable-text a,
+thead th.sortable-date a,
+thead th.sortable-keep a,
+thead th.sortable-date-dmy a,
+thead th.sortable-numeric a,
+thead th.sortable-currency a,
+thead th.sortable-sortByTwelveHourTimestamp a,
+thead th.sortable-sortIPAddress a,
+thead th.sortable-sortEnglishLonghandDateFormat a,
+thead th.sortable-sortScientificNotation a,
+thead th.sortable-sortImage a,
+thead th.sortable-sortFileSize a,
+thead th.sortable-sortAlphaNumeric a
+{
+background: transparent;
+text-align:left;
+font: bold 13px Arial, Helvetica, sans-serif; 
+color: #336699;
+padding: 0 0 0 10px;
+}
+thead th.forwardSort
+{
+background: url('../images/bgTableHeaderSortable-down.gif') no-repeat 0 0;
+}
+thead th.reverseSort
+{
+background: url('../images/bgTableHeaderSortable-up.gif') no-repeat 0 0;
+}
+table.dataTable thead th.forwardSort a,
+table.dataTable thead th.reverseSort a
+{
+color:#003366;
+}
+/*
+
+These styles should be added when very long tables are expected
+
+th.sort-active
+{
+background:#CAE8EA url(../media/bg_header_sorting.jpg) no-repeat 0 0;
+cursor:wait;
+}
+th.sort-active a
+{
+color:#a80000 !important;
+cursor:wait;
+}

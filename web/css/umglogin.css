@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+#header {
+    background-image: url(../images/umg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 134px;
+    width: 758px;
+    position: absolute;
+    left: 120px;
+    top: 100px;
+}
+#header1 {
+    background-image: url(../images/newtownToyotaLogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 520px;
+    width: 1000px;
+
+}
+#header2 {
+    background-image: url(../images/KalamundaToyotaLogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 520px;
+    width: 1000px;
+}
+#content {
+    margin-top: 10px;
+    width: 950px;
+}

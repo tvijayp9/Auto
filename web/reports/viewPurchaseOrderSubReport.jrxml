@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="viewPurchaseOrderSubReport" pageWidth="555" pageHeight="802" columnWidth="535" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<style name="style1" isDefault="false" mode="Opaque" backcolor="#D4D0C8"/>
+	<style name="style2" isDefault="false" mode="Opaque" backcolor="#D8E4F8"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="uom" class="java.lang.String">
+		<fieldDescription><![CDATA[uom]]></fieldDescription>
+	</field>
+	<field name="gtin" class="java.lang.String">
+		<fieldDescription><![CDATA[gtin]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.String">
+		<fieldDescription><![CDATA[qty]]></fieldDescription>
+	</field>
+	<field name="sequenceNumber" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sequenceNumber]]></fieldDescription>
+	</field>
+	<field name="product_Code1" class="java.lang.String">
+		<fieldDescription><![CDATA[product_Code1]]></fieldDescription>
+	</field>
+	<field name="productid" class="java.lang.String">
+		<fieldDescription><![CDATA[productid]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band/>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band height="15">
+			<staticText>
+				<reportElement style="style1" x="429" y="0" width="79" height="15"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Supplier Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="style1" x="177" y="0" width="60" height="15"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="style1" x="238" y="0" width="190" height="15"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="style1" x="96" y="0" width="80" height="15"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GTIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="style1" x="31" y="0" width="64" height="15"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buyer Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="style1" x="508" y="0" width="47" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="style1" x="0" y="0" width="30" height="15"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SNO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15">
+			<textField>
+				<reportElement style="style2" x="177" y="0" width="60" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{uom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style2" x="96" y="0" width="80" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{gtin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style2" x="509" y="0" width="45" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style2" x="0" y="0" width="30" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{sequenceNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style2" x="429" y="0" width="80" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{product_Code1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style2" x="31" y="0" width="64" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{productid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style2" x="238" y="0" width="190" height="15"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

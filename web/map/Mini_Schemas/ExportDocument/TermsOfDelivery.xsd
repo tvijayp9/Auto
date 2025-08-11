@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="TermsOfDelivery" type="TermsOfDelivery"/><xsd:complexType name="TermsOfDelivery">
+      <xsd:sequence>
+         <xsd:element name="TermsOfDeliveryFunctionCoded" type="TermsOfDeliveryFunctionCode"/>
+         <xsd:element minOccurs="0" name="TermsOfDeliveryFunctionCodedOther" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="TransportTermsCoded" type="TransportTermsCode"/>
+         <xsd:element minOccurs="0" name="TransportTermsCodedOther" type="xsd:string"/>
+         <xsd:element name="ShipmentMethodOfPaymentCoded" type="ShipmentMethodOfPaymentCode"/>
+         <xsd:element minOccurs="0" name="ShipmentMethodOfPaymentCodedOther" type="xsd:string"/>
+         <xsd:element minOccurs="0" ref="Location"/>
+         <xsd:element minOccurs="0" name="TermsOfDeliveryDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="TransportDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="RiskOfLossCoded" type="RiskOfLossCode"/>
+         <xsd:element minOccurs="0" name="RiskOfLossCodedOther" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="RiskOfLossDescription" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType><xsd:simpleType name="TermsOfDeliveryFunctionCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="PriceCondition"/>
+         <xsd:enumeration value="DespatchCondition"/>
+         <xsd:enumeration value="PriceandDespatchCondition"/>
+         <xsd:enumeration value="CollectedByCustomer"/>
+         <xsd:enumeration value="TransportCondition"/>
+         <xsd:enumeration value="DeliveryCondition"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="TransportTermsCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="Ex-Works"/>
+         <xsd:enumeration value="Free-Carrier"/>
+         <xsd:enumeration value="FreeAlongsideShip"/>
+         <xsd:enumeration value="FreeOnBoard"/>
+         <xsd:enumeration value="CostAndFreight"/>
+         <xsd:enumeration value="Cost-InsuranceAndFreight"/>
+         <xsd:enumeration value="CarriagePaidTo"/>
+         <xsd:enumeration value="Carriage-InsurancePaidTo"/>
+         <xsd:enumeration value="DeliveredAtFrontier"/>
+         <xsd:enumeration value="DeliveredEx-Ship"/>
+         <xsd:enumeration value="DeliveredEx-Quay"/>
+         <xsd:enumeration value="DeliveredDutyUnpaid"/>
+         <xsd:enumeration value="DeliveredDutyPaid"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="ShipmentMethodOfPaymentCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="Account"/>
+         <xsd:enumeration value="AdvanceCollect"/>
+         <xsd:enumeration value="AdvancePrepaid"/>
+         <xsd:enumeration value="CashOnDeliveryServiceChargePaidByConsignee"/>
+         <xsd:enumeration value="CashOnDeliveryServiceChargePaidByConsignor"/>
+         <xsd:enumeration value="Collect"/>
+         <xsd:enumeration value="CollectFreightCreditedToPaymentCustomer"/>
+         <xsd:enumeration value="CollectOnDelivery"/>
+         <xsd:enumeration value="CustomerPick-UpOrBackhaul"/>
+         <xsd:enumeration value="DefinedByBuyerAndSeller"/>
+         <xsd:enumeration value="FobPortOfCall"/>
+         <xsd:enumeration value="HalfPrepaid"/>
+         <xsd:enumeration value="InformationCopy-NoPaymentDue"/>
+         <xsd:enumeration value="InsuranceCostsPaidByConsignee"/>
+         <xsd:enumeration value="InsuranceCostsPaidByConsignor"/>
+         <xsd:enumeration value="Mixed"/>
+         <xsd:enumeration value="NonRevenue"/>
+         <xsd:enumeration value="NotSpecified"/>
+         <xsd:enumeration value="PaidByBuyer"/>
+         <xsd:enumeration value="PaidBySupplierOrSeller"/>
+         <xsd:enumeration value="PayableElsewhere"/>
+         <xsd:enumeration value="PerContract"/>
+         <xsd:enumeration value="Pickup"/>
+         <xsd:enumeration value="PrepaidAndSummaryBill"/>
+         <xsd:enumeration value="PrepaidButChargedToCustomer"/>
+         <xsd:enumeration value="PrepaidByProcessor"/>
+         <xsd:enumeration value="Prepaid-BySeller"/>
+         <xsd:enumeration value="PrepaidLocalCollectOutstate"/>
+         <xsd:enumeration value="PrepaidOnly"/>
+         <xsd:enumeration value="ReturnContainerFreightFree"/>
+         <xsd:enumeration value="ReturnContainerFreightPaidByCustomer"/>
+         <xsd:enumeration value="ReturnContainerFreightPaidBySupplier"/>
+         <xsd:enumeration value="Rule11Shipment"/>
+         <xsd:enumeration value="ServiceFreight-NoCharge"/>
+         <xsd:enumeration value="ThirdPartyPay"/>
+         <xsd:enumeration value="WeightCondition"/>
+      </xsd:restriction>
+   </xsd:simpleType><xsd:simpleType name="RiskOfLossCode">
+      <xsd:restriction base="xsd:NMTOKEN">
+         <xsd:enumeration value="Other"/>
+         <xsd:enumeration value="RiskOfLossInTransitToDestinationIsBuyers"/>
+         <xsd:enumeration value="RiskOfLossInTransitToFreightEqualizationPointIsSellers"/>
+         <xsd:enumeration value="RiskOfLossInTransitToPoolPointIsSellers"/>
+         <xsd:enumeration value="RiskOfLossInTransitToDestinationIsSellers"/>
+      </xsd:restriction>
+   </xsd:simpleType></xsd:schema>

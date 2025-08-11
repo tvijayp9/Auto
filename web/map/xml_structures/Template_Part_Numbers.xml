@@ -1,0 +1,14 @@
+<PartNumbers>
+	<SellerPartNumber>
+		<PartNum>
+			<PartID>NO PART NUMBER</PartID>
+			<PartIDExt>You must enter a valid Part Number for this item.</PartIDExt>
+		</PartNum>
+	</SellerPartNumber>
+	<BuyerPartNumber>
+		<PartNum>
+			<PartID>NO PART NUMBER</PartID>
+			<PartIDExt>You must enter a valid Part Number for this item.</PartIDExt>
+		</PartNum>
+	</BuyerPartNumber>
+</PartNumbers>

@@ -1,0 +1,119 @@
+/* Default Stylesheet */
+
+/** BODY ELEMENTS **/
+
+body {text-align: left; background: #ffffff; font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: #336699;}
+a, a:old, a:visited {color: #336699; text-decoration: underline; font-weight: bold;}
+a:hover {color: blue; background: transparent;}
+a:active {outline: none;}
+h1 {font: normal 28px Georgia, "Trebuchet MS", Arial, Sans-Serif; color: #0038a9;}
+h2 {font: bold italic 18px Georgia, "Trebuchet MS", Arial, Sans-Serif; color: #0038a9;}
+h3 {font: bold 18px "Trebuchet MS", Tahoma, Verdana, sans-serif; color: #0038a9;}
+h4 {font: bold 14px "Trebuchet MS", Tahoma, Verdana, sans-serif; color: #0038a9; padding: 0; margin: 0;}
+h5 {font: bold 11px Arial, Helvetica, sans-serif; color: #0038a9;}
+h6 {font: normal 12px Verdana; color: black;}
+p {font: normal 12px Arial, Helvetica, sans-serif; color: #0038a9;}
+img {border: 0;}
+hr {margin: 0; padding: 0;height: 1px;}
+span { color: #336699;}
+
+/** PADDING/ALIGNMENT/BORDERS **/
+.padBot10 {padding: 0 0 10px 0;}
+.padTopBot10 {padding: 10px 0 10px 0;}
+.padLeft12 {padding: 0 0 0 12px;}
+.padLeftRight10 {padding: 0 10px;}
+.padTopRightBot10 {padding: 10px 10px 10px 0;}
+.borderBottomGrey {border-bottom: 1px solid #cccccc;}
+.width160 {width: 160px;}
+.formDivider {width: 95%; margin: 2px 0 4px 0; height: 1px;}
+.alignLeft {text-align: left;}
+.alignRight {text-align: right;}
+.alignCenter {text-align: center;}
+.valignBottom {vertical-align: bottom;}
+.valignTop {vertical-align: top;}
+.valignMiddle {vertical-align: middle;}
+.invisible {visibility:hidden;}
+.bold {font-weight: bold;}
+.navy {color: #0038a9;}
+.hide {display: none;}
+
+/** TYPOGRAPHY **/
+
+
+/** IMAGES **/
+
+
+/** MAIN CONTAINERS **/
+div#container {width: 964px; margin: 0 auto; padding: 0 7px; text-align: left; background: #ffffff url('../images/bgBody.gif') top center repeat-y; }
+div#header {margin: 0 17px; padding: 10px 0 0 0; width: 930px;} 	
+div#header-contentsWithoutMenu {height: 85px; margin: 0; padding: 0;}
+div#header-logo {margin: 0; padding: 10px 0 0 10px; width: 100px; height: 45px; float: left;}
+div#header-logoutWelcome {margin: 0; padding: 0; width: 300px; height: 55px; float: right;} 
+div#header-logoutWelcome-content {color: #336699; font-size: 11px; float: right; text-align: center;}
+div#header-logoutWelcome-content a {font-weight: bold;}
+div#header-menu {width: 930px; margin: 0; padding: 0;}
+div#body-wrap {clear: left; width: 930px; height: 430px;  margin: 0 16px 0 18px; padding: 0;}
+div#body-wrap1 {clear: left; width: 930px; height: 420px;  margin: 0 16px 0 18px; padding: 0;overflow:auto;} 
+div#body-wrap2 {clear: left; width: 930px; height: 260px;  margin: 0 16px 0 18px; padding: 0;overflow:auto;} 
+div#body-wrapadmin {clear: left; width: 930px; height: 400px;  margin: 0 16px 0 18px; padding: 0;overflow:auto;} 
+div#previewPanelHeader {width: 920px; background: #336699; color: #ffffff; font-weight: bold; padding: 7px 0 5px 9px; margin: 0;}			
+div#footer {width: 964px; margin: 0 auto; padding: 0; background: #ffffff url('../images/bgBody.gif') top center;} 	
+div#footer-content {width: 940px; margin: 0 auto; padding: 0 7px; font-size: 11px; color: #336699;}
+div#footer-content a {font-size: 11px; font-weight: normal;}
+div#footer-shadow {width: 964px; margin: 0 auto; padding: 0 7px;}
+
+
+/** COMPONENTS **/
+/*Tabbed menu---*/
+#tabMenu {width:100%; line-height:normal; border-bottom:0px solid #6B78A9;}
+#tabMenu ul {margin: 0; padding:10px 10px 0 0; list-style:none; } 
+#tabMenu li {display:inline; margin:0; padding:0;} 
+#tabMenu a {font: bold 11px Verdana; float:left; background:url("../images/tableft.gif") no-repeat left top; margin:0; padding:0 0 0 7px; text-decoration:none;} 
+#tabMenu a.activeTab {float:left; background:url("../images/tableft-active.gif") no-repeat left top; margin:0; padding:0 0 0 7px; text-decoration:none;} 
+#tabMenu a span {font: bold 11px Verdana; float: left; display: block; background: url("../images/tabright.gif") no-repeat right top; color:#6B78A9;   vertical-align:middle; } 
+#tabMenu a.activeTab span {float:left; display:block; background:url("../images/tabright-active.gif") no-repeat right top;   color:#ffffff; vertical-align:middle;}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabMenu a span {float:none;}
+/* End IE5-Mac hack */
+#tabMenu a:hover span {color:#6B78A9;} 
+#tabMenu a:hover {background-position:0% -42px;} 
+#tabMenu a:hover span {background-position:100% -42px;}  
+#tabMenu a.activeTab:hover {background-position: 0 0;} 
+#tabMenu a.activeTab:hover span {background-position: 100% 0; color: #ffffff;}  
+#tabMenu a.disabled {color: #aaaaaa; cursor: default;} 
+#tabMenu a.disabled span {color: #aaaaaa;} 
+#tabMenu a.disabled:hover {background-position: 0 0;}   
+#tabMenu a.disabled:hover span {background-position: 100% 0;} 
+.twoWords {padding: 5px 8px 1px 2px; height: 29px;}
+.oneWord {padding: 12px 8px 0px 2px; height: 23px;}
+/*End of Tabbed menu---*/
+
+/*Sub menu---*/
+#subMenu {float: left; width: 100%; background: #336699; border-bottom: 1px solid #6B78A9;}
+#subMenu ul {margin: 9px 0 0 10px; padding: 0; list-style: none; height: 26px;} 
+#subMenu li {display: inline; margin: 0; padding: 0 15px 0 5px;} 
+#subMenu a {font: bold 11px Verdana; color: #ffffff; border: 1px solid #336699; text-decoration: none; padding: 2px 6px 1px 6px;} 
+#subMenu a.activeSubMenu {background: #fa8337; border: 1px solid #ffffff;} 
+#subMenu a:hover {border: 1px solid #ffffff;} 
+/*End of Sub menu---*/
+
+#subMenuLogo {float: left; width: 100%; background: white; border-bottom: 0px solid #6B78A9;}
+
+/** LISTS **/
+
+
+/** TABLES **/
+/* Body data table styles in datatable.css*/
+
+
+/** FORMS **/
+form input {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;padding: 2px; font-weight: normal;}
+form input.text {border: 1px solid #9d9d9d;background: #ffffff;}
+form input.submit {padding: 0 5px; font-size: 11px;}
+form input.file {font-size: 11px;}
+
+
+/** SUB CONTAINERS **/
+
+
+/** END **/

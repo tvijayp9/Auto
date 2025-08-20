@@ -30,12 +30,16 @@
         <script type="text/javascript">
 		
             var hookUrl='<%=session.getAttribute("hookUrl")%>';
-		
 		$(document).ready(function(){
 				$("#submit1").click(function(){
 					$("#submit1").attr("disabled", "disabled");
+                                 $.ajax({
+                                    type: "POST",
+                                     url: "resetShoppingCart.action",
+                                     success: function() {
 					$("form").attr("action", hookUrl).submit();
-					$("form").attr("action", "resetShoppingCart.action").submit();
+                                      }
+                                   })
 				});
 			});
 		

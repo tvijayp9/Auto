@@ -6,18 +6,45 @@ $(function(){
             window.open('pages/resolution/Trans_Disp_FS.jsp?id='+opts.rowId,'MyWindow','toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,width=800,height=600');
         });
     };
-
     var viewFormatter=function(el, cellval, opts){
-            $(el).html("<a href=\"#\">"+cellval+"</a>").click(function(){
+    $(el).html("<a href='#'>" + cellval + "</a>");
 
-				location.href='processedPrintTransaction.action?ptid='+opts.rowId;
-				//alert(document.URL);
-					var redirectUrl="http://nexusb2bnetwork.com.au/Auto/temp/print_"+cellval+".htm";
-				//setTimeout(function() { window.open(redirectUrl)}, 5000);
-				alert("It takes 5-10 seconds to genarate document.Please refresh the page by hitting F5,if it can't open a page.");
-	  window.open(redirectUrl,'mywindow','width=1000,height=700,toolbar=yes,menubar=yes,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,copyhistory=no,resizable=no');
+    $(el).find('a').click(function (e) {
+        e.preventDefault();
+
+        // 1 Open the popup immediately
+        var popup = window.open(
+            "",
+            "mywindow",
+            "width=1000,height=700,toolbar=yes,menubar=yes,location=no,directories=no,status=no,scrollbars=yes,copyhistory=no,resizable=no"
+        );
+
+        if (!popup) {
+            alert("Popup blocked! Please allow popups for this site.");
+            return;
+        }
+
+        // 2 Initialize popup content and script
+        popup.document.write(
+            "<html><head><title>Generating Document</title></head>" +
+            "<body style='font-family:sans-serif;text-align:center;margin-top:50px;'>" +
+            "<h2>Generating document...</h2>" +
+            "<p>Please wait 3 seconds...</p>" +
+            "<script>" +
+            "setTimeout(function() {" +
+            "window.location.href='https://nexusb2bnetwork.com.au/Auto/temp/print_" + encodeURIComponent(cellval) + ".htm';" +
+            "}, 3000);" +
+            "</script>" +
+            "</body></html>"
+        );
+
+        // 3 Delay main page redirect slightly so popup fully opens first
+        setTimeout(function () {
+            window.location.href = 'processedPrintTransaction.action?ptid=' + opts.rowId;
+        }, 100); // 100ms is enough
        });
     };
+
     $("#list").jqGrid({
         url:'ShowProcessedTransactionList.action?nd='+new Date().getTime(),
         datatype: "json",

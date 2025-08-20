@@ -28,18 +28,19 @@
 		
         <script type="text/javascript" src="javascript/jquery-1.3.min.js"></script>
         <script type="text/javascript">
-		
             var hookUrl='<%=session.getAttribute("hookUrl")%>';
-		hookUrl="SAPEVENT:POST";
 		$(document).ready(function(){
 				$("#submit1").click(function(){
 					$("#submit1").attr("disabled", "disabled");
+                                 $.ajax({
+                                    type: "POST",
+                                     url: "resetShoppingCart.action",
+                                     success: function() {
 					$("form").attr("action", hookUrl).submit();
-					$("form").attr("action", "resetShoppingCart.action").submit();
+                                      }
+                                   })
 				});
 			});
-		
-
         </script>
 </HEAD>
 

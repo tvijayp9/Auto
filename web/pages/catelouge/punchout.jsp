@@ -31,13 +31,10 @@
 			$(document).ready(function(){
 				$("#submit1").click(function(){
 				 $("#submit1").attr("disabled", "disabled");
-                                 //$("form").attr("action", "resetShoppingCart.action").submit();
                                  $.ajax({
                                     type: "POST",
                                      url: "resetShoppingCart.action",
-                                     //data: $(this).serialize(),
                                      success: function() {
-                                       // callback code here
                                        $("form").attr("action", hookUrl).submit();
                                       }
                                    })

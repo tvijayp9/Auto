@@ -29,7 +29,7 @@
         <script src="javascript/jqGrid/jquery.jqGrid.js" type="text/javascript"></script>
         <script src="javascript/jqGrid/js/jqModal.js" type="text/javascript"></script>
         <script src="javascript/jqGrid/js/jqDnR.js" type="text/javascript"></script>
-        <script src="javascript/processedTransactionList.js" type="text/javascript"></script>
+        <script src="javascript/processedTransactionList.js?123" type="text/javascript"></script>
         <style type="text/css">
 <!--
 #mysearch {

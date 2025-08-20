@@ -7,7 +7,7 @@
     
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="false" />
-    <constant name="struts.multipart.saveDir" value="c:\upload" />
+    <constant name="struts.multipart.saveDir" value="/home/ubuntu/tomcat/applications/Auto/upload/" />
     <constant name="struts.custom.i18n.resources" value="MessageResources" />
     <constant name="struts.multipart.maxSize" value="100485760" />
     <include file="struts-admin.xml" />

@@ -12,7 +12,7 @@
     <bean id="mailbean" class="com.nexus.web.common.SendMail">
         <property name="strSmtp" value="smtp.zoho.com"/>
 		<property name="smtpPort" value="587"/>
-		<property name="username" value="vthumma@ivbplus.com"/>
-		<property name="password" value="vijay125"/>
+		<property name="username" value="6465465"/>
+		<property name="password" value="123456"/>
 	</bean>
 </beans>

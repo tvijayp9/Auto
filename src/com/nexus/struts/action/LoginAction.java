@@ -282,8 +282,9 @@ public class LoginAction extends ActionSupport implements ServletRequestAware {
                     session.setAttribute("punchout", punchout);
                  }else if(punchout.equalsIgnoreCase("cxmlpunchout")){
                      log.info("login as CXML punchout customer..");
+                     String cxmlCustomer=catalogueService.findRuleValueMappingbySupId("PUNCHOUT_CUSTOMER",user.getNexusId());
                      hm=new HashMap();
-                     hm=partnerDao.getPunchoutCoockie();
+                     hm=partnerDao.getPunchoutCoockie(cxmlCustomer);
                      session.setAttribute("buyerCoockie", hm.get("buyerCoockie"));
                      session.setAttribute("fromURL",hm.get("fromURL") );
                     session.setAttribute("punchout", punchout);

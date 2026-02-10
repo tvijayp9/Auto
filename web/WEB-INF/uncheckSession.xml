@@ -11,6 +11,7 @@
 <root>
     <request>/login.action</request>
     <request>/punchoutSetup.action</request>
+    <request>/cxmlpunchoutSetup.action</request>
 	<request>/purchaseOrder.action</request>
     <request>/logout.action</request>
     <request>/ntforgetpassword.action</request>

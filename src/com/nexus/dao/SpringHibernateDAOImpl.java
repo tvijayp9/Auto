@@ -1230,37 +1230,37 @@ public class SpringHibernateDAOImpl extends HibernateDaoSupport implements Sprin
         conn.close();
      }
 
-     public void insertPunchoutSetup(String buyerCoockie,String fromURL) throws SQLException{
+     public void insertPunchoutSetup(String buyerCoockie,String fromURL, String buyerName) throws SQLException{
          log.info("insertPunchoutSetup buyerCoockie=" + buyerCoockie);
          Connection conn = this.getSession().connection();
         PreparedStatement ps = null;
-        String selectStatement = "insert into xy_punchout(buyerCoockie,fromURL) values(?,?)";
+        String selectStatement = "insert into xy_punchout(buyerCoockie,fromURL, buyerName) values(?,?,?)";
         ps = conn.prepareStatement(selectStatement);
         ps.setString(1,buyerCoockie);
         ps.setString(2,fromURL);
+        ps.setString(3,buyerName);
         ps.execute();
 
         ps.close();
         conn.close();
      }
 
-    public HashMap getPunchoutCoockie() throws SQLException{
+    public HashMap getPunchoutCoockie(String customerName) throws SQLException{
         
          ResultSet rs = null;
          Connection conn = this.getSession().connection();
         PreparedStatement ps = null;
         HashMap hm=new HashMap();
         log.info("getPunchout Coockie ==");
-        String selectStatement = "select buyerCoockie,fromURL from xy_punchout order by requestDate desc limit 1";
+        String selectStatement = "select buyerCoockie,fromURL from xy_punchout where buyerName =? order by requestDate desc limit 1";
         ps = conn.prepareStatement(selectStatement);
+        ps.setString(1,customerName);
         rs=ps.executeQuery();
         if(rs.next())
         {
             hm.put("buyerCoockie", rs.getString("buyerCoockie"));
             hm.put("fromURL", rs.getString("fromURL"));
         }
-
-        
         rs.close();
         ps.close();
         conn.close();

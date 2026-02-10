@@ -19,6 +19,8 @@ public interface ProductManagementService {
     
     public boolean uploadParts(File uploadFile, String uploadFilePath, String supNexusId, String productsTableName) throws SQLException;
     
+    public boolean uploadMRLParts(File uploadFile, String uploadFilePath, String supNexusId, String productsTableName) throws SQLException;
+            
     public boolean updatePart(String siteName, String catName, String partNumber, String description, String price, String productTable) throws SQLException;
     
     public boolean deletePart(String siteName, String catName, String partNumber, String productTable) throws SQLException;

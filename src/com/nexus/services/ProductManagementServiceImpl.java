@@ -61,7 +61,7 @@ public class ProductManagementServiceImpl implements ProductManagementService{
             os = new FileOutputStream(outFilePath);
             PrintWriter writer = new PrintWriter(new OutputStreamWriter(os));
             line = reader.readLine();
-            log.info("fileName..." + uploadFile.getName() + "...path=" + outFilePath);
+            log.info("bhp fileName..." + uploadFile.getName() + "...path=" + outFilePath);
             if(!line.startsWith("\"") || !line.endsWith("\"")){
                 return updatedRecords;
             }
@@ -84,6 +84,57 @@ public class ProductManagementServiceImpl implements ProductManagementService{
             }
             writer.flush();
             updatedRecords = productManagementDAO.uploadParts(outFileName, outFilePath, productsTableName);
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } finally {
+            try {
+                if (is != null) {
+                    is.close();
+                }
+                if (os != null) {
+                    os.close();
+                }
+            } catch (IOException ioe) {
+                ioe.printStackTrace();
+            }
+        }
+        return updatedRecords;
+    }
+    
+    public boolean uploadMRLParts(File uploadFile, String uploadFilePath, String supNexusId, String productsTableName) throws SQLException {
+
+        InputStream is = null;
+        OutputStream os = null;
+        StringTokenizer str = null;
+        boolean updatedRecords = false;
+        String product_code = "";
+        String description = "";
+        String price="";
+        String newLine = "";
+        try {
+            String line;
+            String delimiter = "@#$%";
+            String outFileName = System.currentTimeMillis() + ".txt";
+            String outFilePath = new StringBuilder(uploadFilePath).append(outFileName).toString();
+            is = new FileInputStream(uploadFile);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            os = new FileOutputStream(outFilePath);
+            PrintWriter writer = new PrintWriter(new OutputStreamWriter(os));
+            line = reader.readLine();
+            log.info("uploading mrl fileName..." + uploadFile.getName() + "...path=" + outFilePath);
+            
+              while (line != null) {
+                str = new StringTokenizer(line, ",");
+                product_code = str.nextToken();
+                description = str.nextToken();
+                price = str.nextToken();
+                
+                newLine = new StringBuilder(StringUtils.trim(product_code)).append(delimiter).append(StringUtils.trim(description)).append(delimiter).append(StringUtils.trim(price)).append(delimiter).append(supNexusId).toString();
+                writer.println(newLine);
+                line = reader.readLine();
+            }
+            writer.flush();
+            updatedRecords = productManagementDAO.uploadMRLParts(outFileName, outFilePath, productsTableName);
         } catch (IOException ioe) {
             ioe.printStackTrace();
         } finally {

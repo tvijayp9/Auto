@@ -63,7 +63,8 @@ public class FileUploadAction extends ActionSupport implements ServletRequestAwa
     
     public String execute() throws Exception {
         log.info("inside file upload action.." + fileUploadFileName+"..fileUpload.."+fileUpload+"...fileUploadContentType.."+fileUploadContentType+"..partnerId="+partnerId);
-        
+        boolean updatedRecords = false;
+        String customerName="";
         try {
             ActionContext ac = ActionContext.getContext();
             setPartnerList((List<Partner>) ac.getSession().get("partners"));
@@ -90,7 +91,21 @@ public class FileUploadAction extends ActionSupport implements ServletRequestAwa
             File fileToCreate = new File(filePath, outFileName);
             FileUtils.copyFile(fileUpload, fileToCreate);//copying source file to new file  
             log.info("Absolute Path Location:" + fileToCreate.getAbsolutePath());
-            boolean updatedRecords = getProductManagementService().uploadParts(fileToCreate, filePath, supplierId, productTableName);
+            
+            for(Partner partner: getPartnerList()){
+                if(partnerId.equalsIgnoreCase(partner.getPartnerId())){
+                 customerName = partner.getPartnerName();
+                 break;
+                }
+            }
+            log.info("customerName:" + customerName);
+            if(customerName.toLowerCase().contains("bhp")){
+            updatedRecords = getProductManagementService().uploadParts(fileToCreate, filePath, supplierId, productTableName);
+            } else if(customerName.toLowerCase().contains("mineral")){
+                updatedRecords = getProductManagementService().uploadMRLParts(fileToCreate, filePath, supplierId, productTableName);
+            } else{
+                updatedRecords = false;
+            }
             if(updatedRecords){
                 addActionMessage("You have successfully uploaded the price file");
             } else{

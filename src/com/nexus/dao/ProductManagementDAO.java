@@ -17,6 +17,8 @@ public interface ProductManagementDAO {
     
     public boolean uploadParts(String uploadFile, String filePath , String productTable) throws SQLException;
     
+    public boolean uploadMRLParts(String uploadFile, String filePath, String productTable) throws SQLException;
+    
     public boolean updatePart(String siteName, String catName, String partNumber, String description, String price, String productTable) throws SQLException;
     
     public boolean deletePart(String siteName, String catName, String partNumber, String productTable) throws SQLException;

@@ -50,6 +50,25 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
         }
     }
     
+    public boolean uploadMRLParts(String uploadFile, String filePath, String productTable) throws SQLException {
+        Session session = sessionFactory.getCurrentSession();
+        Connection connection = session.connection();
+        PreparedStatement ps = null;
+        File temp_Dir = new File(filePath);
+        String _tempDirPath = temp_Dir.getAbsolutePath();
+        _tempDirPath = _tempDirPath.replaceAll("\\\\", "\\\\\\\\");
+        System.out.println("_tempDirPath:" + _tempDirPath + "..fileName=" + filePath);
+        String sql = "LOAD DATA LOCAL INFILE '" + _tempDirPath + "' REPLACE INTO TABLE "+productTable+" FIELDS TERMINATED BY '@#$%' ESCAPED BY '^' LINES TERMINATED BY '\n' (product_code,description,price1,supplier_id)";
+        System.out.println("sql:" + sql);
+        ps = connection.prepareStatement(sql);
+        int updateRecords = ps.executeUpdate();
+        if(updateRecords > 0){
+            return true;
+        } else{
+            return false;
+        }
+    }
+    
     /**
      * @return the sessionFactory
      */

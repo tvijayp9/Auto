@@ -75,6 +75,7 @@
             <result  name="priceList" type="redirect">ViewCategoriesProducts.action</result>
         </action>
         <action name="punchoutSetup" class="com.nexus.struts.action.PunchoutSetupAction" />
+        <action name="cxmlpunchoutSetup" class="com.nexus.struts.action.CXMLPunchoutSetupAction" />
          <action name="purchaseOrder" class="purchaseOrderAction" />
         <action name="ControlTagsIf">
             <result>/pages/ControlTagsIf.jsf</result>

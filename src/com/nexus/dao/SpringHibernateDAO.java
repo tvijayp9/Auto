@@ -157,9 +157,9 @@ public interface SpringHibernateDAO {
 
     public String findProducttable(String rule, int supId,int buyId) throws SQLException;
 
-    public void insertPunchoutSetup(String buyerCoockie,String fromURL) throws SQLException;
+    public void insertPunchoutSetup(String buyerCoockie,String fromURL, String buyerName) throws SQLException;
 
-    public HashMap getPunchoutCoockie() throws SQLException;
+    public HashMap getPunchoutCoockie(String customerName) throws SQLException;
 
     public String getFolderPath(String name) throws SQLException;
 }

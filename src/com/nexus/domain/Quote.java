@@ -16,6 +16,7 @@ public class Quote {
     private String qrn;
     private String qname;
     private String createDate;
+    private String comment;
     private List<TemplateOrderItem> items;
 
     /**
@@ -73,4 +74,20 @@ public class Quote {
     public void setItems(List<TemplateOrderItem> items) {
         this.items = items;
     }
+
+    /**
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
+
+    /**
+     * @param comment the comment to set
+     */
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+    
+    
 }

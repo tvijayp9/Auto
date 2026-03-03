@@ -11,8 +11,6 @@ import java.sql.SQLException;
 import java.util.List;
 import org.apache.log4j.Logger;
 import com.nexus.services.ProductManagementService;
-import com.nexus.web.common.UsersList;
-import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import org.apache.struts2.interceptor.ServletRequestAware;
@@ -28,6 +26,7 @@ public class SaveNewAmcapQuoteAction extends ActionSupport implements ServletReq
     HttpSession session = null;
     private ProductManagementService productManagementService;
     private String quoteName;
+    private String comment;
     List<TemplateOrderItem> toi;
     String quotenumber;
     
@@ -41,9 +40,10 @@ public class SaveNewAmcapQuoteAction extends ActionSupport implements ServletReq
         String id = (String) session.getAttribute(Constant.ID);
         toi = (List<TemplateOrderItem>) session.getAttribute("newQuote");
         log.info("templateName=" + getQuoteName() + "..quote size=" + toi.size());
-        quotenumber = productManagementService.saveNewQuote(getQuoteName(), toi, new Integer(id).intValue(), new Integer(supplierId).intValue());
+        quotenumber = productManagementService.saveNewQuote(getQuoteName(), toi, new Integer(id).intValue(), new Integer(supplierId).intValue(), getComment());
         session.removeAttribute("newQuote");
         session.removeAttribute("quoteName");
+        session.removeAttribute("comment");
         return SUCCESS;
     }
     
@@ -74,4 +74,20 @@ public class SaveNewAmcapQuoteAction extends ActionSupport implements ServletReq
     public void setQuoteName(String quoteName) {
         this.quoteName = quoteName;
     }
+
+    /**
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
+
+    /**
+     * @param comment the comment to set
+     */
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+    
+    
 }

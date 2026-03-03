@@ -9,6 +9,7 @@ import com.nexus.domain.TemplateOrderItem;
 import java.io.File;
 import java.math.BigDecimal;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -49,9 +50,9 @@ public interface ProductManagementService {
     
     public List getQuote(List<TemplateOrderItem> template, int start, int limit) throws SQLException;
     
-    public List<TemplateOrderItem> addAmcapProductToQuoteItem(int qty, String productCode, String description, BigDecimal price, List<TemplateOrderItem> quote) throws SQLException;
+    public List<TemplateOrderItem> addAmcapProductToQuoteItem(int qty, String productCode, String description, BigDecimal price, int leadTime, List<TemplateOrderItem> quote) throws SQLException;
     
-    public String saveNewQuote(String quoteName, List<TemplateOrderItem> quote, int id, int supplierId) throws SQLException;
+    public String saveNewQuote(String quoteName, List<TemplateOrderItem> quote, int id, int supplierId, String comment) throws SQLException;
     
     public List findQuoteItemsByQuoteId(int quoteId, int start, int limit, String sidx, String sord) throws SQLException;
     
@@ -59,7 +60,7 @@ public interface ProductManagementService {
     
     public void addQuoteShoppingCartItem(String itemsId, List<ShoppingCartItem> shoppingCart, List<TemplateOrderItem> quotesItems) throws SQLException;
     
-    public String findQuoteNameByQuoteId(int quoteId) throws SQLException;
+    public HashMap findQuoteByQuoteId(int quoteId) throws SQLException;
     
     public void updateQuoteQuantity(String productCode, int quantity, List<TemplateOrderItem> quoteOrderItems);
     

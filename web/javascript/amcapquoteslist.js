@@ -31,7 +31,7 @@ $(function(){
     $("#list").jqGrid({
         url:'QuotesList.action?nd='+new Date().getTime(),   
         datatype: "json",
-        colNames:['ID','Quote Reference Number','Quote Name','Print','Export'],
+        colNames:['ID','Quote Reference Number','Quote Name','Comment','Print','Export'],
         colModel:[ {
             name:'id',
             hidden:true
@@ -47,6 +47,11 @@ $(function(){
             name:'qname',
             index:'qname',
             width:200
+        },
+        {
+            name:'comment',
+            index:'comment',
+            width:255
         },{
             name:'print',
             width:60,
@@ -81,7 +86,7 @@ $(function(){
     $("#list1").jqGrid({
         url:'QuotesList.action?nd='+new Date().getTime(),   
         datatype: "json",
-        colNames:['ID','Quote Reference Number','Quote Name','Print','Export'],
+        colNames:['ID','Quote Reference Number','Quote Name','Comment','Print','Export'],
         colModel:[ {
             name:'id',
             hidden:true
@@ -97,6 +102,11 @@ $(function(){
             name:'qname',
             index:'qname',
             width:200
+        },
+        {
+            name:'comment',
+            index:'comment',
+            width:255
         },{
             name:'print',
             width:60,

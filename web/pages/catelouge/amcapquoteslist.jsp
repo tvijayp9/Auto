@@ -16,7 +16,7 @@
         <link href="css/default1.css" rel="stylesheet" type="text/css" media="screen" />
        <script type="text/javascript" SRC="javascript/myscript.js"></script>
         <script type="text/javascript" src="javascript/jquery-1.3.min.js"></script>
-        <script type="text/javascript" src="javascript/amcapquoteslist.js?160920233"></script>
+        <script type="text/javascript" src="javascript/amcapquoteslist.js?160920234"></script>
         <link rel="stylesheet" type="text/css" media="screen" href="javascript/jqGrid/themes/basic/grid.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="javascript/jqGrid/themes/jqModal.css" />
         <link href="theme/jqueryUITheme/ui.all.css" rel="stylesheet" type="text/css" />
@@ -29,6 +29,7 @@
     <body>
         <%
             session.removeAttribute("quoteName");
+	    session.removeAttribute("comment");
             String isAdminUser=session.getAttribute("isSupplier").toString();
         %>
         <div id="container">

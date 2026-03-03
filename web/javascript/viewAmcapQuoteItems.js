@@ -51,10 +51,10 @@ $(function(){
     $("#list").jqGrid({
         url:'ShowAmcapQuoteItems.action?nd=' + new Date().getTime(),
         datatype: "json",
-        colNames:['Qty','Product Item No', 'Product Description','Unit Price','Price','Tax','Cost'],
+        colNames:['Qty','Product Item No', 'Product Description','Unit Price','Price','Tax','Cost','Lead Time(from date of order)'],
         colModel:[ {
             name:'quantity',
-            width:80,
+            width:50,
             sortable:false,
             editable:true,
             editrules:{
@@ -67,7 +67,7 @@ $(function(){
         {
             name:'product_code',
             index:'product_code',
-            width:150
+            width:130
         },
 
         {
@@ -78,13 +78,13 @@ $(function(){
         {
             name:'unitPrice',
             sortable:false,
-            width:100,
+            width:30,
             hidden:true
         },
         {
             name:'price',
             sortable:false,
-            width:100,
+            width:80,
             formatter:'currency',
             formatoptions:{
                 prefix: "$",
@@ -110,6 +110,11 @@ $(function(){
                 prefix: "$",
                 decimalPlaces: 3
             }
+        },
+        {
+            name:'leadtime',
+            index:'leadtime',
+            width:200
         }],
         rowNum:10,
         rowList:[10,25,50,100],
@@ -153,17 +158,17 @@ $(function(){
     $("#list1").jqGrid({
         url:'ShowAmcapQuoteItems.action?templateId='+templateId,
         datatype: "json",
-        colNames:['Qty','Product Item No', 'Product Description','Unit Price','Price','Tax','Cost'],
+        colNames:['Qty','Product Item No', 'Product Description','Unit Price','Price','Tax','Cost','Lead Time(from date of order)'],
         colModel:[ {
             name:'quantity',
-            width:80,
+            width:60,
             sortable:false
         },
 
         {
             name:'product_code',
             index:'product_code',
-            width:150
+            width:130
         },
 
         {
@@ -174,7 +179,7 @@ $(function(){
         {
             name:'unitPrice',
             sortable:false,
-            width:100,
+            width:50,
             hidden:true
         },
         {
@@ -206,6 +211,12 @@ $(function(){
                 prefix: "$",
                 decimalPlaces: 3
             }
+        },
+
+        {
+            name:'leadtime',
+            index:'leadtime',
+            width:200
         }],
         rowNum:10,
         rowList:[10,25,50,100],

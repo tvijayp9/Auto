@@ -23,6 +23,7 @@ import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
 import org.apache.commons.lang.StringUtils;
@@ -152,7 +153,7 @@ public class ProductManagementServiceImpl implements ProductManagementService{
         return updatedRecords;
     }
     
-    public String saveNewQuote(String quoteName, List<TemplateOrderItem> quote, int id, int supplierId) throws SQLException {
+    public String saveNewQuote(String quoteName, List<TemplateOrderItem> quote, int id, int supplierId, String comment) throws SQLException {
         String qrn = getQuotesDAO().checkQRN(id, supplierId);
         String effectiveQRN = "B" + id + "S" + supplierId + "QRN1";
         if (qrn != null) {
@@ -160,10 +161,10 @@ public class ProductManagementServiceImpl implements ProductManagementService{
             int count = new Integer(array[1]).intValue() + 1;
             effectiveQRN = "B" + id + "S" + supplierId + "QRN" + count;
         }
-        getQuotesDAO().insertQuote(effectiveQRN, quoteName, id, supplierId);
+        productManagementDAO.insertAmcapQuote(effectiveQRN, quoteName, id, supplierId, comment);
         int QId = getQuotesDAO().findQId(effectiveQRN, quoteName, id, supplierId);
         for (TemplateOrderItem toi : quote) {
-            getQuotesItemsDAO().insertQuoteItems(QId, toi.getProductCode(), toi.getUnitPrice(), toi.getDescription(), toi.getQty());
+            productManagementDAO.insertAmcapQuoteItems(QId, toi.getProductCode(), toi.getUnitPrice(), toi.getDescription(), toi.getQty(), toi.getLeadTime());
         }
         return effectiveQRN;
     }
@@ -264,7 +265,7 @@ public class ProductManagementServiceImpl implements ProductManagementService{
         }
     }
             
-    public List<TemplateOrderItem> addAmcapProductToQuoteItem(int qty, String productCode, String description, BigDecimal unitPrice, List<TemplateOrderItem> quote) throws SQLException {
+    public List<TemplateOrderItem> addAmcapProductToQuoteItem(int qty, String productCode, String description, BigDecimal unitPrice, int leadTime, List<TemplateOrderItem> quote) throws SQLException {
         boolean existing = false;
         for (TemplateOrderItem toi : quote) {
             if (StringUtils.isEmpty(toi.getSiteName()) && productCode.equalsIgnoreCase(toi.getProductCode()) && description.equalsIgnoreCase(toi.getDescription())) {
@@ -276,7 +277,7 @@ public class ProductManagementServiceImpl implements ProductManagementService{
             BigDecimal price = unitPrice.multiply(new BigDecimal(qty));
             BigDecimal tax = price.multiply(new BigDecimal(0.1)).setScale(2, BigDecimal.ROUND_HALF_UP);
             BigDecimal cost = price.add(tax);
-            TemplateOrderItem toi = new TemplateOrderItem("", "", productCode, description, unitPrice, price, tax, qty, cost, 1);
+            TemplateOrderItem toi = new TemplateOrderItem("", "", productCode, description, unitPrice, price, tax, qty, cost, leadTime);
             quote.add(toi);
         }
         log.info("quote size=" + quote.size());
@@ -331,7 +332,6 @@ public class ProductManagementServiceImpl implements ProductManagementService{
             row.setId(toi.getProductCode());
             List<String> cell = new ArrayList();
             cell.add(new Integer(toi.getQty()).toString());
-            cell.add(new Integer(toi.getSoh()).toString());
             cell.add(toi.getProductCode());
             cell.add(toi.getDescription());
             cell.add(toi.getUnitPrice().toString());
@@ -339,6 +339,7 @@ public class ProductManagementServiceImpl implements ProductManagementService{
             cell.add(toi.getPrice().toString());
             cell.add(toi.getTotaltax().toString());
             cell.add(toi.getCost().toString());
+            cell.add(new Integer(toi.getLeadTime()).toString());
             row.setCell(cell);
             rows.add(row);
         }
@@ -367,6 +368,7 @@ public class ProductManagementServiceImpl implements ProductManagementService{
             cell.add(toi.getPrice().toString());
             cell.add(toi.getTotaltax().toString());
             cell.add(toi.getCost().toString());
+            cell.add(new Integer(toi.getLeadTime()).toString());
             row.setCell(cell);
             rows.add(row);
         }
@@ -411,7 +413,7 @@ public class ProductManagementServiceImpl implements ProductManagementService{
         for (String itemId : items) {
             for(TemplateOrderItem templateOrderItem : quotesItems){
                 if(new Integer(itemId)== templateOrderItem.getTemplateId()){
-                    shoppingCart.add(new ShoppingCartItem(templateOrderItem.getProductCode(), templateOrderItem.getDescription(), templateOrderItem.getUnitPrice(), templateOrderItem.getPrice(), templateOrderItem.getTotaltax(), templateOrderItem.getQty(), templateOrderItem.getCost(), 0, templateOrderItem.getTemplateId()));
+                    shoppingCart.add(new ShoppingCartItem(templateOrderItem.getProductCode(), templateOrderItem.getDescription(), templateOrderItem.getUnitPrice(), templateOrderItem.getPrice(), templateOrderItem.getTotaltax(), templateOrderItem.getQty(), templateOrderItem.getCost(), templateOrderItem.getLeadTime(), templateOrderItem.getTemplateId()));
                 }
             }
 //            shoppingCart.add(productManagementDAO.findProductDetailsForQuoteShoppingCart(itemId));
@@ -432,8 +434,8 @@ public class ProductManagementServiceImpl implements ProductManagementService{
         return productManagementDAO.findSupplierProductsCategoryNames(siteName, product_table_name);
     }
     
-    public String findQuoteNameByQuoteId(int quoteId) throws SQLException{
-        return productManagementDAO.findQuoteNameByQuoteId(quoteId);
+    public HashMap findQuoteByQuoteId(int quoteId) throws SQLException{
+        return productManagementDAO.findQuoteByQuoteId(quoteId);
     }
     
     /**

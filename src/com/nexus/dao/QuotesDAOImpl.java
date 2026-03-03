@@ -98,7 +98,7 @@ public class QuotesDAOImpl implements QuotesDAO {
         ResultSet rs = null;
         List<JQGridRow> rows = new ArrayList();
         log.info("findQuotesList...id..."+id+"...supplierId..."+supplierId);
-        String selectStatement = "select id,qrn,qname from xy_quotes where buyer_id=? and supplier_id=? order by " + sidx + " " + sord + " LIMIT " + start + "," + limit;
+        String selectStatement = "select id,qrn,qname,comment from xy_quotes where buyer_id=? and supplier_id=? order by " + sidx + " " + sord + " LIMIT " + start + "," + limit;
         ps = connection.prepareStatement(selectStatement);
         ps.setInt(1, id);
         ps.setInt(2, supplierId);
@@ -110,6 +110,7 @@ public class QuotesDAOImpl implements QuotesDAO {
             cell.add(rs.getString("id"));
             cell.add(rs.getString("qrn"));
             cell.add(rs.getString("qname"));
+            cell.add(rs.getString("comment"));
             cell.add("");
             cell.add("");
             row.setCell(cell);

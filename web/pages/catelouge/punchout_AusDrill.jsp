@@ -28,14 +28,19 @@
         <script type="text/javascript" src="javascript/jquery-1.3.min.js"></script>
         <script type="text/javascript">
             var fromURL='<%=session.getAttribute("fromURL")%>';
-		   // var fromURL='http://192.168.1.45:4008';
 			$(document).ready(function(){
 				$("#submit1").click(function(){
 					$("#submit1").attr("disabled", "disabled");
+					//$("form").attr("action", fromURL).submit();
+					//return false;
+				$.ajax({
+                                    type: "POST",
+                                     url: "resetShoppingCart.action",
+                                     success: function() {
 					$("form").attr("action", fromURL).submit();
-					return false;
-                   // window.open('resetShoppingCart.action','resetShoppingCart','width=1,height=1,top=800,left=800,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no,resizable=no');
-            //       $("form").attr("action", "resetShoppingCart.action").submit();
+                                      }
+                                   })
+                  
 				});
 			});
         </script>

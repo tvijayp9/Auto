@@ -150,13 +150,14 @@ public class QuotesDAOImpl implements QuotesDAO {
         PreparedStatement ps = null;
         ResultSet rs = null;
         log.info("getParametersForPrintQuote...qid..."+qid);
-        String selectStatement = "Select qrn,qname from xy_quotes where id=?";
+        String selectStatement = "Select qrn,qname,comment from xy_quotes where id=?";
         ps = connection.prepareStatement(selectStatement);
         ps.setInt(1, qid);
         rs = ps.executeQuery();
         rs.next();
         reportParams.put("qrn", rs.getString("qrn"));
         reportParams.put("qname", rs.getString("qname"));
+        reportParams.put("comment", rs.getString("comment"));
     }
 
     public Quote findQuoteDetailsByQid(int qid) throws SQLException {

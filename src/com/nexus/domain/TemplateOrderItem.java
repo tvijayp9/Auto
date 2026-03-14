@@ -53,6 +53,15 @@ public class TemplateOrderItem implements Serializable{
         this.qty = qty;
         this.status = status;
     }
+    
+    public TemplateOrderItem(BigDecimal unitPrice, String productCode, String description, int leadTime, int qty, String status) {
+        this.unitPrice = unitPrice;
+        this.productCode = productCode;
+        this.description = description;
+        this.leadTime = leadTime;
+        this.qty = qty;
+        this.status = status;
+    }
 
     public TemplateOrderItem(int qty, String productCode, String description, BigDecimal unitPrice) {
         this.productCode = productCode;

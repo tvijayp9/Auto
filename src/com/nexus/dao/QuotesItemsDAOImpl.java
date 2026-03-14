@@ -104,24 +104,13 @@ public class QuotesItemsDAOImpl implements QuotesItemsDAO {
         ResultSet rs = null;
         List<TemplateOrderItem> rows = new ArrayList();
         log.info("2 findQuoteItemsByQuoteId..quoteId.."+quoteId);
-        /*String selectStatement = "SELECT qi.id,pu.product_code,qi.description,pu.soh,ABS(qi.price),qi.status,qi.qty "
-        + "from ((products_umg pu inner join xy_quotes_items qi on qi.product_code=pu.product_code) "
-        + "left join umg_buyer_products_mapping ubpm on pu.product_code=ubpm.productcode) "
-        + "left join xy_partner_link pl on pl.id=ubpm.partner_link_id where "
-        + "((pl.Buyer_Id=? and pl.Supplier_Id=?) or ubpm.partner_link_id is null) and qi.qid=? "
-        + "order by " + sidx + " " + sord + " LIMIT " + start + "," + limit;*/
-        String selectStatement = "SELECT qi.product_code,qi.description,pu.soh,ABS(qi.price),qi.status,qi.qty " + "from xy_quotes_items qi left join products_umg pu on qi.product_code=pu.product_code where qi.qid=? " + "order by qi.product_code";
+        String selectStatement = "SELECT qi.product_code,qi.description,qi.lead_time,ABS(qi.price),qi.status,qi.qty " + "from xy_quotes_items qi where qi.qid=? " + "order by qi.product_code";
 
         ps = connection.prepareStatement(selectStatement);
         ps.setInt(1, quoteId);
         rs = ps.executeQuery();
         while (rs.next()) {
-            String soh = rs.getString("soh");
-            int realsoh = 0;
-            if ((soh != null) && (!soh.equals(""))) {
-                realsoh = new Integer(soh).intValue();
-            }
-            TemplateOrderItem toi = new TemplateOrderItem(rs.getString("product_code"), rs.getString("description"), rs.getBigDecimal("ABS(qi.price)"), realsoh, rs.getInt("qty"), rs.getString("status"));
+            TemplateOrderItem toi = new TemplateOrderItem(rs.getBigDecimal("ABS(qi.price)"), rs.getString("product_code"), rs.getString("description"),  rs.getInt("lead_time"), rs.getInt("qty"), rs.getString("status"));
             rows.add(toi);
         }
         return rows;

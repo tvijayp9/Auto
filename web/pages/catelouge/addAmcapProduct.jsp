@@ -29,47 +29,98 @@
         <script type="text/javascript" src="dwr/interface/catalogueService.js"></script>
         <script type="text/javascript" src="../../javascript/jquery.loadmask.min.js"></script>
         <script type="text/javascript" src="../../javascript/addAmcapProduct.js"></script>
+<style>
+/* Center the form properly */
+#product-form {
+    width: 550px;
+    margin: 40px auto;
+}
+
+/* Remove inherited weird alignment */
+.product-container {
+    width: 100%;
+}
+
+/* Row layout */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+/* Label styling */
+.form-row label {
+    width: 180px;              /* smaller label column */
+    text-align: right;
+    padding-right: 20px;
+    font-weight: normal;
+}
+
+/* Force consistent input width */
+.form-row input {
+    width: 250px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+.form-row.buttons {
+    margin-left: 200px;
+}
+
+.form-row.buttons input {
+    width: auto;
+    padding: 6px 14px;
+    margin-right: 10px;
+}
+</style>
     </head>
     
     <body>
         <%
             String quotename = request.getParameter("quoteName");
             session.setAttribute("quoteName",quotename);
+	    String comment = request.getParameter("comment");
+            session.setAttribute("comment",comment);
             System.out.println("quoteName in Add Amcap Product="+quotename);
+            System.out.println("comment in Add Amcap Product="+comment);
            %>
         <s:i18n name="resolution">
-            <s:form name="form" id="product-form">
+            <s:form name="form" id="product-form" theme="simple">
           
-         <table width="500" border="0">
-                        <tr>
-                            <td>Product Item No:</td>
-                            <td><s:textfield id="productcode" name="productcode" size="20" maxlength="50" required="true"/></td>
-                        </tr>
-                        <tr>
-                            <td>Product Description:</td>
-                            <td><s:textfield id="description" name="description" size="20" maxlength="50" required="true"/></td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Qty:</td>
-                            <td><s:textfield id="qty" name="qty" size="20" maxlength="20" required="true"/></td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Price:</td>
-                            <td><s:textfield id="price" name="price" size="20" maxlength="40" required="true"/></td>
-                        </tr>
-                        <tr>
-                        </tr>
-                        <tr>
-                            <td>
+         <div class="product-container">
+
+    <div class="form-row">
+        <label>Product Item No:</label>
+        <s:textfield id="productcode" name="productcode" required="true"/>
+    </div>
+
+    <div class="form-row">
+        <label>Product Description:</label>
+        <s:textfield id="description" name="description" required="true"/>
+    </div>
+
+    <div class="form-row">
+        <label>Qty:</label>
+        <s:textfield id="qty" name="qty" required="true"/>
+    </div>
+
+    <div class="form-row">
+        <label>Price:</label>
+        <s:textfield id="price" name="price" required="true"/>
+    </div>
+
+    <div class="form-row">
+        <label>Lead Time(from date of order):</label>
+        <s:textfield id="leadtime" name="leadtime" required="true"/>
+    </div>
+
+    <div class="form-row buttons">
                                  <input type="button" id="add" value="Add Product"/>
-                            </td>
-                            <td>
-                                 <input type="button" id="close" value="close"/>
-                            </td>
-                        </tr>
-                    </table>
+        <input type="button" id="close" value="Close"/>
+    </div>
+
+</div>
         </s:form>
         <p align="center"><font color="#000080" size="4"><s:actionmessage /></font></p>
         </s:i18n>

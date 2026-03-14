@@ -22,6 +22,7 @@ public class CreateNewAmcapQuoteAction extends ActionSupport {
     private List<String> sitenames;
     private String sitename;
     private String quoteName="";
+    private String comment="";
     private ProductManagementService productManagementService;
     public String execute() throws SQLException {
         ActionContext ac = ActionContext.getContext();
@@ -34,6 +35,12 @@ public class CreateNewAmcapQuoteAction extends ActionSupport {
             session.put("quoteName", "");
         } else {
             setQuoteName(session.get("quoteName").toString());
+        }
+        
+        if (session.get("comment") == null) {
+            session.put("comment", "");
+        } else {
+            setComment(session.get("comment").toString());
         }
 
         String productTableName = (String) session.get("PRODUCT_TABLE_NAME");
@@ -94,6 +101,20 @@ public class CreateNewAmcapQuoteAction extends ActionSupport {
      */
     public void setQuoteName(String quoteName) {
         this.quoteName = quoteName;
+    }
+
+    /**
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
+
+    /**
+     * @param comment the comment to set
+     */
+    public void setComment(String comment) {
+        this.comment = comment;
     }
     
 }

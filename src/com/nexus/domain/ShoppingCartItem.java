@@ -12,7 +12,7 @@ import java.math.BigDecimal;
  * @author Terry
  */
 public class ShoppingCartItem implements Serializable{
-
+    private static final long serialVersionUID = 1L;
     private int lineNo;
     private String productCode;
     private String description;
@@ -22,6 +22,7 @@ public class ShoppingCartItem implements Serializable{
     private int quantity;
     private BigDecimal cost;
     private int soh;
+    private int leadtime;
     private int quoteItemId;
     private String uom;
     private String deliveryDate;
@@ -77,7 +78,7 @@ public class ShoppingCartItem implements Serializable{
         this.linelevelComment=linelevelComment;
     }
 
-        public ShoppingCartItem(String productCode, String description, BigDecimal unitPrice,BigDecimal price, BigDecimal tax,int quantity, BigDecimal cost, int soh,int quoteItemId) {
+        public ShoppingCartItem(String productCode, String description, BigDecimal unitPrice,BigDecimal price, BigDecimal tax,int quantity, BigDecimal cost, int leadtime,int quoteItemId) {
         this.productCode = productCode;
         this.description = description;
         this.unitPrice=unitPrice;
@@ -85,7 +86,7 @@ public class ShoppingCartItem implements Serializable{
         this.tax=tax;
         this.quantity = quantity;
         this.cost = cost;
-        this.soh = soh;
+        this.leadtime = leadtime;
         this.quoteItemId=quoteItemId;
     }
 
@@ -296,6 +297,20 @@ public class ShoppingCartItem implements Serializable{
      */
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
+    }
+
+    /**
+     * @return the leadtime
+     */
+    public int getLeadtime() {
+        return leadtime;
+    }
+
+    /**
+     * @param leadtime the leadtime to set
+     */
+    public void setLeadtime(int leadtime) {
+        this.leadtime = leadtime;
     }
     
     

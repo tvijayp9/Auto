@@ -12,12 +12,14 @@ import java.math.BigDecimal;
  * @author Terry
  */
 public class TemplateOrderItem implements Serializable{
+    private static final long serialVersionUID = 1L;
     private int templateId;
     private String productCode;
     private String description;
     private BigDecimal unitPrice;
     private int soh;
     private int qty;
+    private int leadTime;
     private String units;
     private String tax;
     private String status;
@@ -51,6 +53,15 @@ public class TemplateOrderItem implements Serializable{
         this.qty = qty;
         this.status = status;
     }
+    
+    public TemplateOrderItem(BigDecimal unitPrice, String productCode, String description, int leadTime, int qty, String status) {
+        this.unitPrice = unitPrice;
+        this.productCode = productCode;
+        this.description = description;
+        this.leadTime = leadTime;
+        this.qty = qty;
+        this.status = status;
+    }
 
     public TemplateOrderItem(int qty, String productCode, String description, BigDecimal unitPrice) {
         this.productCode = productCode;
@@ -70,7 +81,7 @@ public class TemplateOrderItem implements Serializable{
         this.soh = soh;
     }
     
-    public TemplateOrderItem(String siteName, String categoryName, String productCode, String description, BigDecimal unitPrice,BigDecimal price, BigDecimal totaltax,int qty, BigDecimal cost, int soh) {
+    public TemplateOrderItem(String siteName, String categoryName, String productCode, String description, BigDecimal unitPrice,BigDecimal price, BigDecimal totaltax,int qty, BigDecimal cost, int leadTime) {
         this.siteName = siteName;
         this.categoryName = categoryName;
         this.productCode = productCode;
@@ -80,7 +91,7 @@ public class TemplateOrderItem implements Serializable{
         this.totaltax=totaltax;
         this.qty = qty;
         this.cost = cost;
-        this.soh = soh;
+        this.leadTime = leadTime;
     }
 
     /**
@@ -278,5 +289,19 @@ public class TemplateOrderItem implements Serializable{
     public void setTemplateId(int templateId) {
         this.templateId = templateId;
     }
-    
+
+    /**
+     * @return the leadTime
+     */
+    public int getLeadTime() {
+        return leadTime;
+    }
+
+    /**
+     * @param leadTime the leadTime to set
+     */
+    public void setLeadTime(int leadTime) {
+        this.leadTime = leadTime;
+    }
+
 }

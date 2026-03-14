@@ -76,7 +76,7 @@ has been assembled and is ready to be processed,<br/> please click the Transfer 
 <input type="hidden" name="NEW_ITEM-QUANTITY[<s:property value="#stat.count" />]" value = "<s:property value="quantity"/>" >
 <input type="hidden" name="NEW_ITEM-PRICE[<s:property value="#stat.count" />]" value = "<s:property value="unitPrice"/>" >
 <input type="hidden" name="NEW_ITEM-CURRENCY[<s:property value="#stat.count" />]" value = "AUD">
-<input type="hidden" name="NEW_ITEM-LEADTIME[<s:property value="#stat.count" />]" value = "1">
+<input type="hidden" name="NEW_ITEM-LEADTIME[<s:property value="#stat.count" />]" value = "<s:property value="leadtime"/>">
 <input type="hidden" name="NEW_ITEM-MANUFACTCODE[<s:property value="#stat.count" />]" value = "">
 <input type="hidden" name="NEW_ITEM-MANUFACTMAT[<s:property value="#stat.count" />]" value = "">
 

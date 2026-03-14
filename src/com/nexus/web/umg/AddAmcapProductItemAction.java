@@ -30,15 +30,18 @@ public class AddAmcapProductItemAction extends ActionSupport {
     private String description="";
     private BigDecimal price;
     private String quoteName = "";
+    private String comment = "";
+    private int leadtime = 0;
     public String execute() throws SQLException {
         ActionContext ac = ActionContext.getContext();
         Map session = ac.getSession();
         product_table_name = (String) ac.getSession().get("product_table_name");
         List<TemplateOrderItem> toi = (List<TemplateOrderItem>) session.get("newQuote");
         setQuoteName((String)session.get("quoteName"));
-        log.info("size in action qty=" + qty + "..productcode.." + productcode+"...description="+description+"...price="+price);
+        setComment((String)session.get("comment"));
+        log.info("size in action qty=" + qty + "..productcode.." + productcode+"...description="+description+"...price="+price+"....leadtime="+getLeadtime());
         if (productcode != "") {
-            list = productManagementService.addAmcapProductToQuoteItem(qty, productcode, description, price, toi);
+            list = productManagementService.addAmcapProductToQuoteItem(qty, productcode, description, price, leadtime, toi);
             session.put("newQuote", list);
             log.info("size in action class=" + toi.size() + "..new list..size.." + list.size());
         }
@@ -129,6 +132,34 @@ public class AddAmcapProductItemAction extends ActionSupport {
      */
     public void setQuoteName(String quoteName) {
         this.quoteName = quoteName;
+    }
+
+    /**
+     * @return the leadtime
+     */
+    public int getLeadtime() {
+        return leadtime;
+    }
+
+    /**
+     * @param leadtime the leadtime to set
+     */
+    public void setLeadtime(int leadtime) {
+        this.leadtime = leadtime;
+    }
+
+    /**
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
+
+    /**
+     * @param comment the comment to set
+     */
+    public void setComment(String comment) {
+        this.comment = comment;
     }
     
 }

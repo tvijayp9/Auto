@@ -6,7 +6,9 @@ package com.nexus.dao;
 
 import com.nexus.domain.ShoppingCartItem;
 import com.nexus.domain.TemplateOrderItem;
+import java.math.BigDecimal;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -45,7 +47,11 @@ public interface ProductManagementDAO {
     
     public ShoppingCartItem findProductDetailsForQuoteShoppingCart(String itemId) throws SQLException;
     
-    public String findQuoteNameByQuoteId(int quoteId) throws SQLException;
+    public HashMap findQuoteByQuoteId(int quoteId) throws SQLException;
     
     public List<TemplateOrderItem> findQuoteItemsByQuoteId(int quoteId) throws SQLException;
+    
+    public void insertAmcapQuote(String qrn, String quoteName, int id, int supplierId, String comment) throws SQLException;
+    
+    public void insertAmcapQuoteItems(int QId, String gtin, BigDecimal price, String description, int qty, int leadTime) throws SQLException;
 }

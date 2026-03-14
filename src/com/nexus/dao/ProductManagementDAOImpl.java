@@ -15,6 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
@@ -371,18 +372,22 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
         return rs.getInt(1);
     }
     
-    public String findQuoteNameByQuoteId(int quoteId) throws SQLException {
+    public HashMap findQuoteByQuoteId(int quoteId) throws SQLException {
         Session session = sessionFactory.getCurrentSession();
         Connection connection = session.connection();
         PreparedStatement ps = null;
         ResultSet rs = null;
+        HashMap map = new HashMap();
         log.info("findQuoteNameByQuoteId..quoteId.." + quoteId);
-        String selectStatement = "SELECT qname FROM xy_quotes where id=?";
+        String selectStatement = "SELECT qname,comment FROM xy_quotes where id=?";
         ps = connection.prepareStatement(selectStatement);
         ps.setInt(1, quoteId);
         rs = ps.executeQuery();
-        rs.next();
-        return rs.getString(1);
+        if (rs.next()) {
+        map.put("quoteName", rs.getString("qname"));
+        map.put("comment", rs.getString("comment"));
+        }
+        return map;
     }
     
     public List findQuoteItemsByQuoteId(int quoteId, int start, int limit, String sidx, String sord) throws SQLException {
@@ -392,7 +397,7 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
         ResultSet rs = null;
         List<JQGridRow> rows = new ArrayList();
         log.info("1 findQuoteItemsByQuoteId..quoteId.."+quoteId);
-        String selectStatement = "SELECT qi.id,qi.product_code,qi.description,qi.price,qi.qty from xy_quotes_items qi where qi.qid=? order by " + sidx + " " + sord + " LIMIT " + start + "," + limit;
+        String selectStatement = "SELECT qi.id,qi.product_code,qi.description,qi.price,qi.qty,qi.lead_time from xy_quotes_items qi where qi.qid=? order by " + sidx + " " + sord + " LIMIT " + start + "," + limit;
 
         ps = connection.prepareStatement(selectStatement);
         ps.setInt(1, quoteId);
@@ -414,7 +419,7 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
             cell.add(String.valueOf(price));
             cell.add(String.valueOf(tax));
             cell.add(String.valueOf(cost));
-            
+            cell.add(String.valueOf(rs.getInt("lead_time")));
             row.setCell(cell);
             rows.add(row);
         }
@@ -429,7 +434,7 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
         List<TemplateOrderItem> rows = new ArrayList();
         TemplateOrderItem templateOrderItem = null;
         log.info("1 findQuoteItemsByQuoteId..quoteId.."+quoteId);
-        String selectStatement = "SELECT qi.id, qi.product_code,qi.description,qi.price,qi.qty from xy_quotes_items qi where qi.qid=?";
+        String selectStatement = "SELECT qi.id, qi.product_code,qi.description,qi.price,qi.qty,qi.lead_time from xy_quotes_items qi where qi.qid=?";
 
         ps = connection.prepareStatement(selectStatement);
         ps.setInt(1, quoteId);
@@ -451,7 +456,7 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
             templateOrderItem.setPrice(price);
             templateOrderItem.setTotaltax(tax);
             templateOrderItem.setCost(cost);
-            
+            templateOrderItem.setLeadTime(rs.getInt("lead_time"));
             rows.add(templateOrderItem);
         }
         return rows;
@@ -464,7 +469,7 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
         ResultSet rs = null;
         ShoppingCartItem sci = null;
         log.info("findProductDetailsForQuoteShoppingCart..itemId.."+itemId);
-        String selectStatement = "SELECT qi.product_code,qi.description,qi.price,qi.qty,qi.id " +
+        String selectStatement = "SELECT qi.product_code,qi.description,qi.price,qi.qty,qi.id,qi.lead_time " +
                 "from xy_quotes_items qi where qi.id=?";
         ps = connection.prepareStatement(selectStatement);
         ps.setString(1, itemId);
@@ -475,8 +480,39 @@ public class ProductManagementDAOImpl implements ProductManagementDAO {
             BigDecimal price = unitPrice.multiply(new BigDecimal(quantity));
             BigDecimal tax = price.multiply(new BigDecimal(0.1)).setScale(2, BigDecimal.ROUND_HALF_UP);
             BigDecimal cost = price.add(tax);
-            sci = new ShoppingCartItem(rs.getString("product_code"), rs.getString("description"), unitPrice, price, tax, quantity, cost, 0, rs.getInt("id"));
+            sci = new ShoppingCartItem(rs.getString("product_code"), rs.getString("description"), unitPrice, price, tax, quantity, cost, rs.getInt("lead_time"), rs.getInt("id"));
         }
         return sci;
+    }
+    
+    public void insertAmcapQuote(String qrn, String quoteName, int id, int supplierId, String comment) throws SQLException {
+        Session session = sessionFactory.getCurrentSession();
+        Connection connection = session.connection();
+        PreparedStatement ps = null;
+        log.info("insertQuote...qrn..."+qrn+"...quoteName..."+quoteName+"..supplierId.."+supplierId);
+        String insertStatement = "insert into xy_quotes (qrn,qname,buyer_id,supplier_id,comment) values(?,?,?,?,?)";
+        ps = connection.prepareStatement(insertStatement);
+        ps.setString(1, qrn);
+        ps.setString(2, quoteName);
+        ps.setInt(3, id);
+        ps.setInt(4, supplierId);
+        ps.setString(5, comment);
+        ps.executeUpdate();
+    }
+    
+    public void insertAmcapQuoteItems(int QId, String gtin, BigDecimal price, String description, int qty, int leadTime) throws SQLException {
+        Session session = sessionFactory.getCurrentSession();
+        Connection connection = session.connection();
+        PreparedStatement ps = null;
+        log.info("insertQuoteItems..qid.."+QId+"..gtin.."+gtin+"..price.."+price+"..description.."+description+"..qty.."+qty);
+        String insertStatement = "insert into xy_quotes_items (qid,product_code,price,description,qty,lead_time) values(?,?,?,?,?,?)";
+        ps = connection.prepareStatement(insertStatement);
+        ps.setInt(1, QId);
+        ps.setString(2, gtin);
+        ps.setBigDecimal(3, price);
+        ps.setString(4, description);
+        ps.setInt(5, qty);
+        ps.setInt(6, leadTime);
+        ps.executeUpdate();
     }
 }

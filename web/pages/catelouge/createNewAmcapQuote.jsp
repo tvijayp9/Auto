@@ -32,13 +32,14 @@
         <script type="text/javascript" src="dwr/interface/catalogueService.js"></script>
         <script type="text/javascript" src="javascript/jquery.loadmask.min.js"></script>
 
-        <script type="text/javascript" src="javascript/createNewAmcapQuote.js"></script>
+        <script type="text/javascript" src="javascript/createNewAmcapQuote.js?01032027"></script>
     </head>
     <body>
         <%
             String supNexusId=session.getAttribute("supplierid").toString();
             String quoteName=session.getAttribute("quoteName").toString();
-            System.out.println("quotename="+quoteName);
+            String comment=session.getAttribute("comment").toString();
+            System.out.println("quotename="+quoteName+"....comment="+comment);
         %>
         <div id="container">
             <div id="header">
@@ -53,6 +54,7 @@
                
                     <input type='hidden' name=supnexusid value="<%=supNexusId%>" />
                Quote Name: <s:textfield id="quoteName" name="quoteName"  theme="simple" maxlength="20"/>
+               Comment: <s:textfield id="comment" name="comment"  theme="simple" maxlength="255"/>
                 <p>1. Please search products </p>
                 <table width="800" border="0">
                     <tr>

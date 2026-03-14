@@ -9,6 +9,7 @@ import com.nexus.services.ProductManagementService;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -20,13 +21,18 @@ public class ViewAmcapQuoteItemsAction extends ActionSupport {
 
     private int templateId;
     private String quoteName;
+    private String comment;
     private ProductManagementService productManagementService;
     List<TemplateOrderItem> quoteItems;
+    private HashMap map = new HashMap();
     public String execute() throws SQLException {
-        quoteName = productManagementService.findQuoteNameByQuoteId(templateId);
+        map = productManagementService.findQuoteByQuoteId(templateId);
+        quoteName = (String) map.get("quoteName");
+        setComment((String) map.get("comment"));
         ActionContext ac = ActionContext.getContext();
         Map session = ac.getSession();
         session.put("quoteName", quoteName);
+        session.put("comment", getComment());
         quoteItems = productManagementService.findQuoteItemsByQuoteId(templateId);
         session.put("quoteItemList", quoteItems);
         return SUCCESS;
@@ -74,4 +80,19 @@ public class ViewAmcapQuoteItemsAction extends ActionSupport {
         this.productManagementService = productManagementService;
     }
 
+    /**
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
+
+    /**
+     * @param comment the comment to set
+     */
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    
 }

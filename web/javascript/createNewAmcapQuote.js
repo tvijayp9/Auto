@@ -178,7 +178,8 @@ $(function() {
 
     $("#addRecord").click(function() {
         var quotename =  $("#quoteName").val();
-        window.open('pages/catelouge/addAmcapProduct.jsp?quoteName='+quotename, 'HelpWindow', 'toolbar=no,top=500,left=500,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=500,height=300');
+	var quoteComment =  $("#comment").val();
+        window.open('pages/catelouge/addAmcapProduct.jsp?quoteName='+quotename+'&comment='+quoteComment, 'HelpWindow', 'toolbar=no,top=500,left=500,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=500,height=300');
     });
 
 
@@ -189,7 +190,8 @@ $(function() {
     $("#checkout").click(function() {
         if ($("#quoteName").val() != "") {
             var quotename = $("#quoteName").val();
-            location.href = 'SaveNewAmcapQuote.action?quoteName=' + quotename;
+            var comment = $("#comment").val();
+            location.href = 'SaveNewAmcapQuote.action?quoteName=' + quotename+'&comment='+comment;
         }
         else {
             alert("Please input quote name");
@@ -275,10 +277,10 @@ $(function() {
     $("#newQuote").jqGrid({
         url: 'ShowAmcapQuote.action?nd=' + new Date().getTime(),
         datatype: "json",
-        colNames: ['Qty', 'S.O.H.', 'Product Item No', 'Product Description', 'Unit Price', 'Price', 'Tax', 'Cost'],
+        colNames: ['Qty', 'Product Item No', 'Product Description', 'Unit Price', 'Price', 'Tax', 'Cost','Lead Time'],
         colModel: [{
                 name: 'quantity',
-                width: 100,
+                width: 70,
                 sortable: false,
                 editable: true,
                 editrules: {
@@ -287,11 +289,6 @@ $(function() {
                     minValue: 1,
                     maxValue: 999
                 }
-            }, {
-                name: 'soh',
-                sortable: false,
-                hidden: true,
-                width: 100
             },
             {
                 name: 'product_code',
@@ -306,7 +303,7 @@ $(function() {
             {
                 name: 'unitPrice',
                 sortable: false,
-                width: 100,
+                width: 50,
                 hidden: true
             },
             {
@@ -322,7 +319,7 @@ $(function() {
             {
                 name: 'totaltax',
                 sortable: false,
-                width: 110,
+                width: 100,
                 formatter: 'currency',
                 formatoptions: {
                     prefix: "$",
@@ -331,13 +328,18 @@ $(function() {
             },
             {
                 name: 'cost',
-                width: 110,
+                width: 100,
                 sortable: false,
                 formatter: 'currency',
                 formatoptions: {
                     prefix: "$",
                     decimalPlaces: 3
                 }
+            },
+            {
+                name: 'leadtime',
+                sortable: false,
+                width: 80
             }],
         rowNum: 10,
         rowList: [10, 25, 50, 100],

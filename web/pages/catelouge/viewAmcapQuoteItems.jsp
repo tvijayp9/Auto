@@ -23,7 +23,7 @@
         <![endif]-->
         <SCRIPT type="text/javascript" SRC="javascript/myscript.js"></SCRIPT>
         <script type="text/javascript" src="javascript/jquery-1.3.min.js"></script>
-        <script type="text/javascript" src="javascript/viewAmcapQuoteItems.js?16092023"></script>
+        <script type="text/javascript" src="javascript/viewAmcapQuoteItems.js?16092026"></script>
         <link rel="stylesheet" type="text/css" media="screen" href="javascript/jqGrid/themes/basic/grid.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="javascript/jqGrid/themes/jqModal.css" />
         <link href="theme/jqueryUITheme/ui.all.css" rel="stylesheet" type="text/css" />
@@ -47,6 +47,7 @@
             </div><!-- end #header -->
             <div id="body-wrap">
                 <h4>Quote Name: <s:property value="quoteName"/></h4>
+                <h4>Comment: <s:property value="comment"/></h4>
                 <h1>Quote Items</h1>
               <%-- <input type="button" id="delete" value="Delete Items"/>
                 <input type="button" id="add" value="Add New Items"/>  --%>

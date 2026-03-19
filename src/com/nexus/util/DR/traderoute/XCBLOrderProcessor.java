@@ -589,13 +589,17 @@ public class XCBLOrderProcessor {
     }
 
     public String findUsername(Map<String, String> map, String input) {
+        String lowerInput = input.toLowerCase();
+    
         for (String value : map.values()) {
-            if (input.toLowerCase().contains(value.toLowerCase())) {
-                return value;
-            }
+            String regex = "\\b" + value.toLowerCase() + "\\b";
+        if (lowerInput.matches(".*" + regex + ".*")) {
+            return value;
         }
-        return null; // No match found
+        }
+    return null;
     }
+    
 
     /**
      *
